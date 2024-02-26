@@ -34,7 +34,7 @@ const Acceuil = () => {
           {etranger ? (
             <motion.div
               initial={{ x: 0 }}
-              animate={{ x: "-30vw" }}
+              animate={{ x: "-50vw" }}
               transition={{ duration: 0.5 }}
             >
               <div className="NavMenu">
@@ -51,7 +51,7 @@ const Acceuil = () => {
         <div>
           <div className="EnTete">
             <img
-              src="/images/more.png"
+              src="/images/close.png"
               alt="OuvrirMenu"
               onClick={OuvrirMenu}
               className="LogoNavMenu"
@@ -66,7 +66,7 @@ const Acceuil = () => {
             </div>
           </div>
           <motion.div
-            initial={{ x: "-30vw" }}
+            initial={{ x: "-50vw" }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5 }}
           >
