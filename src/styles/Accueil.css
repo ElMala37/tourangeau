@@ -68,8 +68,6 @@
       width: 100vw;
       display:flex;
       flex-direction:row;
-      justify-content: space-between;
-
     }
   
     .Titre{
@@ -86,6 +84,11 @@
       font-style: italic;
       font-weight: bolder;
       font-size: 15px;
+    }
+
+    .Drapeau{
+      height: 6vh;
+      width: auto;
     }
   
     .LogoNavMenu{
