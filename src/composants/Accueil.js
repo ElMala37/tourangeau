@@ -57,7 +57,7 @@ const Acceuil = () => {
               className="LogoNavMenu"
             />
             <div className="Titre">
-              <text className="Texte">LE TOURANGEAU 2</text>
+              <text className="Texte">LE TOURANGEAU</text>
               <img
                 src="/images/drapeau.png"
                 alt="Drapeau"
