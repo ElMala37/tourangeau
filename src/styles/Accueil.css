@@ -22,7 +22,6 @@
   .Texte{
     align-self: center;
     margin-right:1vw;
-    font-style: italic;
     font-weight: bolder;
     font-size: 30px;
   }
@@ -81,7 +80,6 @@
   
     .Texte{
       margin-right:2vw;
-      font-style: italic;
       font-weight: bolder;
       font-size: 20px;
     }
