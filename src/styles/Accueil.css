@@ -87,6 +87,7 @@
     }
 
     .Drapeau{
+      align-self: center;
       height: 6vh;
       width: auto;
     }
