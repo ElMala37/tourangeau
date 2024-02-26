@@ -1,0 +1,56 @@
+.Fond{
+    background-color: #DEB887;
+    height: 200vh;
+  }
+
+  .EnTete{
+    background-color: #aa804a;
+    height:8vh;
+    width: 100vw;
+    display:flex;
+    flex-direction:row;
+  }
+
+  .Titre{
+    height:8vh;
+    width: 100vw;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    }
+
+  .Texte{
+    align-self: center;
+    margin-right:1vw;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .LogoNavMenu{
+    height: 4vh;
+    margin: 2vh;
+  }
+  
+  .NavMenu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aa804a;
+    width: 30vw;
+  }
+
+  .NavMenuBouton{
+    margin:2px;
+    background-color: #aa804a;
+    border-radius: 5px;
+    width: 15vw;
+    border-style: hidden;
+    font-size: larger;
+  }
+
+  .NavMenuBouton:hover{
+    color: #DEB887;
+    text-shadow: #aa804a;
+    font-weight: bolder;
+  }
