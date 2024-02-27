@@ -1,14 +1,29 @@
 import React, { useState } from "react";
 import "../styles/Accueil.css";
 import { motion } from "framer-motion";
+import Lecons from "./Lecons";
+import Exercices from "./Exercices";
 
 const Acceuil = () => {
   const [etranger, setEtranger] = useState(false);
   const [ouvert, setOuvert] = useState(true);
+  const [page, setPage] = useState(0);
 
   const OuvrirMenu = () => {
     setOuvert(!ouvert);
     setEtranger(true);
+  };
+
+  const OuvrirPre = () => {
+    setPage(0);
+  };
+
+  const OuvrirLec = () => {
+    setPage(1);
+  };
+
+  const OuvrirExe = () => {
+    setPage(2);
   };
 
   return (
@@ -38,9 +53,15 @@ const Acceuil = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="NavMenu">
-                <button className="NavMenuBouton">Accueil</button>
-                <button className="NavMenuBouton">Leçons</button>
-                <button className="NavMenuBouton">Exercices</button>
+                <button className="NavMenuBouton" onClick={OuvrirPre}>
+                  Présentation
+                </button>
+                <button className="NavMenuBouton" onClick={OuvrirLec}>
+                  Leçons
+                </button>
+                <button className="NavMenuBouton" onClick={OuvrirExe}>
+                  Exercices
+                </button>
               </div>
             </motion.div>
           ) : (
@@ -71,12 +92,23 @@ const Acceuil = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="NavMenu">
-              <button className="NavMenuBouton">Accueil</button>
-              <button className="NavMenuBouton">Leçons</button>
-              <button className="NavMenuBouton">Exercices</button>
+              <button className="NavMenuBouton" onClick={OuvrirPre}>
+                Présentation
+              </button>
+              <button className="NavMenuBouton" onClick={OuvrirLec}>
+                Leçons
+              </button>
+              <button className="NavMenuBouton" onClick={OuvrirExe}>
+                Exercices
+              </button>
             </div>
           </motion.div>
         </div>
+      )}
+      {page === 0 ? (
+        <div></div>
+      ) : (
+        <div>{page === 1 ? <Lecons /> : <Exercices />}</div>
       )}
     </div>
   );

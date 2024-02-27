@@ -37,6 +37,8 @@
     align-items: center;
     background-color: #aa804a;
     width: 30vw;
+    position: absolute;
+    z-index:1;
   }
 
   .NavMenuBouton{
@@ -101,6 +103,8 @@
       align-items: center;
       background-color: #aa804a;
       width: 50vw;
+      position: absolute;
+      z-index:1;
     }
   
     .NavMenuBouton{
