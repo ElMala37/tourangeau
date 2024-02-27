@@ -3,9 +3,8 @@ import "../styles/Accueil.css";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
 
-const Acceuil = () => {
+const Acceuil = ({ouvert,setOuvert}) => {
   const [etranger, setEtranger] = useState(false);
-  const [ouvert, setOuvert] = useState(true);
   const navigate = useNavigate();
 
   const OuvrirMenu = () => {
