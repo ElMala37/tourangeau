@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "../styles/Accueil.css";
 import { motion } from "framer-motion";
+import Lecons from "./Lecons";
+import Exercices from "./Exercices";
 import { useNavigate } from "react-router";
 
 const Acceuil = () => {
   const [etranger, setEtranger] = useState(false);
   const [ouvert, setOuvert] = useState(true);
-  const navigate = useNavigate();
+  const [page, setPage] = useState(0);
 
   const OuvrirMenu = () => {
     setOuvert(!ouvert);
@@ -14,22 +16,22 @@ const Acceuil = () => {
   };
 
   const OuvrirPre = () => {
+    setPage(0);
     setOuvert(!ouvert);
-    navigate("/")
   };
 
   const OuvrirLec = () => {
+    setPage(1);
     setOuvert(!ouvert);
-    navigate("/lecons");
   };
 
   const OuvrirExe = () => {
+    setPage(2);
     setOuvert(!ouvert);
-    navigate("/exercices");
   };
 
   return (
-    <div>
+    <div className="Fond">
       {ouvert ? (
         <div>
           <div className="EnTete">
@@ -106,6 +108,11 @@ const Acceuil = () => {
             </div>
           </motion.div>
         </div>
+      )}
+      {page === 0 ? (
+        <div></div>
+      ) : (
+        <div>{page === 1 ? <Lecons /> : <Exercices />}</div>
       )}
     </div>
   );
