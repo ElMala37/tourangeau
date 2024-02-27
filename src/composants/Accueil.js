@@ -16,14 +16,17 @@ const Acceuil = () => {
 
   const OuvrirPre = () => {
     setPage(0);
+    setOuvert(!ouvert);
   };
 
   const OuvrirLec = () => {
     setPage(1);
+    setOuvert(!ouvert);
   };
 
   const OuvrirExe = () => {
     setPage(2);
+    setOuvert(!ouvert);
   };
 
   return (
