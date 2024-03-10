@@ -243,11 +243,10 @@
 
 .Fond{
     background-color: #DEB887;
-    height: 200vh;
+    height: 130vh;
     }
 
 .Contenu{
-    width: 100vw;
     display:flex;
     margin-top: 3vh;
     justify-content: center;
