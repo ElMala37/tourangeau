@@ -253,12 +253,12 @@
 }
 
 .LogoNavMenu{
-    height: 5vh;
+    height: 3vh;
     width: auto;
 }
 
 .TrameQuestion{
-    width: 100%;
+    width: 60vw;
     display:flex;
     flex-direction: column;
 }
