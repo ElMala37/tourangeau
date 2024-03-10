@@ -1,43 +1,26 @@
 import React, { useState } from "react";
-import "../styles/Lecons.css";
+import "../styles/Exercices.css";
 import Acceuil from "./Accueil";
+import { useNavigate } from "react-router";
 
-const Lecons = () => {
-  const [detail, setDetail] = useState(false);
+const Exercices = () => {
   const [ouvert, setOuvert] = useState(true);
+  const navigate = useNavigate();
 
-  const VoirDetail = () => {
-    setDetail(true);
-    if (ouvert===false){
-        setOuvert(true);
-    }
-  };
-
-  const FermerDetail = () => {
-    setDetail(false);
+  const VoirPrononciation = () => {
+    navigate("/exercices/prononciation");
   };
 
   return (
     <div className="Fond">
-      <Acceuil ouvert={ouvert} setOuvert={setOuvert}/>
-      {detail ? (
+      <Acceuil ouvert={ouvert} setOuvert={setOuvert} />
         <div className="Contenu">
-            <img
-              src="/images/close.png"
-              alt="OuvrirMenu"
-              onClick={FermerDetail}
-              className="LogoNavMenu"
-            />
-        </div>
-      ) : (
-        <div className="Contenu">
-          <div className="Carte" onClick={VoirDetail}>
-            <text className="TitreCarte">Exercice n°1: Alphabet</text>
+          <div className="Carte" onClick={VoirPrononciation}>
+            <text className="TitreCarte">Exercice de prononciation</text>
           </div>
         </div>
-      )}
     </div>
   );
 };
 
-export default Lecons;
+export default Exercices;

@@ -31,6 +31,13 @@
     font-size: larger;
 }
 
+.TitreLecon{
+    margin-left: 15vw;
+    color:black;
+    font-weight:bolder;
+    font-size: 40px;
+}
+
 @media only screen and (max-width: 600px) {
     /* Styles spécifiques pour les téléphones ici */
     .Contenu{

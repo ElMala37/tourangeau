@@ -10,6 +10,11 @@
     margin-left: 15vw;
 }
 
+.LogoNavMenu{
+    height: 5vh;
+    width: auto;
+}
+
 .Carte{
     background-color:#f1d2aa;
     height: 10vh;

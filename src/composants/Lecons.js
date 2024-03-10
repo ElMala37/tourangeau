@@ -28,6 +28,10 @@ const Lecons = () => {
               onClick={FermerDetail}
               className="LogoNavMenu"
             />
+            <text className="TitreLecon">L'alphabet tourangeau :</text>
+            ABCDEFGHIJKQLMNOPQRSTUVWYZ
+            ABCÇDEĔFGHIJKQLMNOPQRSTUVYZ
+            
         </div>
       ) : (
         <div className="Contenu">
