@@ -306,13 +306,14 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .BouttonAudio{
     background-color:#f1d2aa;
     height: 8vh;
-    width: 70vw;
+    width: 80vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -328,7 +329,7 @@
 .BouttonAudioSelect{
     background-color:#aacdf1;
     height: 8vh;
-    width: 70vw;
+    width: 80vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -344,7 +345,7 @@
 .BouttonAudioBonneRep{
     background-color:#a7ee99;
     height: 8vh;
-    width: 70vw;
+    width: 80vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -360,7 +361,7 @@
 .BouttonAudioMauvRep{
     background-color:#ee9999;
     height: 8vh;
-    width: 70vw;
+    width: 80vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
