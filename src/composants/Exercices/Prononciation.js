@@ -158,7 +158,7 @@ const Prononciation = () => {
   return (
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} />
-      <div className="Contenu">
+      <div className="ContenuPrononciation">
         <div className="TrameExercice">
           <div className="EnTeteExercice">
             <img

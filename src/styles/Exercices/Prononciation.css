@@ -3,7 +3,7 @@
     height: 200vh;
   }
 
-.Contenu{
+.ContenuPrononciation{
     display:flex;
     margin-top: 5vh;
     margin-left: 15vw;
@@ -246,7 +246,7 @@
     height: 130vh;
     }
 
-.Contenu{
+.ContenuPrononciation{
     display:flex;
     margin-top: 3vh;
     justify-content: center;
