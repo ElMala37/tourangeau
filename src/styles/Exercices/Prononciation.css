@@ -257,7 +257,7 @@
 }
 
 .TrameQuestion{
-    width: 80vw;
+    width: 100%;
     display:flex;
     flex-direction: column;
 }
@@ -309,7 +309,7 @@
 .BouttonAudio{
     background-color:#f1d2aa;
     height: 8vh;
-    width: 15vw;
+    width: 70vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -325,7 +325,7 @@
 .BouttonAudioSelect{
     background-color:#aacdf1;
     height: 8vh;
-    width: 15vw;
+    width: 70vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -341,7 +341,7 @@
 .BouttonAudioBonneRep{
     background-color:#a7ee99;
     height: 8vh;
-    width: 15vw;
+    width: 70vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -357,7 +357,7 @@
 .BouttonAudioMauvRep{
     background-color:#ee9999;
     height: 8vh;
-    width: 15vw;
+    width: 70vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -412,7 +412,7 @@
 .BouttonValider{
     background-color:#a7ee99;
     height: 8vh;
-    width: 15vw;
+    width: 70vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -428,7 +428,7 @@
 .BouttonContinuerMauvaiseReponse{
     background-color:#ee9999;
     height: 8vh;
-    width: 15vw;
+    width: 70vw;
     border-radius: 15px;
     display:flex;
     justify-content: center;
@@ -462,7 +462,7 @@
 }
 
 .Resultat{
-    width:60vw;
+    width:100%;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -475,8 +475,8 @@
 }
 
 .Statistique{
-  width: 10vw;
-  height: 10vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
 }
 }
