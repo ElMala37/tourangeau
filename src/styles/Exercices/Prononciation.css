@@ -241,15 +241,15 @@
 @media only screen and (max-width: 600px) {
     /* Styles spécifiques pour les téléphones ici */
 
-    .Fond{
-        background-color: #DEB887;
-        height: 200vh;
-      }
-    
-    .Contenu{
-        display:flex;
-        margin-top: 3vh;
+.Fond{
+    background-color: #DEB887;
+    height: 200vh;
     }
+
+.Contenu{
+    display:flex;
+    margin-top: 3vh;
+}
 
 .LogoNavMenu{
     height: 5vh;
@@ -314,7 +314,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .BouttonAudio:hover{
@@ -330,7 +330,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .BouttonAudioSelect:hover{
@@ -346,7 +346,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .BouttonAudioBonneRep:hover{
@@ -362,7 +362,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .BouttonAudioMauvRep:hover{
