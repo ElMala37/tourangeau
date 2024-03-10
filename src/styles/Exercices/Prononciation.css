@@ -247,8 +247,10 @@
     }
 
 .Contenu{
+    width: 100vw;
     display:flex;
     margin-top: 3vh;
+    justify-content: center;
 }
 
 .LogoNavMenu{
