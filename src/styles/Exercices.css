@@ -41,9 +41,9 @@
     .Contenu{
         display:flex;
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
         margin-top: 5vh;
-        margin-left: 15vw;
+        margin-left: 0px;
     }
     
     .Carte{
