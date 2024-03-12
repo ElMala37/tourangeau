@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/Apprendre/Famille.css";
+import "../../styles/Vocabulaire/Famille.css";
 import { useNavigate } from "react-router";
 import Acceuil from "../Accueil";
 
@@ -133,7 +133,7 @@ const Vetements = () => {
   }, []);
 
   const FermerTheme = () => {
-    navigate("/apprendre");
+    navigate("/vocabulaire");
   };
 
   const Select1 = () => {

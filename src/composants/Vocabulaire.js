@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import "../styles/Apprendre.css";
+import "../styles/Vocabulaire.css";
 import Acceuil from "./Accueil";
 import { useNavigate } from "react-router";
 
-const Apprendre = () => {
+const Vocabulaire = () => {
   const [ouvert, setOuvert] = useState(true);
   const navigate = useNavigate();
 
   const Famille = () => {
-    navigate("/apprendre/famille");
+    navigate("/vocabulaire/famille");
   };
 
   const Vetements = () => {
-    navigate("/apprendre/vetements");
+    navigate("/vocabulaire/vetements");
+  };
+
+  const Animaux = () => {
+    navigate("/vocabulaire/animaux");
   };
 
   return (
@@ -21,19 +25,19 @@ const Apprendre = () => {
       <div className="Contenu">
         <div className="CarteTheme" onClick={Famille}>
           <text className="TitreCarteTheme">La famille</text>
-          <img src="/images/Apprendre/famille.png" alt="LogoThemeFamille" className="LogoTheme"/>
+          <img src="/images/Vocabulaire/famille.png" alt="LogoThemeFamille" className="LogoTheme"/>
         </div>
         <div className="CarteTheme" onClick={Vetements}>
           <text className="TitreCarteTheme">Les vêtements</text>
-          <img src="/images/Apprendre/vetements.png" alt="LogoThemeFamille" className="LogoTheme"/>
+          <img src="/images/Vocabulaire/vetements.png" alt="LogoThemeFamille" className="LogoTheme"/>
         </div>
-        <div className="CarteTheme" onClick={Famille}>
-          <text className="TitreCarteTheme">Le verbe être</text>
-          <img src="/images/Apprendre/lecon.png" alt="LogoThemeFamille" className="LogoTheme"/>
+        <div className="CarteTheme" onClick={Animaux}>
+          <text className="TitreCarteTheme">Les animaux</text>
+          <img src="/images/Vocabulaire/animaux.png" alt="LogoThemeFamille" className="LogoTheme"/>
         </div>
       </div>
     </div>
   );
 };
 
-export default Apprendre;
+export default Vocabulaire;
