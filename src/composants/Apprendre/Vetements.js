@@ -123,7 +123,7 @@ const Vetements = () => {
   useEffect(() => {
     const generateRandomNumbers = () => {
       const randomNumbers = Array.from(
-        { length: 10 },
+        { length: 18 },
         (_, index) => index
       ).sort(() => Math.random() - 0.5);
       setOrdre(randomNumbers);
