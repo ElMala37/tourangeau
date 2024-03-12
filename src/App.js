@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/exercices/prononciation" element={<Prononciation />} />
       </Routes>
     </Router>
-  );
+  ); 
 }
 
 export default App;
