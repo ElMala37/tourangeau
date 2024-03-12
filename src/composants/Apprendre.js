@@ -11,6 +11,10 @@ const Apprendre = () => {
     navigate("/apprendre/famille");
   };
 
+  const Vetements = () => {
+    navigate("/apprendre/vetements");
+  };
+
   return (
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} />
@@ -19,9 +23,9 @@ const Apprendre = () => {
           <text className="TitreCarteTheme">La famille</text>
           <img src="/images/Apprendre/famille.png" alt="LogoThemeFamille" className="LogoTheme"/>
         </div>
-        <div className="CarteTheme" onClick={Famille}>
-          <text className="TitreCarteTheme">Les animaux</text>
-          <img src="/images/Apprendre/animaux.png" alt="LogoThemeFamille" className="LogoTheme"/>
+        <div className="CarteTheme" onClick={Vetements}>
+          <text className="TitreCarteTheme">Les vêtements</text>
+          <img src="/images/Apprendre/vetements.png" alt="LogoThemeFamille" className="LogoTheme"/>
         </div>
         <div className="CarteTheme" onClick={Famille}>
           <text className="TitreCarteTheme">Le verbe être</text>
