@@ -53,7 +53,7 @@
     .Contenu{
         display:flex;
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
         margin-top: 5vh;
     }
     
