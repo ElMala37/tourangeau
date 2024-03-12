@@ -90,7 +90,6 @@ const Vetements = () => {
     "un manteau",
     "un pull",
     "un t-shirt",
-    "une chemise",
     "un chapeau",
     "une robe",
     "une jupe",
