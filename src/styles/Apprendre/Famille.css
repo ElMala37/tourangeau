@@ -3,7 +3,7 @@
     height: 200vh;
   }
 
-.ContenuPrononciation{
+.ContenuTheme{
     display:flex;
     margin-top: 5vh;
     margin-left: 15vw;
@@ -91,6 +91,12 @@
     margin-right:20px;
     color:black;
     font-weight:bolder;
+}
+
+.Chevre{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .TitreQuestion{
@@ -338,12 +344,62 @@
     text-align: center;
   }
 
+  .EnteteQuestion{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.Chevre{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.LogoQuestion{
+    height: 15vh;
+    width: auto;
+}
+
+.BulleQuestion {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    height: 7vh;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .BulleQuestion::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    border-width: 1vh;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  
+
+.QuestionBulle{
+    font-size: 25px;
+    margin-left:20px;
+    margin-right:20px;
+    color:black;
+    font-weight:bolder;
+}
+
 .TitreQuestion{
-    font-size: 25px;;
+    font-size: 30px;
     margin-right:10px;
     color:black;
     font-weight:bolder;
     text-align: center;
+    align-self: center;
 }
 
 .ReponsesQuestion{

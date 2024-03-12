@@ -79,7 +79,10 @@ const Famille1 = () => {
 
   useEffect(() => {
     const generateRandomNumbers = () => {
-      const randomNumbers = Array.from({ length: 10 }, (_, index) => index).sort(() => Math.random() - 0.5);
+      const randomNumbers = Array.from(
+        { length: 10 },
+        (_, index) => index
+      ).sort(() => Math.random() - 0.5);
       setOrdre(randomNumbers);
     };
 
@@ -139,7 +142,7 @@ const Famille1 = () => {
   return (
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} />
-      <div className="ContenuPrononciation">
+      <div className="ContenuTheme">
         <div className="TrameExercice">
           <div className="EnTeteExercice">
             <img
@@ -191,16 +194,18 @@ const Famille1 = () => {
             <div>
               <div className="EnteteQuestion">
                 <p className="TitreQuestion">Choisis la bonne traduction : </p>
-                <div className="BulleQuestion">
-                  <p className="QuestionBulle">
-                    {ListeQuestion[ordre[numeroQuestion]]}
-                  </p>
+                <div className="Chevre">
+                  <div className="BulleQuestion">
+                    <p className="QuestionBulle">
+                      {ListeQuestion[ordre[numeroQuestion]]}
+                    </p>
+                  </div>
+                  <img
+                    src="/images/chevre.png"
+                    alt="mascotteChevre"
+                    className="LogoQuestion"
+                  />
                 </div>
-                <img
-                  src="/images/chevre.png"
-                  alt="mascotteChevre"
-                  className="LogoQuestion"
-                />
               </div>
               <div className="ReponsesQuestion">
                 <div
