@@ -1,0 +1,532 @@
+.Fond{
+    background-color: #DEB887;
+    height: 200vh;
+  }
+
+.ContenuPrononciation{
+    display:flex;
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+.LogoNavMenu{
+    height: 5vh;
+    width: auto;
+}
+
+.TrameQuestion{
+    width: 60vw;
+    display:flex;
+    flex-direction: column;
+}
+
+.EnTeteExercice{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.BarreFond{
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .BarreProgression{
+    height: 100%;
+    background-color: #4caf50; /* Couleur de remplissage */
+    transition: width 0.3s ease-in-out; /* Animation de transition */
+  }
+
+  .Progression{
+    font-size: 25px;;
+    margin-right:10px;
+    margin-left:10px;
+    color:black;
+    font-weight:bolder;
+    text-align: center;
+  }
+
+.EnteteQuestion{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.LogoQuestion{
+    height: 20vh;
+    width: auto;
+}
+
+.BulleQuestion {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    height: 7vh;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .BulleQuestion::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    border-width: 1vh;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  
+
+.QuestionBulle{
+    font-size: 25px;
+    margin-left:20px;
+    margin-right:20px;
+    color:black;
+    font-weight:bolder;
+}
+
+.TitreQuestion{
+    font-size: 30px;
+    margin-right:10px;
+    color:black;
+    font-weight:bolder;
+    text-align: center;
+    align-self: center;
+}
+
+.ReponsesQuestion{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.BouttonAudio{
+    background-color:#f1d2aa;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.BouttonAudio:hover{
+    border-color: #aa804a;
+    border-style:solid;
+}
+
+.BouttonAudioSelect{
+    background-color:#aacdf1;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.BouttonAudioSelect:hover{
+    border-color: #4a78aa;
+    border-style:solid;
+}
+
+.BouttonAudioBonneRep{
+    background-color:#a7ee99;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.BouttonAudioBonneRep:hover{
+    border-color: #50a641;
+    border-style:solid;
+}
+
+.BouttonAudioMauvRep{
+    background-color:#ee9999;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.BouttonAudioMauvRep:hover{
+    border-color: #a64141;
+    border-style:solid;
+}
+
+.LogoAudio{
+    height: 5vh;
+    width: auto;
+}
+
+.TexteAudio{
+    margin-right:10px;
+    color:#aa804a;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteAudioSelect{
+    margin-right:10px;
+    color:#4a78aa;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteAudioBonneRep{
+    margin-right:10px;
+    color:#50a641;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteAudioMauvRep{
+    margin-right:10px;
+    color:#a64141;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.ValidationReponse{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BouttonValider{
+    background-color:#a7ee99;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BouttonValider:hover{
+    border-color:  #50a641;
+    background-color: #a7ee99;
+    border-style:solid;
+}
+
+.BouttonContinuerMauvaiseReponse{
+    background-color:#ee9999;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BouttonContinuerMauvaiseReponse:hover{
+    border-color:  #a64141;
+    background-color: #ee9999;
+    border-style:solid;
+}
+
+.TexteValider{
+    color:#50a641;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteContinuerMauvaiseReponse{
+    color:#a64141;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.FinExerciceTitre{
+    font-size: 25px;;
+    margin-right:50px;
+    color:black;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.Resultat{
+    width:60vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CaseFin{
+    display:flex;
+    flex-direction: column;
+}
+
+.Statistique{
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles spécifiques pour les téléphones ici */
+
+.Fond{
+    background-color: #DEB887;
+    height: 130vh;
+    }
+
+.ContenuPrononciation{
+    display:flex;
+    margin-top: 3vh;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+.LogoNavMenu{
+    height: 5vh;
+    width: auto;
+}
+
+.TrameQuestion{
+    width: 60vw;
+    display:flex;
+    flex-direction: column;
+}
+
+.EnTeteExercice{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.BarreFond{
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .BarreProgression{
+    height: 100%;
+    background-color: #4caf50; /* Couleur de remplissage */
+    transition: width 0.3s ease-in-out; /* Animation de transition */
+  }
+
+  .Progression{
+    font-size: 25px;;
+    margin-right:10px;
+    margin-left:10px;
+    color:black;
+    font-weight:bolder;
+    text-align: center;
+  }
+
+.TitreQuestion{
+    font-size: 25px;;
+    margin-right:10px;
+    color:black;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.ReponsesQuestion{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.BouttonAudio{
+    background-color:#f1d2aa;
+    height: 8vh;
+    width: 80vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.BouttonAudio:hover{
+    border-color: #aa804a;
+    border-style:solid;
+}
+
+.BouttonAudioSelect{
+    background-color:#aacdf1;
+    height: 8vh;
+    width: 80vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.BouttonAudioSelect:hover{
+    border-color: #4a78aa;
+    border-style:solid;
+}
+
+.BouttonAudioBonneRep{
+    background-color:#a7ee99;
+    height: 8vh;
+    width: 80vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.BouttonAudioBonneRep:hover{
+    border-color: #50a641;
+    border-style:solid;
+}
+
+.BouttonAudioMauvRep{
+    background-color:#ee9999;
+    height: 8vh;
+    width: 80vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.BouttonAudioMauvRep:hover{
+    border-color: #a64141;
+    border-style:solid;
+}
+
+.LogoAudio{
+    height: 5vh;
+    width: auto;
+}
+
+.TexteAudio{
+    margin-right:10px;
+    color:#aa804a;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteAudioSelect{
+    margin-right:10px;
+    color:#4a78aa;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteAudioBonneRep{
+    margin-right:10px;
+    color:#50a641;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteAudioMauvRep{
+    margin-right:10px;
+    color:#a64141;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.ValidationReponse{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BouttonValider{
+    background-color:#a7ee99;
+    height: 8vh;
+    width: 70vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BouttonValider:hover{
+    border-color:  #50a641;
+    background-color: #a7ee99;
+    border-style:solid;
+}
+
+.BouttonContinuerMauvaiseReponse{
+    background-color:#ee9999;
+    height: 8vh;
+    width: 70vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BouttonContinuerMauvaiseReponse:hover{
+    border-color:  #a64141;
+    background-color: #ee9999;
+    border-style:solid;
+}
+
+.TexteValider{
+    color:#50a641;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.TexteContinuerMauvaiseReponse{
+    color:#a64141;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+.FinExerciceTitre{
+    font-size: 25px;;
+    margin-right:50px;
+    color:black;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.Resultat{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CaseFin{
+    display:flex;
+    flex-direction: column;
+}
+
+.Statistique{
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+}
+}
+
+

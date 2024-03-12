@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/Lecons.css";
 import Acceuil from "./Accueil";
 
 const Presentation = () => {

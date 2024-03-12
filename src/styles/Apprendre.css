@@ -1,0 +1,44 @@
+.Fond{
+    background-color: #DEB887;
+    height: 200vh;
+  }
+
+.Contenu{
+    display:flex;
+    justify-content: left;
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+.LogoNavMenu{
+    height: 5vh;
+    width: auto;
+}
+
+.CarteTheme{
+    background-color:#f1d2aa;
+    height: 10vh;
+    width: 20vw;
+    margin-right: 5vw;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CarteTheme:hover{
+    border-color: #aa804a;
+    border-style:solid;
+}
+
+.TitreCarteTheme{
+    color:#aa804a;
+    font-weight:bolder;
+    font-size: larger;
+    margin-right: 15px;
+}
+
+.LogoTheme{
+    height: 6vh;
+    width: auto;
+}

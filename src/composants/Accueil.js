@@ -17,9 +17,9 @@ const Acceuil = ({ouvert,setOuvert}) => {
     navigate("/")
   };
 
-  const OuvrirLec = () => {
+  const OuvrirApp = () => {
     setOuvert(!ouvert);
-    navigate("/lecons");
+    navigate("/apprendre");
   };
 
   const OuvrirExe = () => {
@@ -57,8 +57,8 @@ const Acceuil = ({ouvert,setOuvert}) => {
                 <button className="NavMenuBouton" onClick={OuvrirPre}>
                   Présentation
                 </button>
-                <button className="NavMenuBouton" onClick={OuvrirLec}>
-                  Leçons
+                <button className="NavMenuBouton" onClick={OuvrirApp}>
+                  Apprendre
                 </button>
                 <button className="NavMenuBouton" onClick={OuvrirExe}>
                   Exercices
@@ -96,8 +96,8 @@ const Acceuil = ({ouvert,setOuvert}) => {
               <button className="NavMenuBouton" onClick={OuvrirPre}>
                 Présentation
               </button>
-              <button className="NavMenuBouton" onClick={OuvrirLec}>
-                Leçons
+              <button className="NavMenuBouton" onClick={OuvrirApp}>
+                Apprendre
               </button>
               <button className="NavMenuBouton" onClick={OuvrirExe}>
                 Exercices
