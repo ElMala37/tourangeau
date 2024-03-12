@@ -386,7 +386,7 @@
   
 
 .QuestionBulle{
-    font-size: 15px;
+    font-size: 18px;
     margin-left:20px;
     margin-right:20px;
     color:black;
@@ -394,7 +394,7 @@
 }
 
 .TitreQuestion{
-    font-size: 20px;
+    font-size: 23px;
     margin-right:10px;
     color:black;
     font-weight:bolder;
