@@ -193,7 +193,7 @@ const Famille1 = () => {
           ) : (
             <div>
               <div className="EnteteQuestion">
-                <p className="TitreQuestion">Choisis la bonne traduction : </p>
+                <p className="TitreQuestion">Choisis la bonne traduction: </p>
                 <div className="Chevre">
                   <div className="BulleQuestion">
                     <p className="QuestionBulle">
