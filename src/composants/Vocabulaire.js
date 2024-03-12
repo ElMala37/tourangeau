@@ -36,6 +36,20 @@ const Vocabulaire = () => {
           <img src="/images/Vocabulaire/animaux.png" alt="LogoThemeFamille" className="LogoTheme"/>
         </div>
       </div>
+      <div className="Contenu">
+        <div className="CarteTheme" onClick={Famille}>
+          <text className="TitreCarteTheme">La famille</text>
+          <img src="/images/Vocabulaire/famille.png" alt="LogoThemeFamille" className="LogoTheme"/>
+        </div>
+        <div className="CarteTheme" onClick={Vetements}>
+          <text className="TitreCarteTheme">Les vêtements</text>
+          <img src="/images/Vocabulaire/vetements.png" alt="LogoThemeFamille" className="LogoTheme"/>
+        </div>
+        <div className="CarteTheme" onClick={Animaux}>
+          <text className="TitreCarteTheme">Les animaux</text>
+          <img src="/images/Vocabulaire/animaux.png" alt="LogoThemeFamille" className="LogoTheme"/>
+        </div>
+      </div>
     </div>
   );
 };
