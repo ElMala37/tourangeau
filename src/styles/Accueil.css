@@ -95,8 +95,13 @@
     .LogoNavMenu{
       height: 3vh;
       margin: 2vh;
-     }
+      transition: scale 0.3s ease;
+    }
 
+    .LogoNavMenu:hover{
+      scale: 1;
+    }
+    
     .NavMenu{
       display:flex;
       flex-direction: column;
