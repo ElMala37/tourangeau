@@ -92,8 +92,12 @@
     }
   
     .LogoNavMenu{
-      height: 4vh;
+      height: 3vh;
       margin: 2vh;
+    }
+
+    .LogoNavMenu:hover{
+      scale: 1.3;
     }
     
     .NavMenu{

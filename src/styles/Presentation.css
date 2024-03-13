@@ -52,13 +52,13 @@
     }
     .CarteTouraine1 {
         height: auto;
-        width: 70vw;
+        width: 90vw;
     }
     
     .EspaceTexteIntroduction{
         display:flex;
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
         margin-right: 5vw;
     }
