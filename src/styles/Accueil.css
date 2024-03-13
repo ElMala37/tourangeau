@@ -24,6 +24,7 @@
   .LogoNavMenu{
     height: 4vh;
     margin: 2vh;
+    transition: scale 0.3s ease;
   }
   
   .LogoNavMenu:hover{
@@ -94,6 +95,7 @@
     .LogoNavMenu{
       height: 3vh;
       margin: 2vh;
+      transition: scale 0.3s ease;
     }
 
     .LogoNavMenu:hover{
