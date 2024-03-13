@@ -26,6 +26,10 @@
     margin: 2vh;
   }
   
+  .LogoNavMenu:hover{
+    scale: 1.2;
+  }
+  
   .NavMenu{
     display:flex;
     flex-direction: column;

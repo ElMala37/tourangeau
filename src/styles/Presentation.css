@@ -1,3 +1,8 @@
+.Fond{
+    background-color: #DEB887;
+    height: 200vh;
+  }
+
 .Introduction{
     display:flex;
     flex-direction: row;
@@ -19,10 +24,48 @@
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    margin-right: 5vw;;
+    margin-right: 5vw;
 }
 
 .TexteIntroduction{
     font-weight: bolder;
     font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles spécifiques pour les téléphones ici */
+    .Fond{
+        background-color: #DEB887;
+        height: 200vh;
+      }
+    
+    .Introduction{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .TitreCarteTouraine{
+        font-weight: bolder;
+        font-size:xx-large;
+    }
+    .CarteTouraine1 {
+        height: auto;
+        width: 70vw;
+    }
+    
+    .EspaceTexteIntroduction{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        margin-right: 5vw;
+    }
+    
+    .TexteIntroduction{
+        font-weight: bolder;
+        font-size: larger;
+    }
+
 }

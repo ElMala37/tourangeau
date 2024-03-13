@@ -42,8 +42,10 @@ const Presentation = () => {
             src="images/carte_touraine_1.png"
             alt="CarteTouraine1"
             style={{
-              transform: `perspective(1000px) rotateX(${tiltX*2}deg) rotateY(${tiltY*2}deg)`,
-              transition: 'transform 0.5s ease'
+              transform: ouvert
+                ? `perspective(1000px) rotateX(${tiltX * 2}deg) rotateY(${tiltY * 2}deg)`
+                : "none",
+              transition: "transform 0.5s ease",
             }}
             className="CarteTouraine1"
           />
