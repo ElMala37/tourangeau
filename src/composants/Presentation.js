@@ -43,7 +43,9 @@ const Presentation = () => {
             alt="CarteTouraine1"
             style={{
               transform: ouvert
-                ? `perspective(1000px) rotateX(${tiltX * 2}deg) rotateY(${tiltY * 2}deg)`
+                ? `perspective(1000px) rotateX(${tiltX * 2}deg) rotateY(${
+                    tiltY * 2
+                  }deg)`
                 : "none",
               transition: "transform 0.5s ease",
             }}
@@ -51,12 +53,24 @@ const Presentation = () => {
           />
         </div>
         <div className="EspaceTexteIntroduction">
+          <div className="Chevre">
+            <div className="BulleQuestion">
+              <p className="QuestionBulle">Bienvenue sur notre site !</p>
+            </div>
+            <img
+              src="/images/chevre.png"
+              alt="mascotteChevre"
+              className="LogoPresentation"
+            />
+          </div>
+          <div className="FondTexteIntroduction">
           <p className="TexteIntroduction">
-            La Touraine est une région située dans le centre de la France. Cette
-            région possède sa propre langue, le tourangeau. Le tourangeau est
-            une langue latine et fait partie des langues d'oïl. Ce site est
-            dédié à son apprentissage.
+            La Touraine est une région située dans le centre de la France.
+            Cette région possède sa propre langue, le tourangeau.
+            Le tourangeau est une langue latine et fait partie des langues
+            d'oïl. Ce site est dédié à son apprentissage.
           </p>
+          </div>
         </div>
       </div>
     </div>

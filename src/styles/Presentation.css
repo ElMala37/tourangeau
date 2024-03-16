@@ -1,6 +1,7 @@
 .Fond{
     background-color: #DEB887;
-    height: 200vh;
+    min-height: 100vh;
+    max-height: max-content;
   }
 
 .Introduction{
@@ -28,8 +29,57 @@
 }
 
 .TexteIntroduction{
-    font-weight: bolder;
+    font-weight:bold;
     font-size: larger;
+    margin:20px;
+}
+
+.FondTexteIntroduction{
+    background-color:#f1d2aa;
+    border-radius: 15px;
+}
+
+.Chevre{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.LogoPresentation{
+    height: 30vh;
+    width: auto;
+    margin-right: 5vw;
+}
+
+.BulleQuestion {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    height: 7vh;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .BulleQuestion::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    border-width: 1vh;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  
+
+.QuestionBulle{
+    font-size: 23px;
+    margin-left:20px;
+    margin-right:20px;
+    color:black;
+    font-weight:bolder;
 }
 
 @media only screen and (max-width: 600px) {
