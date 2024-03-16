@@ -110,7 +110,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 0vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
     }
     
     .TexteIntroduction{
