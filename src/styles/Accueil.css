@@ -91,10 +91,8 @@
     }
   
     .LogoNavMenu{
-      width: 6vw;
-      height: auto;
-      margin: 2vh;
-      transition: scale 0.3s ease;
+      height: 4vh;
+      width: auto;
     }
 
     .LogoNavMenu:hover{
