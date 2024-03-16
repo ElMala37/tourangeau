@@ -14,23 +14,115 @@ const Animaux = () => {
   const [finExo, setFinExo] = useState(false);
   const [ordre, setOrdre] = useState([]);
 
-  const nbQuestion = 16;
-  const ListeQuestion = ["le poisson","le mouton","le chat","la poule","le coq","le lapin","le chien","le cheval","eul poçon","l'ouighlĕ","eul margou","la geailughnĕ","eul geau","eul couni"," eul chian","eul chĕau"];
-  const ListeReponse1 = ["eul geau", "l'ouighlĕ", "eul poçon", "eul chĕau", "l'ouighlĕ", "l'ouighlĕ", " eul chian", " eul chian","le poisson", "le cheval", "le chien", "le chien", "le lapin", "le lapin", "le chat", "le poisson"];
-  const ListeReponse2 = ["eul couni", "la geailughnĕ", "eul margou", "la geailughnĕ", "eul poçon", "eul poçon", "eul couni", "eul margou","le coq", "le mouton", "le lapin", "le mouton", "le mouton", "le cheval", "le cheval", "le chat"];
-  const ListeReponse3 = ["eul poçon", " eul chian", " eul chian", "eul geau", "la geailughnĕ", "eul chĕau", "eul geau", "eul couni","le lapin", "le poisson", "le chat", "la poule", "le chien", "le coq", "le chien", "la poule"];
-  const ListeReponse4 = ["eul chĕau", "eul margou", "la geailughnĕ", "l'ouighlĕ", "eul geau", "eul couni", "eul margou", "eul chĕau","le mouton", "le coq", "la poule", "le chat", "le coq", "la poule", "le poisson", "le cheval"];
-  const ListeBonneReponse = [3, 1, 2, 2, 4, 4, 1, 4, 1, 2, 3, 3, 4, 1, 3, 4];
-  
-
-
-
-
+  const nbQuestion = 18;
+  const ListeQuestion = [
+    "le poisson",
+    "le mouton",
+    "le chat",
+    "la poule",
+    "le coq",
+    "le lapin",
+    "le chien",
+    "le cheval",
+    "la chèvre",
+    "eul poçon",
+    "l'ouighlĕ",
+    "eul margou",
+    "la geailughnĕ",
+    "eul geau",
+    "eul couni",
+    " eul chian",
+    "eul chĕau",
+    "la chiĕvĕr",
+  ];
+  const ListeReponse1 = [
+    "la geailughnĕ",
+    "l'ouighlĕ",
+    "eul margou",
+    "l'ouighlĕ",
+    "eul couni",
+    "l'ouighlĕ",
+    "eul couni",
+    "eul chĕau",
+    "eul margou",
+    "le chien",
+    "la chèvre",
+    "le lapin",
+    "la poule",
+    "le lapin",
+    "le lapin",
+    "le mouton",
+    "le coq",
+    "la poule",
+  ];
+  const ListeReponse2 = [
+    " eul chian",
+    "eul poçon",
+    "la chiĕvĕr",
+    "la geailughnĕ",
+    "l'ouighlĕ",
+    "eul chĕau",
+    "la chiĕvĕr",
+    " eul chian",
+    "eul poçon",
+    "le poisson",
+    "le chat",
+    "le chat",
+    "le chat",
+    "le coq",
+    "le mouton",
+    "la poule",
+    "le poisson",
+    "le cheval",
+  ];
+  const ListeReponse3 = [
+    "eul geau",
+    "eul couni",
+    "eul chĕau",
+    "eul poçon",
+    "la geailughnĕ",
+    "la geailughnĕ",
+    "eul margou",
+    "eul margou",
+    "la chiĕvĕr",
+    "le cheval",
+    "le mouton",
+    "le coq",
+    "le coq",
+    "le mouton",
+    "le chat",
+    "le chien",
+    "le cheval",
+    "la chèvre",
+  ];
+  const ListeReponse4 = [
+    "eul poçon",
+    "eul geau",
+    "eul geau",
+    "eul chĕau",
+    "eul geau",
+    "eul couni",
+    " eul chian",
+    "la chiĕvĕr",
+    " eul chian",
+    "le lapin",
+    "le chien",
+    "le cheval",
+    "le chien",
+    "la chèvre",
+    "la chèvre",
+    "le poisson",
+    "la poule",
+    "le poisson",
+  ];
+  const ListeBonneReponse = [
+    4, 1, 1, 2, 4, 4, 4, 1, 3, 2, 3, 2, 1, 2, 1, 3, 3, 3,
+  ];
 
   useEffect(() => {
     const generateRandomNumbers = () => {
       const randomNumbers = Array.from(
-        { length: 16 },
+        { length: 18 },
         (_, index) => index
       ).sort(() => Math.random() - 0.5);
       setOrdre(randomNumbers);
