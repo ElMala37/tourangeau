@@ -49,6 +49,7 @@
     width: 15vw;
     border-style: hidden;
     font-size: larger;
+    font-weight:bold;
   }
 
   .NavMenuBouton:hover{
