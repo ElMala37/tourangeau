@@ -68,8 +68,9 @@ const Presentation = () => {
             La Touraine est une région située dans le centre de la France.
             Cette région possède sa propre langue, le tourangeau.
             Le tourangeau est une langue latine et fait partie des langues
-            d'oïl. Ce site est dédié à son apprentissage.
+            d'oïl. 
           </p>
+          <p className="TexteIntroduction">Ce site est dédié à son apprentissage.</p>
           </div>
         </div>
       </div>
