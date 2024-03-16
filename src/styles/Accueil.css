@@ -91,7 +91,8 @@
     }
   
     .LogoNavMenu{
-      height: 3vh;
+      width: 8vw;
+      height: auto;
       margin: 2vh;
       transition: scale 0.3s ease;
     }
