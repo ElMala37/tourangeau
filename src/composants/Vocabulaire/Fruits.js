@@ -25,15 +25,15 @@ const Fruits = () => {
     "la poumĕ",
     "la pouesĕ",
     "la frarĕ",
-    "eul fruchĕ",
-    "eul ponsyrĕ",
+    "la fruchĕ",
+    "la ponsyrĕ",
     "la pombrangĕ",
   ];
   const ListeReponse1 = [
     "la poumĕ",
     "la pouesĕ",
-    "eul fruchĕ",
-    "eul ponsyrĕ",
+    "la fruchĕ",
+    "la ponsyrĕ",
     "la frarĕ",
     "la frarĕ",
     "le fruit",
@@ -44,10 +44,10 @@ const Fruits = () => {
     "l'orange",
   ];
   const ListeReponse2 = [
-    "eul fruchĕ",
+    "la fruchĕ",
     "la pombrangĕ",
-    "eul ponsyrĕ",
-    "eul fruchĕ",
+    "la ponsyrĕ",
+    "la fruchĕ",
     "la poumĕ",
     "la pombrangĕ",
     "le citron",
@@ -62,8 +62,8 @@ const Fruits = () => {
     "la frarĕ",
     "la pombrangĕ",
     "la poumĕ",
-    "eul ponsyrĕ",
-    "eul ponsyrĕ",
+    "la ponsyrĕ",
+    "la ponsyrĕ",
     "l'orange",
     "la poire",
     "la pomme",
@@ -73,7 +73,7 @@ const Fruits = () => {
   ];
   const ListeReponse4 = [
     "la pombrangĕ",
-    "eul fruchĕ",
+    "la fruchĕ",
     "la frarĕ",
     "la pouesĕ",
     "la pouesĕ",

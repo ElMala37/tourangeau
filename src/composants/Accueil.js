@@ -3,7 +3,7 @@ import "../styles/Accueil.css";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
 
-const Acceuil = ({ouvert,setOuvert}) => {
+const Acceuil = ({ ouvert, setOuvert }) => {
   const [etranger, setEtranger] = useState(false);
   const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ const Acceuil = ({ouvert,setOuvert}) => {
 
   const OuvrirPre = () => {
     setOuvert(!ouvert);
-    navigate("/")
+    navigate("/");
   };
 
   const OuvrirVoc = () => {
@@ -95,6 +95,9 @@ const Acceuil = ({ouvert,setOuvert}) => {
             <div className="NavMenu">
               <button className="NavMenuBouton" onClick={OuvrirPre}>
                 Présentation
+              </button>
+              <button className="NavMenuBouton">
+                Prononciation
               </button>
               <button className="NavMenuBouton" onClick={OuvrirVoc}>
                 Vocabulaire
