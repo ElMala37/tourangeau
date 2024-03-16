@@ -120,6 +120,7 @@
     }
 
     .FondTexteIntroduction{
+        margin-left: 2vw;
         background-color:#f1d2aa;
         border-radius: 15px;
     }
@@ -131,7 +132,7 @@
     }
     
     .LogoPresentation{
-        height: 10vh;
+        height: 15vh;
         width: auto;
         margin-right: 5vw;
     }
