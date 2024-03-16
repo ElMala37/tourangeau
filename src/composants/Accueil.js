@@ -53,8 +53,8 @@ const Acceuil = ({ ouvert, setOuvert }) => {
         <div
           className="NavMenu"
           style={{
-            transform: ouvert ? "translateX(calc(-30vw))" : "none",
-            transition: "transform 0.5s ease",
+            transform: ouvert ? "translateX(calc(-50vw))" : "none",
+            transition: "transform 1s ease",
           }}
         >
           <button className="NavMenuBouton" onClick={OuvrirPre}>
