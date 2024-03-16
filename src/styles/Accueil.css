@@ -37,8 +37,10 @@
     align-items: center;
     background-color: #aa804a;
     width: 30vw;
+    border-bottom-right-radius: 15px;
     position: absolute;
     z-index:1;
+    padding-bottom: 2vh;
   }
 
   .NavMenuBouton{
@@ -49,7 +51,6 @@
     width: 15vw;
     border-style: hidden;
     font-size: larger;
-    font-weight:bold;
   }
 
   .NavMenuBouton:hover{
@@ -105,8 +106,10 @@
       align-items: center;
       background-color: #aa804a;
       width: 50vw;
+      border-bottom-right-radius: 15px;
       position: absolute;
       z-index:1;
+      padding-bottom: 1vh;
     }
   
     .NavMenuBouton{
