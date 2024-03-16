@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Accueil.css";
 import { useNavigate } from "react-router";
 
