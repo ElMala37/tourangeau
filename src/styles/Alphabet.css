@@ -68,6 +68,14 @@
     .AlphabetDispositionBlock{
         display: flex;
         flex-direction: column;
+        margin-bottom: 0vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AlphabetDispositionCase{
+        display: flex;
+        flex-direction: row;
         margin-bottom: 1vh;
     }
     
