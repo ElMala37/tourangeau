@@ -50,24 +50,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5vh;
+        margin-top: 2vh;
     }
     
     .TitreAlphabet{
         font-weight: bolder;
-        font-size: 30px;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        font-size: 20px;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
     }
     
     .AlphabetDispositionBlock{
         display: flex;
-        flex-direction: row;
-        margin-bottom: 2vh;
+        flex-direction: column;
+        margin-bottom: 1vh;
     }
     
     .AlphabetLettreCase{
-        height:8vh;
+        height:4vh;
         min-height: max-content;
         width: 3vw;
         min-width: max-content;
