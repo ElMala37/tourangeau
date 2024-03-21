@@ -60,7 +60,7 @@
     
     .TitreAlphabet{
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 2vh;
         margin-bottom: 2vh;
     }
@@ -80,9 +80,9 @@
     }
     
     .AlphabetLettreCase{
-        height:4vh;
+        height:6vh;
         min-height: max-content;
-        width: 10vw;
+        width: 15vw;
         min-width: max-content;
         background-color: #f1d2aa;
         border-radius: 15px;
