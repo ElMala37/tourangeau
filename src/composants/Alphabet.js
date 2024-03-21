@@ -92,16 +92,20 @@ const Alphabet = () => {
         </div>
         <text className="TitreAlphabet">Prononciations particulières :</text>
         <div className="AlphabetDispositionBlock">
-          {alphabet.slice(26, 30).map((item) => (
-            <div className="AlphabetLettreCase">
-              <text className="TexteLettreCase">{item}</text>
-            </div>
-          ))}
-          {alphabet.slice(30, 33).map((item) => (
-            <div className="AlphabetLettreCase">
-              <text className="TexteLettreCase">{item}</text>
-            </div>
-          ))}
+          <div className="AlphabetDispositionCase">
+            {alphabet.slice(26, 30).map((item) => (
+              <div className="AlphabetLettreCase">
+                <text className="TexteLettreCase">{item}</text>
+              </div>
+            ))}
+          </div>
+          <div className="AlphabetDispositionCase">
+            {alphabet.slice(30, 33).map((item) => (
+              <div className="AlphabetLettreCase">
+                <text className="TexteLettreCase">{item}</text>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
