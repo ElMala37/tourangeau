@@ -1,0 +1,93 @@
+.AlphabetDisposition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.TitreAlphabet{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.AlphabetDispositionBlock{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+
+.AlphabetLettreCase{
+    height:8vh;
+    min-height: max-content;
+    width: 3vw;
+    min-width: max-content;
+    background-color: #f1d2aa;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.AlphabetLettreCase:hover{
+    border-color: #aa804a;
+    border-style:solid;
+}
+
+.TexteLettreCase{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles spécifiques pour les téléphones ici */
+    .AlphabetDisposition{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    
+    .TitreAlphabet{
+        font-weight: bolder;
+        font-size: 30px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    .AlphabetDispositionBlock{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2vh;
+    }
+    
+    .AlphabetLettreCase{
+        height:8vh;
+        min-height: max-content;
+        width: 3vw;
+        min-width: max-content;
+        background-color: #f1d2aa;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    .AlphabetLettreCase:hover{
+        border-color: #aa804a;
+        border-style:solid;
+    }
+    
+    .TexteLettreCase{
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+}

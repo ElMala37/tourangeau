@@ -24,6 +24,11 @@ const Acceuil = ({ ouvert, setOuvert }) => {
     navigate("/exercices");
   };
 
+  const OuvrirAlph = () => {
+    setOuvert(!ouvert);
+    navigate("/alphabet");
+  };
+
   return (
     <div>
       <div>
@@ -60,7 +65,9 @@ const Acceuil = ({ ouvert, setOuvert }) => {
           <button className="NavMenuBouton" onClick={OuvrirPre}>
             Présentation
           </button>
-          <button className="NavMenuBouton">Prononciation</button>
+          <button className="NavMenuBouton" onClick={OuvrirAlph}>
+            Alphabet
+          </button>
           <button className="NavMenuBouton" onClick={OuvrirVoc}>
             Vocabulaire
           </button>

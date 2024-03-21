@@ -32,7 +32,7 @@ const Vetements = () => {
     "eunĕ gipĕ",
     "dais geuzurĕs",
     "eun chandaughl",
-    "eunĕ nemosughnĕ",
+    "eunĕ nemouzughnĕ",
     "eun chapiau",
   ];
   const ListeReponse1 = [
@@ -40,7 +40,7 @@ const Vetements = () => {
     "eunĕ cimarrĕ",
     "eunĕ geaisibĕ",
     "eun chandaughl",
-    "eunĕ nemosughnĕ",
+    "eunĕ nemouzughnĕ",
     "eunĕ cimarrĕ",
     "eunĕ gipĕ",
     "eun chandaughl",
@@ -62,7 +62,7 @@ const Vetements = () => {
     "eunĕ cimarrĕ",
     "eunĕ gipĕ",
     "eunĕ geaiminjĕ",
-    "eunĕ nemosughnĕ",
+    "eunĕ nemouzughnĕ",
     "dais brĕgĕs",
     "eunĕ gipĕ",
     "un t-shirt",
@@ -76,14 +76,14 @@ const Vetements = () => {
     "un chapeau",
   ];
   const ListeReponse3 = [
-    "eunĕ nemosughnĕ",
+    "eunĕ nemouzughnĕ",
     "eunĕ gipĕ",
     "dais brĕgĕs",
     "dais brĕgĕs",
     "eunĕ geaisibĕ",
     "eunĕ geaisibĕ",
     "eun chandaughl",
-    "eunĕ nemosughnĕ",
+    "eunĕ nemouzughnĕ",
     "dais brĕgĕs",
     "un chapeau",
     "une chemise",
