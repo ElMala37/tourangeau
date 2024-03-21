@@ -46,8 +46,54 @@
 .TexteLettreCase{
     font-weight: bolder;
     font-size: larger;
-    margin-left:10px;
-    margin-right:10px;
+}
+
+.TexteLettreCaseExemple{
+    font-size: larger;
+    margin-right:1vw;
+    margin-left: 5px;
+}
+
+.LogoAudioAlphabet{
+    height:6vh;
+    width: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.LettreFinDeMot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+
+.TexteLettreFinDeMot{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.TexteExempleLettreFinDeMot{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    margin-left: 3vw;
+}
+
+.TexteApresLettreFinDeMot{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.LettreFinDeMotDisposition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,6 +138,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         margin-left: 1vw;
         margin-right: 1vw;
     }

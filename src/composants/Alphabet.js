@@ -108,6 +108,75 @@ const Alphabet = () => {
           </div>
         </div>
         <text className="TitreAlphabet">Les lettres en fin de mots :</text>
+        <div className="LettreFinDeMot">
+          <text className="TexteLettreFinDeMot">-r = muet</text>
+          <text className="TexteExempleLettreFinDeMot">exemple :</text>
+          <div className="AlphabetLettreCase">
+            <img
+              src="images/audio.png"
+              alt="AudioFinMots1"
+              className="LogoAudioAlphabet"
+            />
+            <text className="TexteLettreCase">viĕquir</text>
+            <text className="TexteLettreCaseExemple">(vivre)</text>
+          </div>
+        </div>
+        <div className="LettreFinDeMot">
+          <text className="TexteLettreFinDeMot">-au = /ow/</text>
+          <text className="TexteExempleLettreFinDeMot">exemple :</text>
+          <div className="AlphabetLettreCase">
+            <img
+              src="images/audio.png"
+              alt="AudioFinMots1"
+              className="LogoAudioAlphabet"
+            />
+            <text className="TexteLettreCase">choaquiau</text>
+            <text className="TexteLettreCaseExemple">(château)</text>
+          </div>
+        </div>
+        <div className="LettreFinDeMot">
+          <text className="TexteLettreFinDeMot">-z = /y/</text>
+          <text className="TexteApresLettreFinDeMot">après</text>
+          <text className="TexteLettreFinDeMot">e-,eu-,i-,u-</text>
+          <text className="TexteExempleLettreFinDeMot">exemple :</text>
+          <div className="AlphabetLettreCase">
+            <img
+              src="images/audio.png"
+              alt="AudioFinMots1"
+              className="LogoAudioAlphabet"
+            />
+            <text className="TexteLettreCase">bainzĕliz</text>
+            <text className="TexteLettreCaseExemple">(basilic)</text>
+          </div>
+        </div>
+        <div className="LettreFinDeMot">
+          <text className="TexteLettreFinDeMot">-z = /w/</text>
+          <text className="TexteApresLettreFinDeMot">après</text>
+          <text className="TexteLettreFinDeMot">a-,o-,ou-</text>
+          <text className="TexteExempleLettreFinDeMot">exemple :</text>
+          <div className="AlphabetLettreCase">
+            <img
+              src="images/audio.png"
+              alt="AudioFinMots1"
+              className="LogoAudioAlphabet"
+            />
+            <text className="TexteLettreCase">cembĕloz</text>
+            <text className="TexteLettreCaseExemple">(piano)</text>
+          </div>
+        </div>
+        <div className="LettreFinDeMot">
+          <text className="TexteLettreFinDeMot">-g = /y/</text>
+          <text className="TexteExempleLettreFinDeMot">exemple :</text>
+          <div className="AlphabetLettreCase">
+            <img
+              src="images/audio.png"
+              alt="AudioFinMots1"
+              className="LogoAudioAlphabet"
+            />
+            <text className="TexteLettreCase">jĕ seug</text>
+            <text className="TexteLettreCaseExemple">(je suis)</text>
+          </div>
+        </div>
       </div>
     </div>
   );
