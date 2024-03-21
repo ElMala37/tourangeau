@@ -107,6 +107,7 @@ const Alphabet = () => {
             ))}
           </div>
         </div>
+        <text className="TitreAlphabet">Les lettres en fin de mots :</text>
       </div>
     </div>
   );
