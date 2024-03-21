@@ -27,8 +27,8 @@
 .AlphabetLettreCase{
     height:8vh;
     min-height: max-content;
-    min-width:max-content;
     width: 3vw;
+    min-width:max-content;
     background-color: #f1d2aa;
     border-radius: 15px;
     display: flex;
@@ -52,6 +52,7 @@
 
 @media only screen and (max-width: 600px) {
     /* Styles spécifiques pour les téléphones ici */
+    
     .AlphabetDisposition{
         display: flex;
         flex-direction: column;
@@ -106,5 +107,4 @@
         font-weight: bolder;
         font-size: larger;
     }
-
 }
