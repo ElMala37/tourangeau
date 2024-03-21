@@ -19,6 +19,11 @@
     margin-bottom: 2vh;
 }
 
+.AlphabetDispositionCase{
+    display: flex;
+    flex-direction: row;
+}
+
 .AlphabetLettreCase{
     height:8vh;
     min-height: max-content;
