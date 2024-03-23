@@ -78,7 +78,7 @@
 
 
 
-@media only screen and (max-width: 1300px) and (max-height: 750px) {
+@media only screen and (max-width: 1300px) {
     /* Styles spécifiques pour les téléphones paysages ici */
     .tableauAlphabet{
         margin-top: 5vh;
