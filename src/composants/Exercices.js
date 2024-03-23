@@ -13,7 +13,7 @@ const Exercices = () => {
 
   return (
     <div className="Fond">
-      <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="EXERCICES DE TOURANGEAU"/>
+      <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="EXERCICES"/>
         <div className="Contenu">
           <div className="Carte" onClick={VoirPrononciation}>
             <text className="TitreCarte">Exercice de prononciation</text>
