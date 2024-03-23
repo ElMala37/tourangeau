@@ -142,12 +142,12 @@
     }
     
     .lettreTableauAlphabet{
-        font-size: 15px;
+        font-size: 1.2rem;
         font-weight: bolder;
     }
     
     .texteTableauAlphabet{
-        font-size: 12px;
+        font-size: 1.2rem;
         font-style: italic;
     }
     
