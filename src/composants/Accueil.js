@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Accueil.css";
 import { useNavigate } from "react-router";
 
-const Acceuil = ({ ouvert, setOuvert }) => {
+const Acceuil = ({ ouvert, setOuvert, titre }) => {
   const navigate = useNavigate();
 
   const OuvrirMenu = () => {
@@ -50,7 +50,12 @@ const Acceuil = ({ ouvert, setOuvert }) => {
           )}
 
           <div className="Titre">
-            <text className="Texte">LE TOURANGEAU</text>
+            {titre === undefined ? (
+              <text className="Texte">LE TOURANGEAU</text>
+            ) : (
+              <text className="Texte">{titre}</text>
+            )}
+
             <img src="/images/drapeau.png" alt="Drapeau" className="Drapeau" />
           </div>
         </div>

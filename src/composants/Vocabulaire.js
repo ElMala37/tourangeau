@@ -29,7 +29,7 @@ const Vocabulaire = () => {
 
   return (
     <div className="Fond">
-      <Acceuil ouvert={ouvert} setOuvert={setOuvert} />
+      <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="VOCABULAIRE TOURANGEAU"/>
       <div className="Contenu">
         <div className="CarteTheme" onClick={Famille}>
           <text className="TitreCarteTheme">La famille</text>
