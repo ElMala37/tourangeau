@@ -62,14 +62,13 @@
 }
 
 .lettreTableauAlphabet{
-    font-size: 3vh;
+    font-size: 1.2rem;
     font-weight: bolder;
 }
 
 .texteTableauAlphabet{
-    font-size: 3vh;
+    font-size: 1.2rem;
     font-style: italic;
-    margin-right: 1vw;
 }
 
 .logoAudioTableauAlphabet{
@@ -150,7 +149,6 @@
     .texteTableauAlphabet{
         font-size: 12px;
         font-style: italic;
-        margin-right: 1vw;
     }
     
     .logoAudioTableauAlphabet{
