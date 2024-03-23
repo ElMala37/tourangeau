@@ -35,7 +35,7 @@
 .TitreCarteTheme{
     color:#aa804a;
     font-weight:bolder;
-    font-size: larger;
+    font-size: 1rem;
     margin-right: 15px;
 }
 
@@ -84,7 +84,7 @@
     .TitreCarteTheme{
         color:#aa804a;
         font-weight:bolder;
-        font-size: larger;
+        font-size: 1rem;
         margin-right: 15px;
     }
     
