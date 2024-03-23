@@ -156,3 +156,84 @@
         width: auto;
     }
 }
+
+@media only screen and (max-width: 1300px) and (max-height: 750px) {
+    /* Styles spécifiques pour les téléphones paysages ici */
+    .tableauAlphabet{
+        margin-top: 5vh;
+        width: 80vw;
+        margin-left: 10vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding-bottom: 10vh;
+    }
+    
+    .categoriesTableauAlphabet{
+        width: 80vw;
+        height: 10vh;
+        background-color: #aa804a;
+        border-color: #DEB887;
+        border-style:solid;
+        border-radius: 15px;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    .ligneTableauAlphabet{
+        width: 80vw;
+        height: 10vh;
+        background-color: #f1d2aa;
+        border-color: #DEB887;
+        border-style:solid;
+        border-radius: 15px;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    .celluleTableauAlphabet{
+        width: 20vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .celluleAudioTableauAlphabet{
+        width: 20vw;
+        height: 10vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .celluleAudioTableauAlphabet:hover{
+        border-color: #aa804a;
+        border-style:solid;
+        border-radius: 15px;
+    }
+    
+    .celluleAudioTableauAlphabet:active{
+        background-color: #f3dfc5;
+    }
+    
+    .lettreTableauAlphabet{
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    
+    .texteTableauAlphabet{
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    
+    .logoAudioTableauAlphabet{
+        height:8vh;
+        width: auto;
+    }
+}
