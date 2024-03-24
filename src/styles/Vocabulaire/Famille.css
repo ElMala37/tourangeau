@@ -1,9 +1,3 @@
-.Fond{
-    background-color: #DEB887;
-    min-height: 100vh;
-    max-height: max-content;
-  }
-
 .ContenuTheme{
     display:flex;
     margin-top: 5vh;
@@ -291,11 +285,6 @@
 
 @media only screen and (max-width: 600px) {
     /* Styles spécifiques pour les téléphones ici */
-
-.Fond{
-    background-color: #DEB887;
-    height: 130vh;
-    }
 
 .ContenuTheme{
     display:flex;

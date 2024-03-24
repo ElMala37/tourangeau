@@ -1,9 +1,3 @@
-.Fond{
-    background-color: #DEB887;
-    min-height: 100vh;
-    max-height: max-content;
-  }
-
 .Introduction{
     display:flex;
     flex-direction: row;

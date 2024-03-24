@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/Exercices.css";
 import Acceuil from "./Accueil";
 import { useNavigate } from "react-router";
 
@@ -15,8 +14,8 @@ const Exercices = () => {
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="EXERCICES"/>
         <div className="Contenu">
-          <div className="Carte" onClick={VoirPrononciation}>
-            <text className="TitreCarte">Exercice de prononciation</text>
+          <div className="CarteTheme" onClick={VoirPrononciation}>
+            <text className="TitreCarteTheme">Exercice de prononciation</text>
           </div>
         </div>
     </div>

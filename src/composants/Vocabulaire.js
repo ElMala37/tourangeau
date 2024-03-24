@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/Vocabulaire.css";
 import Acceuil from "./Accueil";
 import { useNavigate } from "react-router";
 

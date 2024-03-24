@@ -10,6 +10,7 @@ import Instruments from "./composants/Vocabulaire/Instruments";
 import Fruits from "./composants/Vocabulaire/Fruits";
 import Vocabulaire from "./composants/Vocabulaire";
 import Alphabet from "./composants/Alphabet";
+import "./styles/General.css";
 
 function App() {
   return (
