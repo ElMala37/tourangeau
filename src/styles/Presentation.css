@@ -91,8 +91,8 @@
         font-size:xx-large;
     }
     .CarteTouraine1 {
-        height: 70vh;
-        width: auto;
+        height: auto;
+        width: 60vw;
     }
     
     .EspaceTexteIntroduction{
@@ -174,8 +174,8 @@
         font-size:xx-large;
     }
     .CarteTouraine1 {
-        height: auto;
-        width: 90vw;
+        height: 50vh;
+        width: auto;
     }
     
     .EspaceTexteIntroduction{
@@ -185,6 +185,7 @@
         align-items: center;
         margin-right: 2vw;
         margin-left: 2vw;
+        width: 70vw;
     }
     
     .TexteIntroduction{
@@ -206,7 +207,7 @@
     }
     
     .LogoPresentation{
-        height: 15vh;
+        height: 20vh;
         width: auto;
         margin-right: 5vw;
     }
