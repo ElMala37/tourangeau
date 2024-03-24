@@ -4,11 +4,6 @@
     margin-left: 15vw;
 }
 
-.LogoNavMenu{
-    height: 5vh;
-    width: auto;
-}
-
 .TrameQuestion{
     width: 60vw;
     display:flex;
@@ -291,11 +286,6 @@
     margin-top: 3vh;
     justify-content: center;
     margin-left: 0px;
-}
-
-.LogoNavMenu{
-    height: 4vh;
-    width: auto;
 }
 
 .TrameQuestion{
