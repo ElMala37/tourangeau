@@ -175,8 +175,9 @@
         font-size:xx-large;
     }
     .CarteTouraine1 {
-        height: auto;
+        
         width: 50vw;
+        height: auto;
     }
     
     .EspaceTexteIntroduction{
