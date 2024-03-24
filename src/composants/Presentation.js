@@ -53,8 +53,8 @@ const Presentation = () => {
           />
         </div>
         <div className="EspaceTexteIntroduction">
-          <div className="Chevre">
-            <div className="BulleQuestion">
+          <div className="ChevrePresentation">
+            <div className="BulleQuestionPresentation">
               <p className="PresentationBulle">Bienvenue !</p>
             </div>
             <img
