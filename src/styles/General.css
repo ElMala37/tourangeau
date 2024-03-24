@@ -4,6 +4,7 @@
     max-height: max-content;
     min-width: 100vw;
     max-width: max-content;
+    padding-bottom: 10vh;
   }
 
 .Contenu{
@@ -49,6 +50,7 @@
         max-height: max-content;
         min-width: 100vw;
         max-width: max-content;
+        padding-bottom: 10vh;
       }
     
     .Contenu{
@@ -96,6 +98,9 @@
         background-color: #DEB887;
         min-height: 100vh;
         max-height: max-content;
+        min-width: 100vw;
+        max-width: max-content;
+        padding-bottom: 10vh;
       }
     
     .Contenu{
