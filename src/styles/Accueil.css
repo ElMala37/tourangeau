@@ -59,6 +59,73 @@
     font-weight: bolder;
   }
 
+  @media only screen and (max-width: 1300px) {
+    /* Styles spécifiques pour les téléphones ici */
+  
+    .EnTete{
+      background-color: #aa804a;
+      height:10vh;
+      width: 100vw;
+      display:flex;
+      flex-direction:row;
+    }
+  
+    .Titre{
+      height:10vh;
+      width: 100vw;
+      display:flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      }
+  
+    .Texte{
+      margin-right:2vw;
+      font-weight: bolder;
+      font-size: 6vh;
+    }
+
+    .Drapeau{
+      height: 7vh;
+      width: auto;
+    }
+  
+    .LogoNavMenu{
+      height: 6vh;
+      width: auto;
+    }
+
+    .LogoNavMenu:hover{
+      scale: 1;
+    }
+    
+    .NavMenu{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #aa804a;
+      width: 50vw;
+      border-bottom-right-radius: 15px;
+      position: absolute;
+      z-index:1;
+      padding-bottom: 1vh;
+    }
+  
+    .NavMenuBouton{
+      color:black;
+      background-color: #aa804a;
+      width: 25vw;
+      border-style: hidden;
+      font-size: larger;
+    }
+  
+    .NavMenuBouton:hover{
+      color: #DEB887;
+      text-shadow: #aa804a;
+      font-weight: bolder;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     /* Styles spécifiques pour les téléphones ici */
   

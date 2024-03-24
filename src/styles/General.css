@@ -44,11 +44,59 @@
     width: auto;
 }
 
+@media only screen and (max-width: 1300px) {
+    /* Styles spécifiques pour les téléphones ici */
+    .Fond{
+        background-color: #DEB887;
+        min-height: 100vh;
+        max-height: max-content;
+      }
+    
+    .Contenu{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 0vh;
+        margin-left: 15vw;
+    }
+    
+    .CarteTheme{
+        background-color:#f1d2aa;
+        height: 15vh;
+        width: 70vw;
+        margin-bottom: 0vh;
+        margin-top: 3vh;
+        border-radius: 15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .CarteTheme:hover{
+        border-color: #aa804a;
+        border-style:solid;
+    }
+    
+    .TitreCarteTheme{
+        color:#aa804a;
+        font-weight:bolder;
+        font-size: 5vh;
+        margin-right: 15px;
+    }
+    
+    .LogoTheme{
+        height: 8vh;
+        width: auto;
+    }
+    
+}
+
 @media only screen and (max-width: 600px) {
     /* Styles spécifiques pour les téléphones ici */
     .Fond{
         background-color: #DEB887;
-        height: 200vh;
+        min-height: 100vh;
+        max-height: max-content;
       }
     
     .Contenu{
