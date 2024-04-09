@@ -12,6 +12,7 @@ import Vocabulaire from "./composants/Vocabulaire";
 import Alphabet from "./composants/Alphabet";
 import "./styles/General.css";
 import SePresenter from "./composants/Vocabulaire/SePresenter";
+import Nombres from "./composants/Nombres";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Presentation />} />
         <Route exact path="/alphabet" element={<Alphabet />} />
+        <Route exact path="/nombres" element={<Nombres />} />
         <Route exact path="/vocabulaire" element={<Vocabulaire />} />
         <Route exact path="/vocabulaire/famille" element={<Famille1 />} />
         <Route exact path="/vocabulaire/vetements" element={<Vetements />} />

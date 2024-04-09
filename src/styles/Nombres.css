@@ -1,0 +1,75 @@
+.Dizaine1{
+    margin-top:5vh;
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.CelluleChiffre{
+    width: 16vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LogoChiffres{
+    width: 5vw;
+    transition: 0.6s;
+}
+
+.LogoChiffres:hover{
+    scale:1.15;
+    transition: 0.6s;
+
+}
+
+.TexteChiffres{
+    font-weight: bolder;
+    font-size: 2vw;
+    font-style:italic;
+}
+
+.tableauChiffre{
+    margin-top:5vh;
+    width: 70vw;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.colonneDizaine{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ligneDizaine{
+    display: flex;
+    flex-direction: row;
+    background-color: #f1d2aa;
+    border-color: #DEB887;
+    border-style:solid;
+    border-radius: 15px;
+    width: 30vw;
+}
+
+.CelluleColonneDizaine{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NumerosTableau{
+    font-weight: bold;
+}
+
+.texteNumeroTableau{
+    font-style:italic;
+}
+
+.LogoAudioNumeros{
+    width: 2vw;
+}
