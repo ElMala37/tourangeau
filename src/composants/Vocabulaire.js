@@ -26,6 +26,10 @@ const Vocabulaire = () => {
     navigate("/vocabulaire/fruits");
   };
 
+  const SePresenter = () => {
+    navigate("/vocabulaire/sepresenter");
+  };
+
   return (
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="VOCABULAIRE"/>
@@ -51,6 +55,10 @@ const Vocabulaire = () => {
         <div className="CarteTheme" onClick={Fruits}>
           <text className="TitreCarteTheme">Les fruits</text>
           <img src="/images/Vocabulaire/fruits.png" alt="LogoThemeFamille" className="LogoTheme"/>
+        </div>
+        <div className="CarteTheme" onClick={SePresenter}>
+          <text className="TitreCarteTheme">Se présenter</text>
+          <img src="/images/Vocabulaire/sepresenter.png" alt="LogoThemeSePresenter" className="LogoTheme"/>
         </div>
       </div>
     </div>

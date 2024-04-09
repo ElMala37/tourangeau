@@ -11,6 +11,7 @@ import Fruits from "./composants/Vocabulaire/Fruits";
 import Vocabulaire from "./composants/Vocabulaire";
 import Alphabet from "./composants/Alphabet";
 import "./styles/General.css";
+import SePresenter from "./composants/Vocabulaire/SePresenter";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/vocabulaire/animaux" element={<Animaux />} />
         <Route exact path="/vocabulaire/instruments" element={<Instruments />} />
         <Route exact path="/vocabulaire/fruits" element={<Fruits />} />
+        <Route exact path="/vocabulaire/sepresenter" element={<SePresenter />} />
         <Route exact path="/exercices" element={<Exercices />} />
         <Route exact path="/exercices/prononciation" element={<Prononciation />} />
       </Routes>

@@ -55,7 +55,7 @@ const Presentation = () => {
         <div className="EspaceTexteIntroduction">
           <div className="ChevrePresentation">
             <div className="BulleQuestionPresentation">
-              <p className="PresentationBulle">Chut !</p>
+              <p className="PresentationBulle">Bienvenue !</p>
             </div>
             <img
               src="/images/chevre.png"
