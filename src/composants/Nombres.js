@@ -47,24 +47,52 @@ const Nombres = () => {
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="LES LIMEROZS" />
       <div className="Dizaine1">
-        {dizaine1.map((item, index) => (
-          <div className="CelluleChiffre">
-            <img
-              src={`/images/Nombres/number-${index + 1}.png`}
-              alt="FermerMenu"
-              className="LogoChiffres"
-            />
-            <span className="TexteChiffres">{item}</span>
-          </div>
-        ))}
+        <div className="LigneDizaine1">
+          {dizaine1.slice(0, 5).map((item, index) => (
+            <div className="CelluleChiffre">
+              <div className="CercleChiffre">
+                <span className="Chiffre">{index + 1}</span>
+              </div>
+              <div className="BoutonAudioChiffres">
+                <img
+                  src={`/images/audio.png`}
+                  alt="AudioChiffres"
+                  className="LogoAudioChiffres"
+                />
+                <span className="TexteChiffres">{item}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="LigneDizaine1">
+          {dizaine1.slice(5, 10).map((item, index) => (
+            <div className="CelluleChiffre">
+              <div className="CercleChiffre">
+                <span className="Chiffre">{index + 6}</span>
+              </div>
+              <div className="BoutonAudioChiffres">
+                <img
+                  src={`/images/audio.png`}
+                  alt="AudioChiffres"
+                  className="LogoAudioChiffres"
+                />
+                <span className="TexteChiffres">{item}</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="tableauChiffre">
         <div className="colonneDizaine">
           {numeros.slice(0, 10).map((item, index) => (
             <div className="ligneDizaine">
-              <div className="CelluleColonneDizaine"><text className="NumerosTableau">{item}</text></div>
-              <div className="CelluleColonneDizaine"><text className="texteNumeroTableau">{nom_numeros[index]}</text></div>
               <div className="CelluleColonneDizaine">
+                <text className="NumerosTableau">{item}</text>
+              </div>
+              <div className="CelluleColonneDizaine">
+                <text className="texteNumeroTableau">{nom_numeros[index]}</text>
+              </div>
+              <div className="CelluleColonneDizaineAudio">
                 <img
                   src={`/images/audio.png`}
                   alt="AudioNumeros"
@@ -77,9 +105,13 @@ const Nombres = () => {
         <div className="colonneDizaine">
           {numeros.slice(10, 20).map((item, index) => (
             <div className="ligneDizaine">
-              <div className="CelluleColonneDizaine"><text className="NumerosTableau">{item}</text></div>
-              <div className="CelluleColonneDizaine"><text className="texteNumeroTableau">{nom_numeros[index]}</text></div>
               <div className="CelluleColonneDizaine">
+                <text className="NumerosTableau">{item}</text>
+              </div>
+              <div className="CelluleColonneDizaine">
+                <text className="texteNumeroTableau">{nom_numeros[index]}</text>
+              </div>
+              <div className="CelluleColonneDizaineAudio">
                 <img
                   src={`/images/audio.png`}
                   alt="AudioNumeros"
