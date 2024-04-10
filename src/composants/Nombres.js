@@ -109,7 +109,7 @@ const Nombres = () => {
                 <text className="NumerosTableau">{item}</text>
               </div>
               <div className="CelluleColonneDizaine">
-                <text className="texteNumeroTableau">{nom_numeros[index]}</text>
+                <text className="texteNumeroTableau">{nom_numeros[index+10]}</text>
               </div>
               <div className="CelluleColonneDizaineAudio">
                 <img
