@@ -1,0 +1,57 @@
+.ContenuConversation{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 20px;
+}
+
+.TrameConversation{
+    width: 80vw;
+}
+
+.EnTeteConversation{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.LigneEtapeFondConv{
+    width: 60vw;
+    height: 2.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    justify-content: left;
+    align-items: center;
+}
+
+.RondEtapeConv{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    background-color: #4a6caa;
+    position: absolute;
+    align-self: center;
+}
+
+.LigneEtapeConv{
+    height: 0.3vw;
+    margin-top: 1.10vw;
+    margin-bottom: 1.10vw;
+    background-color: #4a6caa;
+    border-radius: 5%;
+}
+
+.ProgressionConversation{
+    font-size: 1.5vw;;
+    margin-right:1vw;
+    margin-left:1vw;
+    color:black;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.EtapeSuivante{
+    width: 30vw;
+    background-color: aqua;
+}

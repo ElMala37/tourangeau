@@ -13,6 +13,8 @@ import Alphabet from "./composants/Alphabet";
 import "./styles/General.css";
 import SePresenter from "./composants/Vocabulaire/SePresenter";
 import Nombres from "./composants/Nombres";
+import Conversation from "./composants/Conversation";
+import SePresenterConv from "./composants/Conversation/SePresenterConv";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route exact path="/vocabulaire/instruments" element={<Instruments />} />
         <Route exact path="/vocabulaire/fruits" element={<Fruits />} />
         <Route exact path="/vocabulaire/sepresenter" element={<SePresenter />} />
+        <Route exact path="/conversation" element={<Conversation />} />
+        <Route exact path="/conversation/sepresenter" element={<SePresenterConv />} />
         <Route exact path="/exercices" element={<Exercices />} />
         <Route exact path="/exercices/prononciation" element={<Prononciation />} />
       </Routes>

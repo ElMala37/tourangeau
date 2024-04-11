@@ -19,10 +19,10 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
     navigate("/vocabulaire");
   };
 
-  const OuvrirExe = () => {
-    setOuvert(!ouvert);
-    navigate("/exercices");
-  };
+  // const OuvrirExe = () => {
+  //   setOuvert(!ouvert);
+  //   navigate("/exercices");
+  // };
 
   const OuvrirAlph = () => {
     setOuvert(!ouvert);
@@ -32,6 +32,11 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
   const OuvrirNomb = () => {
     setOuvert(!ouvert);
     navigate("/nombres");
+  };
+
+  const OuvrirConv = () => {
+    setOuvert(!ouvert);
+    navigate("/conversation");
   };
 
   return (
@@ -84,8 +89,8 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
           <button className="NavMenuBouton" onClick={OuvrirVoc}>
             Vocabulaire
           </button>
-          <button className="NavMenuBouton" onClick={OuvrirExe}>
-            Exercices
+          <button className="NavMenuBouton" onClick={OuvrirConv}>
+            Conversation
           </button>
         </div>
       </div>
