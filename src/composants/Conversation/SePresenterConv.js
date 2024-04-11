@@ -34,7 +34,6 @@ const SePresenterConv = () => {
                 <div
                   className="RondEtapeConv"
                   style={{
-                    zIndex: index,
                     transform:
                       etape >= index + 1
                         ? `translateX(${(60 / nbEtapes) * (index + 1)}vw)`
@@ -58,6 +57,9 @@ const SePresenterConv = () => {
           </div>
           <div className="EtapeSuivante" onClick={EtapeSuivante}>
             Suivant
+          </div>
+          <div className="EnteteQuestionConversation">
+
           </div>
         </div>
       </div>
