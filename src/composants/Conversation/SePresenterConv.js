@@ -8,36 +8,69 @@ const SePresenterConv = () => {
   const navigate = useNavigate();
   const [etape, setEtape] = useState(0);
   const [Reponses, setReponses] = useState([]);
-  const nbEtapes = 8;
+  const [Validation, setValidation] = useState(false);
+  const [bonneRep, setBonneRep] = useState(true);
+  const nbEtapes = 2;
 
-    const Question=["Comment t'appelles-tu ?","Je m'appelle Thomas"]
+  const Question = ["Comment t'appelles-tu ?", "Je m'appelle Thomas"];
 
   const Propositions = [
     ["Coumenque", "t'hoas-ti", "lom", "Eyouque", "tu", "?", "eul", "fraizĕr"],
     ["J'hag", "t'hoas-ti", "lom", "angs", "frarĕ", "couni", "eul", "Thomas"],
   ];
 
+  const BonnesReponses = [
+    ["Coumenque", "t'hoas-ti", "lom", "?"],
+    ["J'hag", "lom", "Thomas"],
+  ];
+
   const FermerTheme = () => {
     navigate("/conversation");
   };
 
-  const EtapeSuivante = () => {
-    setEtape(etape + 1);
-    setReponses([]);
-  };
-
   const RajouterUneReponse = (i_reponse) => {
-    if (Reponses.length < 8 && !Reponses.includes(i_reponse)) {
+    if (
+      Reponses.length < 8 &&
+      !Reponses.includes(i_reponse) &&
+      Validation === false
+    ) {
       setReponses([...Reponses, i_reponse]);
     }
   };
 
   const EnleverUneReponse = (i_reponse) => {
-    if (Reponses.includes(i_reponse)) {
+    if (Reponses.includes(i_reponse) && Validation === false) {
       const newReponses = Reponses.filter((reponse) => reponse !== i_reponse);
       setReponses(newReponses);
     }
   };
+
+  const Valider = () => {
+    setValidation(true);
+    console.log("reponse:", Reponses);
+    console.log("bonne reponses:", BonnesReponses[etape]);
+    const isEqual =
+      Reponses.length === BonnesReponses[etape].length &&
+      Reponses.every((value, index) => value === BonnesReponses[etape][index]);
+    if (isEqual) {
+      setBonneRep(true);
+      console.log("bonnerep");
+    } else {
+      setBonneRep(false);
+      console.log("mauvrep");
+    }
+  };
+
+  const Continuer = () => {
+    setValidation(false);
+    setEtape(etape + 1);
+    setReponses([]);
+  };
+
+  const VoirBonneRep = () => {
+    setBonneRep(true);
+    setReponses(BonnesReponses[etape])
+  }
 
   return (
     <div className="Fond">
@@ -99,18 +132,34 @@ const SePresenterConv = () => {
           <div className="SpaceDesReponsesConv">
             <div className="LigneDeSupportReponses"></div>
             {Reponses.map((item, index) => (
-              <div
-                key={index}
-                className="BouttonReponseConv"
-                onClick={() => EnleverUneReponse(item)}
-              >
-                {item}
+              <div>
+                {Validation === true ? (
+                  <div>
+                    {bonneRep ? (
+                      <div key={index} className="BouttonBonneReponseConv">
+                        {item}
+                      </div>
+                    ) : (
+                      <div key={index} className="BouttonMauvReponseConv">
+                        {item}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div
+                    key={index}
+                    className="BouttonReponseConv"
+                    onClick={() => EnleverUneReponse(item)}
+                  >
+                    {item}
+                  </div>
+                )}
               </div>
             ))}
           </div>
 
           <div className="SpaceDesPropositionsConv">
-          <div className="LignePropositionsConv">
+            <div className="LignePropositionsConv">
               {Propositions[etape].slice(0, 4).map((item, index) =>
                 !Reponses.includes(item) ? (
                   <div
@@ -121,8 +170,7 @@ const SePresenterConv = () => {
                     {item}
                   </div>
                 ) : (
-                  <div key={index} className="BouttonPropositionVideConv">
-                  </div>
+                  <div key={index} className="BouttonPropositionVideConv"></div>
                 )
               )}
             </div>
@@ -137,16 +185,35 @@ const SePresenterConv = () => {
                     {item}
                   </div>
                 ) : (
-                  <div key={index} className="BouttonPropositionVideConv">
-                  </div>
+                  <div key={index} className="BouttonPropositionVideConv"></div>
                 )
               )}
             </div>
           </div>
           <div className="SpaceValidation">
-            <div className="BouttonValiderConv" onClick={EtapeSuivante}>
-              Valider
-            </div>
+            {Validation ? (
+              <div>
+                {" "}
+                {bonneRep ? (
+                  <div className="BouttonValiderConv" onClick={Continuer}>
+                    Continuer
+                  </div>
+                ) : (
+                  <div className="SpaceValidationVoirBonnRep">
+                    <div className="BouttonValiderConv" onClick={VoirBonneRep}>
+                      Voir la bonne réponse
+                    </div>
+                    <div className="BouttonValiderConv" onClick={Continuer}>
+                      Continuer
+                    </div>
+                  </div>
+                )}{" "}
+              </div>
+            ) : (
+              <div className="BouttonValiderConv" onClick={Valider}>
+                Valider
+              </div>
+            )}
           </div>
         </div>
       </div>

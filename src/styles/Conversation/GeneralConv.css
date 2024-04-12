@@ -154,6 +154,44 @@
     border-style:solid;
 }
 
+.BouttonBonneReponseConv{
+    background-color:#a7ee99;
+    height: 3vw;
+    width: 10vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.08vw;
+    color:#50a641;
+    font-weight:bolder;
+    font-size: 1.25vw;
+    z-index: 1;
+}
+
+.BouttonMauvReponseConv:hover{
+    border-color: #50a641;
+    border-style:solid;
+}
+
+.BouttonMauvReponseConv{
+    background-color:#ee9999;
+    height: 3vw;
+    width: 10vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.08vw;
+    color:#a64141;
+    font-weight:bolder;
+    font-size: 1.25vw;
+    z-index: 1;
+}
+
+.BouttonBonneReponseConv:hover{
+    border-color: #a64141;
+    border-style:solid;
+}
+
 .SpaceDesPropositionsConv{
     width: 80vw;
     height: 10vw;
@@ -222,4 +260,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.SpaceValidationVoirBonnRep{
+    width: 40vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
