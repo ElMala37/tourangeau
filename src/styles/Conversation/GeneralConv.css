@@ -21,25 +21,32 @@
     height: 2.5vw;
     margin-left: 3vw;
     margin-right: 3vw;
+    display: flex;
     justify-content: left;
     align-items: center;
 }
 
 .RondEtapeConv{
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 1.7vw;
+    height: 1.7vw;
     border-radius: 50%;
-    background-color: #4a6caa;
+    background-color: #4a78aa;
     position: absolute;
     align-self: center;
 }
 
-.LigneEtapeConv{
-    height: 0.3vw;
-    margin-top: 1.10vw;
-    margin-bottom: 1.10vw;
-    background-color: #4a6caa;
-    border-radius: 5%;
+.LigneEtapeConvNoir{
+    width: 60vw;
+    height: 0.5vw;
+    background-color: #ddd;
+    border-radius: 10%;
+    position: absolute;
+}
+
+.LigneEtapeConvBleu{
+    height: 0.5vw;
+    background-color: #4a78aa;
+    position: absolute;
 }
 
 .ProgressionConversation{
@@ -51,7 +58,168 @@
     text-align: center;
 }
 
-.EtapeSuivante{
-    width: 30vw;
-    background-color: aqua;
+.EnteteQuestionConversation{
+    width: 60vw;
+    margin-left: 10vw;
+    height: 10vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ConsigneQuestionConversation{
+    font-size: 1.7vw;
+    color:black;
+    font-weight:bolder;
+}
+
+.LogoConversation{
+    width: 9vw;
+}
+
+.BulleConversation {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 0.5vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    height: 3vw;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  .BulleConversation::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    border-width: 0.6vw;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  
+
+.ConversationBulle{
+    font-size: 1.3vw;
+    margin-left:0.5vw;
+    margin-right:0.5vw;
+    color:black;
+    font-weight:bolder;
+}
+
+.ChevreConversation{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.SpaceDesReponsesConv{
+    width: 80vw;
+    height: 3.4vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75vw;
+}
+
+.LigneDeSupportReponses{
+    background-color:#4a78aa70;
+    margin-top: 3.2vw;
+    height: 0.2vw;
+    width: 80vw;
+    position: absolute;
+    z-index: 0;
+}
+
+.BouttonReponseConv{
+    background-color:#aacdf1;
+    height: 3vw;
+    width: 10vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.08vw;
+    color:#4a78aa;
+    font-weight:bolder;
+    font-size: 1.25vw;
+    z-index: 1;
+}
+
+.BouttonReponseConv:hover{
+    border-color: #4a78aa;
+    border-style:solid;
+}
+
+.SpaceDesPropositionsConv{
+    width: 80vw;
+    height: 10vw;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LignePropositionsConv{
+    width: 50vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BouttonPropositionVideConv{
+    background-color:#DEB887;
+    height: 3vw;
+    width: 10vw;
+}
+
+.BouttonPropositionConv{
+    background-color:#f1d2aa;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 1vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#aa804a;
+    font-weight:bolder;
+    font-size: 1.15vw;
+}
+
+.BouttonPropositionConv:hover{
+    border-color: #aa804a;
+    border-style:solid;
+}
+
+.BouttonValiderConv{
+    background-color:#a7ee99;
+    height: 4vw;
+    width: 15vw;
+    border-radius: 1.2vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#50a641;
+    font-weight:bolder;
+    font-size: 1.15vw;
+}
+
+.BouttonValiderConv:hover{
+    border-color: #50a641;
+    border-style:solid;
+}
+
+.SpaceValidation{
+    width: 80vw;
+    height: 5vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
