@@ -1,5 +1,5 @@
 .Dizaine1{
-    margin-top:5vh;
+    margin-top:2.5vw;
     width: 80vw;
     margin-left: 10vw;
     display: flex;
@@ -68,7 +68,7 @@
 }
 
 .tableauChiffre{
-    margin-top:5vh;
+    margin-top:2.5vw;
     width: 70vw;
     margin-left: 15vw;
     display: flex;

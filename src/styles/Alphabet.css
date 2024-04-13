@@ -1,5 +1,5 @@
 .tableauAlphabet{
-    margin-top: 5vh;
+    margin-top: 2.5vw;
     width: 60vw;
     margin-left: 20vw;
     display:flex;
@@ -7,16 +7,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    padding-bottom: 10vh;
+    padding-bottom: 5vw;
 }
 
 .categoriesTableauAlphabet{
     width: 60vw;
-    height: 5vh;
+    height: 2.5vw;
     background-color: #aa804a;
     border-color: #DEB887;
     border-style:solid;
-    border-radius: 15px;
+    border-radius: 1vw;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -25,7 +25,7 @@
 
 .ligneTableauAlphabet{
     width: 60vw;
-    height: 5vh;
+    height: 2.5vw;
     background-color: #f1d2aa;
     border-color: #DEB887;
     border-style:solid;
@@ -45,7 +45,7 @@
 
 .celluleAudioTableauAlphabet{
     width: 15vw;
-    height: 5vh;
+    height: 2.5vw;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -62,180 +62,16 @@
 }
 
 .lettreTableauAlphabet{
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-weight: bolder;
 }
 
 .texteTableauAlphabet{
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-style: italic;
 }
 
 .logoAudioTableauAlphabet{
-    height:4vh;
+    height:2vw;
     width: auto;
-}
-
-
-
-@media only screen and (max-width: 1300px) {
-    /* Styles spécifiques pour les téléphones paysages ici */
-    .tableauAlphabet{
-        margin-top: 5vh;
-        width: 80vw;
-        margin-left: 10vw;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        padding-bottom: 10vh;
-    }
-    
-    .categoriesTableauAlphabet{
-        width: 80vw;
-        height: 10vh;
-        background-color: #aa804a;
-        border-color: #DEB887;
-        border-style:solid;
-        border-radius: 15px;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        }
-    
-    .ligneTableauAlphabet{
-        width: 80vw;
-        height: 10vh;
-        background-color: #f1d2aa;
-        border-color: #DEB887;
-        border-style:solid;
-        border-radius: 15px;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        }
-    
-    .celluleTableauAlphabet{
-        width: 20vw;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .celluleAudioTableauAlphabet{
-        width: 20vw;
-        height: 10vh;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .celluleAudioTableauAlphabet:hover{
-        border-color: #aa804a;
-        border-style:solid;
-        border-radius: 15px;
-    }
-    
-    .celluleAudioTableauAlphabet:active{
-        background-color: #f3dfc5;
-    }
-    
-    .lettreTableauAlphabet{
-        font-size: 1.2rem;
-        font-weight: bolder;
-    }
-    
-    .texteTableauAlphabet{
-        font-size: 1.2rem;
-        font-style: italic;
-    }
-    
-    .logoAudioTableauAlphabet{
-        height:8vh;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    /* Styles spécifiques pour les téléphones ici */
-    .tableauAlphabet{
-        margin-top: 5vh;
-        width: 88vw;
-        margin-left: 6vw;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        padding-bottom: 10vh;
-    }
-    
-    .categoriesTableauAlphabet{
-        width: 88vw;
-        height: 5vh;
-        background-color: #aa804a;
-        border-color: #DEB887;
-        border-style:solid;
-        border-radius: 15px;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        }
-    
-    .ligneTableauAlphabet{
-        width: 88vw;
-        height: 5vh;
-        background-color: #f1d2aa;
-        border-color: #DEB887;
-        border-style:solid;
-        border-radius: 15px;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        }
-    
-    .celluleTableauAlphabet{
-        width: 22vw;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .celluleAudioTableauAlphabet{
-        width: 22vw;
-        height: 5vh;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .celluleAudioTableauAlphabet:hover{
-        border-color: #aa804a;
-        border-style:solid;
-        border-radius: 15px;
-    }
-    
-    .celluleAudioTableauAlphabet:active{
-        background-color: #f3dfc5;
-    }
-    
-    .lettreTableauAlphabet{
-        font-size: 0.7rem;
-        font-weight: bolder;
-    }
-    
-    .texteTableauAlphabet{
-        font-size: 0.7rem;
-        font-style: italic;
-    }
-    
-    .logoAudioTableauAlphabet{
-        height:4vh;
-        width: auto;
-    }
 }

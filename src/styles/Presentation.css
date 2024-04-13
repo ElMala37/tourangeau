@@ -5,13 +5,9 @@
     align-items: center;
 }
 
-.TitreCarteTouraine{
-    font-weight: bolder;
-    font-size:xx-large;
-}
 .CarteTouraine1 {
-    height: 70vh;
-    width: auto;
+    height: auto;
+    width: 40vw;
 }
 
 .EspaceTexteIntroduction{
@@ -24,14 +20,14 @@
 
 .TexteIntroduction{
     font-weight:bold;
-    font-size: 3vh;
-    margin:20px;
+    font-size: 1.2vw;
+    margin:1vw;
 }
 
 .FondTexteIntroduction{
     background-color:#f1d2aa;
-    border-radius: 15px;
-    margin-bottom: 10vh;
+    border-radius: 2vw;
+    margin-bottom: 5vw;
 }
 
 .ChevrePresentation{
@@ -41,7 +37,7 @@
 }
 
 .LogoPresentation{
-    height: 30vh;
+    height: 10vw;
     width: auto;
     margin-right: 5vw;
 }
@@ -52,8 +48,8 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: max-content;
-    height: 7vh;
-    margin: 20px;
+    height: 3vw;
+    margin: 1vw;
     display: flex;
     align-items: center;
   }
@@ -63,186 +59,16 @@
     position: absolute;
     top: 40%;
     left: 100%;
-    border-width: 1vh;
+    border-width: 0.4vw;
     border-style: solid;
     border-color: transparent transparent transparent #ffffff;
   }
   
 
 .PresentationBulle{
-    font-size: 4vh;
-    margin-left:20px;
-    margin-right:20px;
+    font-size: 1.2vw;
+    margin-left:1vw;
+    margin-right:1vw;
     color:black;
     font-weight:bolder;
-}
-
-@media only screen and (max-width: 1300px) {
-    /* Styles spécifiques pour les téléphones ici */ 
-    .Introduction{
-        display:flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-    }
-    
-    .TitreCarteTouraine{
-        font-weight: bolder;
-        font-size:xx-large;
-    }
-    .CarteTouraine1 {
-        height: auto;
-        width: 60vw;
-    }
-    
-    .EspaceTexteIntroduction{
-        display:flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        margin-right: 5vw;
-        width: 45vw;
-    }
-    
-    .TexteIntroduction{
-        font-weight:bold;
-        font-size: 4vh;
-        margin:20px;
-    }
-    
-    .FondTexteIntroduction{
-        background-color:#f1d2aa;
-        border-radius: 15px;
-        margin-bottom: 10vh;
-    }
-    
-    .ChevrePresentation{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .LogoPresentation{
-        height: 30vh;
-        width: auto;
-        margin-right: 5vw;
-    }
-    
-    .BulleQuestionPresentation {
-        position: relative;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        width: max-content;
-        height: 7vh;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-      }
-      
-      .BulleQuestionPresentation::before {
-        content: '';
-        position: absolute;
-        top: 40%;
-        left: 100%;
-        border-width: 1vh;
-        border-style: solid;
-        border-color: transparent transparent transparent #ffffff;
-      }
-      
-    
-    .PresentationBulle{
-        font-size: 4vh;
-        margin-left:20px;
-        margin-right:20px;
-        color:black;
-        font-weight:bolder;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    /* Styles spécifiques pour les téléphones ici */ 
-    .Introduction{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .TitreCarteTouraine{
-        font-weight: bolder;
-        font-size:xx-large;
-    }
-    .CarteTouraine1 {
-        width: 50vw;
-        height: auto;
-        margin-left: 25vw;
-        margin-right: 25vw;
-    }
-    
-    .EspaceTexteIntroduction{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 2vw;
-        margin-left: 2vw;
-        width: 80vw;
-    }
-    
-    .TexteIntroduction{
-        font-weight: bolder;
-        font-size: larger;
-        margin:20px;
-    }
-
-    .FondTexteIntroduction{
-        background-color:#f1d2aa;
-        border-radius: 15px;
-        margin-bottom: 10vh;
-        width: 80vw;
-    }
-    
-    .ChevrePresentation{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .LogoPresentation{
-        height: 15vh;
-        width: auto;
-        margin-right: 5vw;
-    }
-    
-    .BulleQuestionPresentation {
-        position: relative;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        width: max-content;
-        height: 7vh;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-      }
-      
-      .BulleQuestionPresentation::before {
-        content: '';
-        position: absolute;
-        top: 40%;
-        left: 100%;
-        border-width: 1vh;
-        border-style: solid;
-        border-color: transparent transparent transparent #ffffff;
-      }
-      
-    
-    .PresentationBulle{
-        font-size: 23px;
-        margin-left:20px;
-        margin-right:20px;
-        color:black;
-        font-weight:bolder;
-    }
 }

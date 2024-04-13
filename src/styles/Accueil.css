@@ -1,13 +1,13 @@
   .EnTete{
     background-color: #aa804a;
-    height:8vh;
+    height:4vw;
     width: 100vw;
     display:flex;
     flex-direction:row;
   }
 
   .Titre{
-    height:8vh;
+    height:4vw;
     width: 100vw;
     display:flex;
     flex-direction:row;
@@ -15,7 +15,7 @@
     }
 
     .Drapeau{
-      height: 7vh;
+      height: 3.5vw;
       width: auto;
       align-self: center;
     }
@@ -24,12 +24,12 @@
     align-self: center;
     margin-right:1vw;
     font-weight: bolder;
-    font-size: 6vh;
+    font-size: 3vw;
   }
 
   .LogoNavMenu{
-    height: 4vh;
-    margin: 2vh;
+    height: 2vw;
+    margin: 1vw;
     transition: scale 0.3s ease;
   }
   
@@ -43,10 +43,10 @@
     align-items: center;
     background-color: #aa804a;
     width: 30vw;
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 3vw;
     position: absolute;
     z-index:1;
-    padding-bottom: 2vh;
+    padding-bottom: 2vw;
   }
 
   .NavMenuBouton{
@@ -56,147 +56,11 @@
     border-radius: 5px;
     width: 15vw;
     border-style: hidden;
-    font-size: larger;
+    font-size: 1.5vw;
   }
 
   .NavMenuBouton:hover{
     color: #DEB887;
     text-shadow: #aa804a;
     font-weight: bolder;
-  }
-
-  @media only screen and (max-width: 1300px) {
-    /* Styles spécifiques pour les téléphones ici */
-  
-    .EnTete{
-      background-color: #aa804a;
-      height:10vh;
-      width: 100vw;
-      display:flex;
-      flex-direction:row;
-    }
-  
-    .Titre{
-      height:10vh;
-      width: 100vw;
-      display:flex;
-      flex-direction:row;
-      justify-content: center;
-      align-items: center;
-      }
-  
-    .Texte{
-      margin-right:2vw;
-      font-weight: bolder;
-      font-size: 6vh;
-    }
-
-    .Drapeau{
-      height: 7vh;
-      width: auto;
-      align-self: center;
-    }
-  
-    .LogoNavMenu{
-      height: 7vh;
-      width: auto;
-    }
-
-    .LogoNavMenu:hover{
-      scale: 1;
-    }
-    
-    .NavMenu{
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #aa804a;
-      width: 50vw;
-      border-bottom-right-radius: 15px;
-      position: absolute;
-      z-index:1;
-      padding-bottom: 1vh;
-    }
-  
-    .NavMenuBouton{
-      color:black;
-      background-color: #aa804a;
-      width: 25vw;
-      border-style: hidden;
-      font-size: larger;
-    }
-  
-    .NavMenuBouton:hover{
-      color: #DEB887;
-      text-shadow: #aa804a;
-      font-weight: bolder;
-    }
-  }
-
-  @media only screen and (max-width: 750px) {
-    /* Styles spécifiques pour les téléphones ici */
-  
-    .EnTete{
-      background-color: #aa804a;
-      height:8vh;
-      width: 100vw;
-      display:flex;
-      flex-direction:row;
-    }
-  
-    .Titre{
-      height:8vh;
-      width: 100vw;
-      display:flex;
-      flex-direction:row;
-      justify-content: center;
-      align-items: center;
-      }
-  
-    .Texte{
-      margin-right:2vw;
-      font-weight: bolder;
-      font-size: 20px;
-    }
-
-    .Drapeau{
-      height: 6vh;
-      width: auto;
-      align-self: center;
-    }
-  
-    .LogoNavMenu{
-      height: 4vh;
-      width: auto;
-    }
-
-    .LogoNavMenu:hover{
-      scale: 1;
-    }
-    
-    .NavMenu{
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #aa804a;
-      width: 50vw;
-      border-bottom-right-radius: 15px;
-      position: absolute;
-      z-index:1;
-      padding-bottom: 1vh;
-    }
-  
-    .NavMenuBouton{
-      color:black;
-      background-color: #aa804a;
-      width: 25vw;
-      border-style: hidden;
-      font-size: larger;
-    }
-  
-    .NavMenuBouton:hover{
-      color: #DEB887;
-      text-shadow: #aa804a;
-      font-weight: bolder;
-    }
   }

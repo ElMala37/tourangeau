@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../styles/Vocabulaire/Famille.css";
 import { useNavigate } from "react-router";
 import Acceuil from "../Accueil";
+import { Chart } from "react-google-charts";
 
 const SePresenter = () => {
   const [ouvert, setOuvert] = useState(true);
@@ -31,11 +32,11 @@ const SePresenter = () => {
     "eul chaisiau",
     "eul minquier",
   ];
-  const ListeReponse1 = ['eul pilom', 'la seinĕriyĕ', 'la seinĕriyĕ', 'eul minquier', 'la vilĕ de noaquicencĕ', 'eul minquier', 'la vilĕ de noaquicencĕ','le métier', 'le prénom', 'le prénom', 'le surnom', 'le métier', "l'adresse", "l'âge"];
-  const ListeReponse2 =['eul lom', 'eul chaisiau', "l'ĕoagĕ", "l'ĕoagĕ", 'eul lom', 'la seinĕriyĕ', 'eul minquier','le nom', "l'adresse", 'le nom', "l'adresse", 'la ville de naissance', 'le nom', 'le métier'];
-  const ListeReponse3 = ['eul chaisiau', 'la vilĕ de noaquicencĕ', 'la vilĕ de noaquicencĕ', 'la seinĕriyĕ', 'eul pilom', "l'ĕoagĕ", "l'ĕoagĕ",'le prénom', 'le nom', 'le surnom', 'la ville de naissance', 'le surnom', 'la ville de naissance', "l'adresse"];
-  const ListeReponse4 = ['eul minquier', 'eul lom', 'eul pilom', 'eul lom', 'eul chaisiau', 'eul chaisiau', 'eul pilom','le surnom', "l'âge", "l'âge", 'le métier', 'le prénom', "l'âge", 'la ville de naissance'];
-  const ListeBonneReponse = [1, 4, 2, 3, 1, 4, 2,3, 3, 4, 1, 2, 1, 2];
+  const ListeReponse1 = ['eul pilom', 'la seinĕriyĕ', 'la seinĕriyĕ', 'eul minquier', 'la vilĕ de noaquicencĕ', 'eul minquier', 'la vilĕ de noaquicencĕ', 'le métier', 'le prénom', 'le prénom', 'le surnom', 'le métier', "l'adresse", "l'âge"];
+  const ListeReponse2 = ['eul lom', 'eul chaisiau', "l'ĕoagĕ", "l'ĕoagĕ", 'eul lom', 'la seinĕriyĕ', 'eul minquier', 'le nom', "l'adresse", 'le nom', "l'adresse", 'la ville de naissance', 'le nom', 'le métier'];
+  const ListeReponse3 = ['eul chaisiau', 'la vilĕ de noaquicencĕ', 'la vilĕ de noaquicencĕ', 'la seinĕriyĕ', 'eul pilom', "l'ĕoagĕ", "l'ĕoagĕ", 'le prénom', 'le nom', 'le surnom', 'la ville de naissance', 'le surnom', 'la ville de naissance', "l'adresse"];
+  const ListeReponse4 = ['eul minquier', 'eul lom', 'eul pilom', 'eul lom', 'eul chaisiau', 'eul chaisiau', 'eul pilom', 'le surnom', "l'âge", "l'âge", 'le métier', 'le prénom', "l'âge", 'la ville de naissance'];
+  const ListeBonneReponse = [1, 4, 2, 3, 1, 4, 2, 3, 3, 4, 1, 2, 1, 2];
 
   useEffect(() => {
     const generateRandomNumbers = () => {
@@ -123,32 +124,24 @@ const SePresenter = () => {
           </div>
 
           {finExo ? (
-            <div className="Resultat">
-              <div className="CaseFin">
-                <p className="FinExerciceTitre">Exercice terminé !</p>
-                <p className="FinExerciceTitre">
-                  Score : {score}/{nbQuestion}
-                </p>
+            <div className="SpaceResultatVoc">
+              <div className="SpaceResultatTexteVoc">
+                <div className="ResultatTexteVoc">Exercice terminé !</div>
               </div>
-              {(score / nbQuestion) * 100 > 50 ? (
-                <div
-                  className="Statistique"
-                  style={{
-                    background: `linear-gradient(0deg, #50a641 50%, transparent 50%), linear-gradient(${
-                      180 - (score / nbQuestion) * 180
-                    }deg, #a64141 50%, #50a641 50%)`,
-                  }}
-                ></div>
-              ) : (
-                <div
-                  className="Statistique"
-                  style={{
-                    background: `linear-gradient(0deg, transparent 50%, #a64141 50%), linear-gradient(${
-                      360 - (score / nbQuestion) * 180
-                    }deg, #a64141 50%, #50a641 50%)`,
-                  }}
-                ></div>
-              )}
+              <Chart
+                chartType="PieChart"
+                data={[
+                  ['Réponses', 'score'],
+                  ['Bonnes réponses', score],
+                  ['Mauvaises réponses', nbQuestion - score],
+                ]}
+                options={{
+                  backgroundColor: 'transparent',
+                  colors: ['#50a641', '#a64141']
+                }}
+                width={'80vw'}
+                height={'30vw'}
+              />
             </div>
           ) : (
             <div>
@@ -175,11 +168,11 @@ const SePresenter = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 1
                         ? "BouttonAudioBonneRep"
                         : select === 1
-                        ? "BouttonAudioMauvRep"
-                        : "BouttonAudio"
+                          ? "BouttonAudioMauvRep"
+                          : "BouttonAudio"
                       : select === 1
-                      ? "BouttonAudioSelect"
-                      : "BouttonAudio"
+                        ? "BouttonAudioSelect"
+                        : "BouttonAudio"
                   }
                 >
                   <strong
@@ -188,11 +181,11 @@ const SePresenter = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 1
                           ? "TexteAudioBonneRep"
                           : select === 1
-                          ? "TexteAudioMauvRep"
-                          : "TexteAudio"
+                            ? "TexteAudioMauvRep"
+                            : "TexteAudio"
                         : select === 1
-                        ? "TexteAudioSelect"
-                        : "TexteAudio"
+                          ? "TexteAudioSelect"
+                          : "TexteAudio"
                     }
                   >
                     {ListeReponse1[ordre[numeroQuestion]]}
@@ -205,11 +198,11 @@ const SePresenter = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 2
                         ? "BouttonAudioBonneRep"
                         : select === 2
-                        ? "BouttonAudioMauvRep"
-                        : "BouttonAudio"
+                          ? "BouttonAudioMauvRep"
+                          : "BouttonAudio"
                       : select === 2
-                      ? "BouttonAudioSelect"
-                      : "BouttonAudio"
+                        ? "BouttonAudioSelect"
+                        : "BouttonAudio"
                   }
                 >
                   <strong
@@ -218,11 +211,11 @@ const SePresenter = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 2
                           ? "TexteAudioBonneRep"
                           : select === 2
-                          ? "TexteAudioMauvRep"
-                          : "TexteAudio"
+                            ? "TexteAudioMauvRep"
+                            : "TexteAudio"
                         : select === 2
-                        ? "TexteAudioSelect"
-                        : "TexteAudio"
+                          ? "TexteAudioSelect"
+                          : "TexteAudio"
                     }
                   >
                     {ListeReponse2[ordre[numeroQuestion]]}
@@ -235,11 +228,11 @@ const SePresenter = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 3
                         ? "BouttonAudioBonneRep"
                         : select === 3
-                        ? "BouttonAudioMauvRep"
-                        : "BouttonAudio"
+                          ? "BouttonAudioMauvRep"
+                          : "BouttonAudio"
                       : select === 3
-                      ? "BouttonAudioSelect"
-                      : "BouttonAudio"
+                        ? "BouttonAudioSelect"
+                        : "BouttonAudio"
                   }
                 >
                   <strong
@@ -248,11 +241,11 @@ const SePresenter = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 3
                           ? "TexteAudioBonneRep"
                           : select === 3
-                          ? "TexteAudioMauvRep"
-                          : "TexteAudio"
+                            ? "TexteAudioMauvRep"
+                            : "TexteAudio"
                         : select === 3
-                        ? "TexteAudioSelect"
-                        : "TexteAudio"
+                          ? "TexteAudioSelect"
+                          : "TexteAudio"
                     }
                   >
                     {ListeReponse3[ordre[numeroQuestion]]}
@@ -265,11 +258,11 @@ const SePresenter = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 4
                         ? "BouttonAudioBonneRep"
                         : select === 4
-                        ? "BouttonAudioMauvRep"
-                        : "BouttonAudio"
+                          ? "BouttonAudioMauvRep"
+                          : "BouttonAudio"
                       : select === 4
-                      ? "BouttonAudioSelect"
-                      : "BouttonAudio"
+                        ? "BouttonAudioSelect"
+                        : "BouttonAudio"
                   }
                 >
                   <strong
@@ -278,11 +271,11 @@ const SePresenter = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 4
                           ? "TexteAudioBonneRep"
                           : select === 4
-                          ? "TexteAudioMauvRep"
-                          : "TexteAudio"
+                            ? "TexteAudioMauvRep"
+                            : "TexteAudio"
                         : select === 4
-                        ? "TexteAudioSelect"
-                        : "TexteAudio"
+                          ? "TexteAudioSelect"
+                          : "TexteAudio"
                     }
                   >
                     {ListeReponse4[ordre[numeroQuestion]]}

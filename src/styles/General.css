@@ -4,22 +4,22 @@
     max-height: max-content;
     min-width: 100vw;
     max-width: max-content;
-    padding-bottom: 10vh;
+    padding-bottom: 5vw;
   }
 
 .Contenu{
     display:flex;
     justify-content: left;
-    margin-top: 5vh;
+    margin-top: 2.1vw;
     margin-left: 15vw;
 }
 
 .CarteTheme{
     background-color:#f1d2aa;
-    height: 10vh;
+    height: 5vw;
     width: 20vw;
     margin-right: 5vw;
-    border-radius: 15px;
+    border-radius: 1vw;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -33,111 +33,11 @@
 .TitreCarteTheme{
     color:#aa804a;
     font-weight:bolder;
-    font-size: 1rem;
-    margin-right: 15px;
+    font-size: 1.2vw;
+    margin-right: 1vw;
 }
 
 .LogoTheme{
-    height: 6vh;
+    height: 3vw;
     width: auto;
-}
-
-@media only screen and (max-width: 1300px) {
-    /* Styles spécifiques pour les téléphones ici */
-    .Fond{
-        background-color: #DEB887;
-        min-height: 100vh;
-        max-height: max-content;
-        min-width: 100vw;
-        max-width: max-content;
-        padding-bottom: 10vh;
-      }
-    
-    .Contenu{
-        display:flex;
-        flex-direction: column;
-        justify-content: left;
-        margin-top: 0vh;
-        margin-left: 15vw;
-    }
-    
-    .CarteTheme{
-        background-color:#f1d2aa;
-        height: 15vh;
-        width: 70vw;
-        margin-bottom: 0vh;
-        margin-top: 3vh;
-        border-radius: 15px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .CarteTheme:hover{
-        border-color: #aa804a;
-        border-style:solid;
-    }
-    
-    .TitreCarteTheme{
-        color:#aa804a;
-        font-weight:bolder;
-        font-size: 5vh;
-        margin-right: 15px;
-    }
-    
-    .LogoTheme{
-        height: 8vh;
-        width: auto;
-    }
-    
-}
-
-@media only screen and (max-width: 750px) {
-    /* Styles spécifiques pour les téléphones ici */
-    .Fond{
-        background-color: #DEB887;
-        min-height: 100vh;
-        max-height: max-content;
-        min-width: 100vw;
-        max-width: max-content;
-        padding-bottom: 10vh;
-      }
-    
-    .Contenu{
-        display:flex;
-        flex-direction: column;
-        justify-content: left;
-        margin-top: 0vh;
-        margin-left: 15vw;
-    }
-    
-    .CarteTheme{
-        background-color:#f1d2aa;
-        height: 10vh;
-        width: 70vw;
-        margin-bottom: 0vh;
-        margin-top: 3vh;
-        border-radius: 15px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .CarteTheme:hover{
-        border-color: #aa804a;
-        border-style:solid;
-    }
-    
-    .TitreCarteTheme{
-        color:#aa804a;
-        font-weight:bolder;
-        font-size: 1rem;
-        margin-right: 15px;
-    }
-    
-    .LogoTheme{
-        height: 6vh;
-        width: auto;
-    }
-    
 }

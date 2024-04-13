@@ -245,6 +245,10 @@
     align-items: center;
     color:#50a641;
     font-weight:bolder;
+    font-size: 1.3vw;
+}
+
+.BouttonValiderConv:hover{
     border-color: #50a641;
     border-style:solid;
 }
