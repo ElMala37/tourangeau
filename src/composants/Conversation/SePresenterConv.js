@@ -10,18 +10,23 @@ const SePresenterConv = () => {
   const [Reponses, setReponses] = useState([]);
   const [Validation, setValidation] = useState(false);
   const [bonneRep, setBonneRep] = useState(true);
-  const nbEtapes = 2;
+  const [score, setScore] = useState(0);
+  const nbEtapes = 4;
 
-  const Question = ["Comment t'appelles-tu ?", "Je m'appelle Thomas"];
+  const Question = ["Comment t'appelles-tu ?", "Je m'appelle Thomas", "Quel âge as-tu ?", "J'ai 20 ans"];
 
   const Propositions = [
     ["Coumenque", "t'hoas-ti", "lom", "Eyouque", "tu", "?", "eul", "fraizĕr"],
     ["J'hag", "t'hoas-ti", "lom", "angs", "frarĕ", "couni", "eul", "Thomas"],
+    ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?", "seinĕriyĕ", "chaisiau", "lom"],
+    ["J'hag","vinz","lom","t'hoas-ti","ĕoagĕ","Jĕ","rĕssĕ","angs"],
   ];
 
   const BonnesReponses = [
     ["Coumenque", "t'hoas-ti", "lom", "?"],
     ["J'hag", "lom", "Thomas"],
+    ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?"],
+    ["J'hag","vinz","angs"]
   ];
 
   const FermerTheme = () => {
@@ -46,6 +51,8 @@ const SePresenterConv = () => {
   };
 
   const Valider = () => {
+    const audioCorrect = document.getElementById("correct");
+    const audioIncorrect = document.getElementById("incorrect");
     setValidation(true);
     console.log("reponse:", Reponses);
     console.log("bonne reponses:", BonnesReponses[etape]);
@@ -54,23 +61,29 @@ const SePresenterConv = () => {
       Reponses.every((value, index) => value === BonnesReponses[etape][index]);
     if (isEqual) {
       setBonneRep(true);
-      console.log("bonnerep");
+      setScore(score + 1);
+      audioCorrect.play();
     } else {
       setBonneRep(false);
-      console.log("mauvrep");
+      audioIncorrect.play();
     }
   };
 
   const Continuer = () => {
+    const audioFinExo = document.getElementById("finexo");
     setValidation(false);
     setEtape(etape + 1);
     setReponses([]);
+    console.log("etape : ",etape)
+    if (etape===nbEtapes-1){
+        audioFinExo.play();
+    }
   };
 
   const VoirBonneRep = () => {
     setBonneRep(true);
-    setReponses(BonnesReponses[etape])
-  }
+    setReponses(BonnesReponses[etape]);
+  };
 
   return (
     <div className="Fond">
@@ -112,111 +125,154 @@ const SePresenterConv = () => {
               {etape}/{nbEtapes}
             </p>
           </div>
-
-          <div className="EnteteQuestionConversation">
-            <div className="ConsigneQuestionConversation">
-              Assemble les morceaux pour traduire :
-            </div>
-            <div className="ChevreConversation">
-              <div className="BulleConversation">
-                <p className="ConversationBulle">{Question[etape]}</p>
+          {etape === nbEtapes ? (
+            <div className="SpaceResultatConv">
+              <div className="SpaceResultatTexteConv">
+                <div className="ResultatTexteConv">Conversation terminée !</div>
+                <div className="ResultatTexteConv">
+                  Score : {score}/{nbEtapes}
+                </div>
               </div>
-              <img
-                src="/images/chevre.png"
-                alt="mascotteChevre"
-                className="LogoConversation"
-              />
+              {(score / nbEtapes) * 100 > 50 ? (
+                <div
+                  className="StatistiqueConv"
+                  style={{
+                    background: `linear-gradient(0deg, #50a641 50%, transparent 50%), linear-gradient(${
+                      180 - (score / nbEtapes*2) * 180
+                    }deg, #a64141 50%, #50a641 50%)`,
+                  }}
+                ></div>
+              ) : (
+                <div
+                  className="StatistiqueConv"
+                  style={{
+                    background: `linear-gradient(0deg, transparent 50%, #a64141 50%), linear-gradient(${
+                      360 - (score / nbEtapes*2) * 180
+                    }deg, #a64141 50%, #50a641 50%)`,
+                  }}
+                ></div>
+              )}
             </div>
-          </div>
+          ) : (
+            <div>
+              <div className="EnteteQuestionConversation">
+                <div className="ConsigneQuestionConversation">
+                  Assemble les morceaux pour traduire :
+                </div>
+                <div className="ChevreConversation">
+                  <div className="BulleConversation">
+                    <p className="ConversationBulle">{Question[etape]}</p>
+                  </div>
+                  <img
+                    src="/images/chevre.png"
+                    alt="mascotteChevre"
+                    className="LogoConversation"
+                  />
+                </div>
+              </div>
 
-          <div className="SpaceDesReponsesConv">
-            <div className="LigneDeSupportReponses"></div>
-            {Reponses.map((item, index) => (
-              <div>
-                {Validation === true ? (
+              <div className="SpaceDesReponsesConv">
+                <div className="LigneDeSupportReponses"></div>
+                {Reponses.map((item, index) => (
                   <div>
-                    {bonneRep ? (
-                      <div key={index} className="BouttonBonneReponseConv">
-                        {item}
+                    {Validation === true ? (
+                      <div>
+                        {bonneRep ? (
+                          <div key={index} className="BouttonBonneReponseConv">
+                            {item}
+                          </div>
+                        ) : (
+                          <div key={index} className="BouttonMauvReponseConv">
+                            {item}
+                          </div>
+                        )}
                       </div>
                     ) : (
-                      <div key={index} className="BouttonMauvReponseConv">
+                      <div
+                        key={index}
+                        className="BouttonReponseConv"
+                        onClick={() => EnleverUneReponse(item)}
+                      >
                         {item}
                       </div>
                     )}
                   </div>
+                ))}
+              </div>
+
+              <div className="SpaceDesPropositionsConv">
+                <div className="LignePropositionsConv">
+                  {Propositions[etape].slice(0, 4).map((item, index) =>
+                    !Reponses.includes(item) ? (
+                      <div
+                        key={index}
+                        className="BouttonPropositionConv"
+                        onClick={() => RajouterUneReponse(item)}
+                      >
+                        {item}
+                      </div>
+                    ) : (
+                      <div
+                        key={index}
+                        className="BouttonPropositionVideConv"
+                      ></div>
+                    )
+                  )}
+                </div>
+                <div className="LignePropositionsConv">
+                  {Propositions[etape].slice(4, 8).map((item, index) =>
+                    !Reponses.includes(item) ? (
+                      <div
+                        key={index}
+                        className="BouttonPropositionConv"
+                        onClick={() => RajouterUneReponse(item)}
+                      >
+                        {item}
+                      </div>
+                    ) : (
+                      <div
+                        key={index}
+                        className="BouttonPropositionVideConv"
+                      ></div>
+                    )
+                  )}
+                </div>
+              </div>
+              <div className="SpaceValidation">
+                {Validation ? (
+                  <div>
+                    {" "}
+                    {bonneRep ? (
+                      <div className="BouttonValiderConv" onClick={Continuer}>
+                        Continuer
+                      </div>
+                    ) : (
+                      <div className="SpaceValidationVoirBonnRep">
+                        <div
+                          className="BouttonValiderConv"
+                          onClick={VoirBonneRep}
+                        >
+                          Voir la bonne réponse
+                        </div>
+                        <div className="BouttonValiderConv" onClick={Continuer}>
+                          Continuer
+                        </div>
+                      </div>
+                    )}{" "}
+                  </div>
                 ) : (
-                  <div
-                    key={index}
-                    className="BouttonReponseConv"
-                    onClick={() => EnleverUneReponse(item)}
-                  >
-                    {item}
+                  <div className="BouttonValiderConv" onClick={Valider}>
+                    Valider
                   </div>
                 )}
               </div>
-            ))}
-          </div>
-
-          <div className="SpaceDesPropositionsConv">
-            <div className="LignePropositionsConv">
-              {Propositions[etape].slice(0, 4).map((item, index) =>
-                !Reponses.includes(item) ? (
-                  <div
-                    key={index}
-                    className="BouttonPropositionConv"
-                    onClick={() => RajouterUneReponse(item)}
-                  >
-                    {item}
-                  </div>
-                ) : (
-                  <div key={index} className="BouttonPropositionVideConv"></div>
-                )
-              )}
             </div>
-            <div className="LignePropositionsConv">
-              {Propositions[etape].slice(4, 8).map((item, index) =>
-                !Reponses.includes(item) ? (
-                  <div
-                    key={index}
-                    className="BouttonPropositionConv"
-                    onClick={() => RajouterUneReponse(item)}
-                  >
-                    {item}
-                  </div>
-                ) : (
-                  <div key={index} className="BouttonPropositionVideConv"></div>
-                )
-              )}
-            </div>
-          </div>
-          <div className="SpaceValidation">
-            {Validation ? (
-              <div>
-                {" "}
-                {bonneRep ? (
-                  <div className="BouttonValiderConv" onClick={Continuer}>
-                    Continuer
-                  </div>
-                ) : (
-                  <div className="SpaceValidationVoirBonnRep">
-                    <div className="BouttonValiderConv" onClick={VoirBonneRep}>
-                      Voir la bonne réponse
-                    </div>
-                    <div className="BouttonValiderConv" onClick={Continuer}>
-                      Continuer
-                    </div>
-                  </div>
-                )}{" "}
-              </div>
-            ) : (
-              <div className="BouttonValiderConv" onClick={Valider}>
-                Valider
-              </div>
-            )}
-          </div>
+          )}
         </div>
       </div>
+      <audio id="correct" src="/audios/bruitages/correct.mp3"></audio>
+      <audio id="incorrect" src="/audios/bruitages/incorrect.mp3"></audio>
+      <audio id="finexo" src="/audios/bruitages/finexercice.mp3"></audio>
     </div>
   );
 };

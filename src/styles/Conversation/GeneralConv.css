@@ -168,7 +168,7 @@
     z-index: 1;
 }
 
-.BouttonMauvReponseConv:hover{
+.BouttonBonneReponseConv:hover{
     border-color: #50a641;
     border-style:solid;
 }
@@ -187,7 +187,7 @@
     z-index: 1;
 }
 
-.BouttonBonneReponseConv:hover{
+.BouttonMauvReponseConv:hover{
     border-color: #a64141;
     border-style:solid;
 }
@@ -269,4 +269,35 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+}
+
+.SpaceResultatConv{
+    margin-top: 4vw;
+    margin-left: 15vw;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.SpaceResultatTexteConv{
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ResultatTexteConv{
+    margin-top: 2vw;
+    font-size: 2vw;
+    color: black;
+    font-weight: bolder;
+}
+
+.StatistiqueConv{
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
 }
