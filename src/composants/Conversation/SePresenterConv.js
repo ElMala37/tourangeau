@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../styles/Conversation/GeneralConv.css";
 import { useNavigate } from "react-router";
 import Acceuil from "../Accueil";
+import { Chart } from "react-google-charts";
 
 const SePresenterConv = () => {
   const [ouvert, setOuvert] = useState(true);
@@ -19,14 +20,14 @@ const SePresenterConv = () => {
     ["Coumenque", "t'hoas-ti", "lom", "Eyouque", "tu", "?", "eul", "fraizĕr"],
     ["J'hag", "t'hoas-ti", "lom", "angs", "frarĕ", "couni", "eul", "Thomas"],
     ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?", "seinĕriyĕ", "chaisiau", "lom"],
-    ["J'hag","vinz","lom","t'hoas-ti","ĕoagĕ","Jĕ","rĕssĕ","angs"],
+    ["J'hag", "vinz", "lom", "t'hoas-ti", "ĕoagĕ", "Jĕ", "rĕssĕ", "angs"],
   ];
 
   const BonnesReponses = [
     ["Coumenque", "t'hoas-ti", "lom", "?"],
     ["J'hag", "lom", "Thomas"],
     ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?"],
-    ["J'hag","vinz","angs"]
+    ["J'hag", "vinz", "angs"]
   ];
 
   const FermerTheme = () => {
@@ -74,9 +75,9 @@ const SePresenterConv = () => {
     setValidation(false);
     setEtape(etape + 1);
     setReponses([]);
-    console.log("etape : ",etape)
-    if (etape===nbEtapes-1){
-        audioFinExo.play();
+    console.log("etape : ", etape)
+    if (etape === nbEtapes - 1) {
+      audioFinExo.play();
     }
   };
 
@@ -129,29 +130,21 @@ const SePresenterConv = () => {
             <div className="SpaceResultatConv">
               <div className="SpaceResultatTexteConv">
                 <div className="ResultatTexteConv">Conversation terminée !</div>
-                <div className="ResultatTexteConv">
-                  Score : {score}/{nbEtapes}
-                </div>
               </div>
-              {(score / nbEtapes) * 100 > 50 ? (
-                <div
-                  className="StatistiqueConv"
-                  style={{
-                    background: `linear-gradient(0deg, #50a641 50%, transparent 50%), linear-gradient(${
-                      180 - (score / nbEtapes*2) * 180
-                    }deg, #a64141 50%, #50a641 50%)`,
-                  }}
-                ></div>
-              ) : (
-                <div
-                  className="StatistiqueConv"
-                  style={{
-                    background: `linear-gradient(0deg, transparent 50%, #a64141 50%), linear-gradient(${
-                      360 - (score / nbEtapes*2) * 180
-                    }deg, #a64141 50%, #50a641 50%)`,
-                  }}
-                ></div>
-              )}
+              <Chart
+                chartType="PieChart"
+                data={[
+                  ['Réponses', 'score'],
+                  ['Bonnes réponses', score],
+                  ['Mauvaises réponses', nbEtapes-score],
+                ]}
+                options={{
+                  backgroundColor: 'transparent',
+                  colors: ['#50a641', '#a64141']
+                }}
+                width={'80vw'}
+                height={'30vw'}
+              />
             </div>
           ) : (
             <div>
