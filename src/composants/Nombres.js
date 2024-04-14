@@ -17,8 +17,8 @@ const Nombres = () => {
     "diz",
   ];
   const numeros = [
-    11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
-    30,
+    '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29',
+    '30',
   ];
   const nom_numeros = [
     "unrĕm",
@@ -43,6 +43,13 @@ const Nombres = () => {
     "trentĕ",
   ];
 
+  const LectureAudio = (item) => {
+    const audioElement = document.getElementById(`AudioPour${item}`);
+    audioElement.currentTime = 0;
+    audioElement.play();
+    console.log(item);
+  };
+
   return (
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="LES LIMEROZS" />
@@ -53,12 +60,13 @@ const Nombres = () => {
               <div className="CercleChiffre">
                 <span className="Chiffre">{index + 1}</span>
               </div>
-              <div className="BoutonAudioChiffres">
+              <div className="BoutonAudioChiffres" onClick={()=>LectureAudio(index+1)}>
                 <img
                   src={`/images/audio.png`}
                   alt="AudioChiffres"
                   className="LogoAudioChiffres"
                 />
+                <audio id={`AudioPour${index + 1}`} src={`/audios/Nombres/${index + 1}.mp3`}></audio>
                 <span className="TexteChiffres">{item}</span>
               </div>
             </div>
@@ -70,12 +78,13 @@ const Nombres = () => {
               <div className="CercleChiffre">
                 <span className="Chiffre">{index + 6}</span>
               </div>
-              <div className="BoutonAudioChiffres">
+              <div className="BoutonAudioChiffres" onClick={()=>LectureAudio(index+6)}>
                 <img
                   src={`/images/audio.png`}
                   alt="AudioChiffres"
                   className="LogoAudioChiffres"
                 />
+                <audio id={`AudioPour${index+6}`} src={`/audios/Nombres/${index+6}.mp3`}></audio>
                 <span className="TexteChiffres">{item}</span>
               </div>
             </div>
@@ -92,12 +101,13 @@ const Nombres = () => {
               <div className="CelluleColonneDizaine">
                 <text className="texteNumeroTableau">{nom_numeros[index]}</text>
               </div>
-              <div className="CelluleColonneDizaineAudio">
+              <div className="CelluleColonneDizaineAudio" onClick={()=>LectureAudio(index+11)}>
                 <img
                   src={`/images/audio.png`}
                   alt="AudioNumeros"
                   className="LogoAudioNumeros"
                 />
+                <audio id={`AudioPour${index+11}`} src={`/audios/Nombres/${index+11}.mp3`}></audio>
               </div>
             </div>
           ))}
@@ -109,14 +119,15 @@ const Nombres = () => {
                 <text className="NumerosTableau">{item}</text>
               </div>
               <div className="CelluleColonneDizaine">
-                <text className="texteNumeroTableau">{nom_numeros[index+10]}</text>
+                <text className="texteNumeroTableau">{nom_numeros[index + 10]}</text>
               </div>
-              <div className="CelluleColonneDizaineAudio">
+              <div className="CelluleColonneDizaineAudio" onClick={() => LectureAudio(index+21)}>
                 <img
                   src={`/images/audio.png`}
                   alt="AudioNumeros"
                   className="LogoAudioNumeros"
                 />
+                <audio id={`AudioPour${index+21}`} src={`/audios/Nombres/${index+21}.mp3`}></audio>
               </div>
             </div>
           ))}
