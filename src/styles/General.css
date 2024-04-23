@@ -41,3 +41,31 @@
     height: 3vw;
     width: auto;
 }
+
+@media only screen and (max-width: 600px) {
+
+.Contenu{
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 0vw;
+    margin-left: 10vw;
+}
+
+.CarteTheme{
+    height: 10vw;
+    width: 80vw;
+    margin-right: 0vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+.TitreCarteTheme{
+    font-size: 4vw;
+    margin-right: 2vw;
+}
+
+.LogoTheme{
+    height: 5vw;
+}
+}

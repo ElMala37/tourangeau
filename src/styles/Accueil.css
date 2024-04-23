@@ -64,3 +64,40 @@
     text-shadow: #aa804a;
     font-weight: bolder;
   }
+
+  @media only screen and (max-width: 600px) {
+    .EnTete{
+      height:8vw;
+      width: 100vw;
+    }
+    
+    .Titre{
+      height:8vw;
+      }
+  
+      .Drapeau{
+        height: 7vw;
+      }
+  
+    .Texte{
+      margin-right:2vw;
+      font-size: 6vw;
+    }
+  
+    .LogoNavMenu{
+      height: 4vw;
+      margin: 2vw;
+    }
+    
+    .NavMenu{
+      width: 50vw;
+      border-bottom-right-radius: 3vw;
+      padding-bottom: 2vw;
+    }
+  
+    .NavMenuBouton{
+      width: 30vw;
+      font-size: 3vw;
+    }
+
+  }

@@ -294,3 +294,188 @@
     color: black;
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .ContenuConversation{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: 3.5vw;
+    }
+    
+    .TrameConversation{
+        width: 90vw;
+    }
+    
+    .EnTeteConversation{
+        width: 90vw;
+    }
+    
+    .LigneEtapeFondConv{
+        width: 60vw;
+        height: 4vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    
+    .RondEtapeConv{
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    .LigneEtapeConvNoir{
+        width: 60vw;
+        height: 1vw;
+    }
+    
+    .LigneEtapeConvBleu{
+        height: 1vw;
+    }
+    
+    .ProgressionConversation{
+        font-size: 3vw;
+        margin-right:2vw;
+        margin-left:2vw;
+    }
+    
+    .EnteteQuestionConversation{
+        width: 90vw;
+        margin-left: 0vw;
+        height: 40vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .ConsigneQuestionConversation{
+        font-size: 4vw;
+        margin-bottom: 5vw;
+        margin-top: 0vw;
+    }
+    
+    .LogoConversation{
+        width: 18vw;
+    }
+    
+    .BulleConversation {
+        border-radius: 2vw;
+        height: 6vw;
+        margin: 2vw;
+      }
+      
+      .BulleConversation::before {
+        border-width: 0.8vw;
+      }
+      
+    .ConversationBulle{
+        font-size: 2.6vw;
+        margin-left:1.5vw;
+        margin-right:1.5vw;
+    }
+    
+    .SpaceDesReponsesConv{
+        width: 90vw;
+        height: 5.2vw;
+        border-radius: 2vw;
+        padding: 0.75vw;
+    }
+    
+    .LigneDeSupportReponses{
+        margin-top: 5vw;
+        height: 0.4vw;
+        width: 90vw;
+    }
+    
+    .BouttonReponseConv{
+        height: 4.8vw;
+        width: max-content;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin:0.12vw;
+        font-size: 2.5vw;
+    }
+    
+    .BouttonBonneReponseConv{
+        height: 4.8vw;
+        width: max-content;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin:0.12vw;
+        font-size: 2.5vw;
+    }
+
+    .BouttonMauvReponseConv{
+        height: 4.8vw;
+        width: max-content;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin:0.12vw;
+        font-size: 2.5vw;
+    }
+    
+    .BouttonMauvReponseConv:hover{
+        border-color: #a64141;
+        border-style:solid;
+    }
+    
+    .SpaceDesPropositionsConv{
+        width: 90vw;
+        height: 40vw;
+        margin-top: 4vw;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .LignePropositionsConv{
+        width: 90vw;
+        height: 40vw;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    
+    .BouttonPropositionVideConv{
+        height: 7vw;
+        width: 40vw;
+        margin-bottom: 3vw;
+    }
+    
+    .BouttonPropositionConv{
+        height: 7vw;
+        width: 40vw;
+        border-radius: 2vw;
+        margin-bottom: 3vw;
+        font-size: 2.8vw;
+    }
+    
+    .BouttonValiderConv{
+        height: 7vw;
+        width: 40vw;
+        border-radius: 2vw;
+        font-size: 3vw;
+    }
+    
+    .SpaceValidation{
+        width: 90vw;
+        height: 7vw;
+        margin-top: 4vw;
+    }
+    
+    .SpaceValidationVoirBonnRep{
+        width: 90vw;
+        height: 10vw;
+    }
+    
+    .SpaceResultatConv{
+        margin-left: 15vw;
+        width: 60vw;
+    }
+    
+    .SpaceResultatTexteConv{
+        width: 60vw;
+    }
+    
+    .ResultatTexteConv{
+        margin-top: 3.5vw;
+        font-size: 3.5vw;
+    }
+}

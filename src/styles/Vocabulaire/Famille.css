@@ -269,3 +269,152 @@
     color: black;
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 600px) {
+    .ContenuTheme{
+        display:flex;
+        justify-content: center;
+        margin-top: 2.5vw;
+        margin-left: 0vw;
+    }
+    
+    .EnTeteExercice{
+        width: 90vw;
+    }
+    
+    .BarreFond{
+        height: 3vw;
+        border-radius: 2vw;
+      }
+    
+      .Progression{
+        font-size: 3vw;
+        margin-right:0vw;
+        margin-left:2vw;
+      }
+    
+    .EnteteQuestion{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 4vw;
+    }
+    
+    .LogoQuestion{
+        height: 22vw;
+    }
+    
+    .BulleQuestion {
+        border-radius: 2vw;
+        height: 6vw;
+        margin: 2vw;
+      }
+      
+      .BulleQuestion::before {
+        border-width: 0.8vw;
+      }
+      
+    
+    .QuestionBulle{
+        font-size: 3.5vw;
+        margin-left:2.5vw;
+        margin-right:2.5vw;
+    }
+    
+    .TitreQuestion{
+        font-size: 5vw;
+        margin-right:0vw;
+        margin-top: 3vw;
+        margin-bottom: vw;
+    }
+    
+    .ReponsesQuestion{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 4vw;
+    }
+    
+    .BouttonAudio{
+        height: 8vw;
+        width: 80vw;
+        border-radius: 2vw;
+        margin-right: 0vw;
+    }
+    
+    .BouttonAudioSelect{
+        height: 8vw;
+        width: 80vw;
+        border-radius: 2vw;
+        margin-right: 0vw;
+    }
+    
+    .BouttonAudioBonneRep{
+        height: 8vw;
+        width: 80vw;
+        border-radius: 2vw;
+        margin-right: 0vw;
+    }
+    
+    .BouttonAudioMauvRep{
+        height: 8vw;
+        width: 80vw;
+        border-radius: 2vw;
+        margin-right: 0vw;
+    }
+    
+    .TexteAudio{
+        margin-right:0vw;
+        font-size: 3.4vw;
+    }
+    
+    .TexteAudioSelect{
+        margin-right:0vw;
+        font-size: 3.4vw;
+    }
+    
+    .TexteAudioBonneRep{
+        margin-right:0vw;
+        font-size: 3.4vw;
+    }
+    
+    .TexteAudioMauvRep{
+        margin-right:0vw;
+        font-size: 3.4vw;
+    }
+    
+    .BouttonValider{
+        height: 8vw;
+        width: 40vw;
+        border-radius: 2vw;
+    }
+    
+    .BouttonContinuerMauvaiseReponse{
+        height: 8vw;
+        width: 40vw;
+        border-radius: 2vw;
+    }
+    
+    .TexteValider{
+        font-size: 3.4vw;
+    }
+    
+    .TexteContinuerMauvaiseReponse{
+        font-size: 3.4vw;
+    }
+    
+    .SpaceResultatVoc{
+        margin-left: 15vw;
+        width: 60vw;
+    }
+    
+    .SpaceResultatTexteVoc{
+        width: 60vw;
+    }
+    
+    .ResultatTexteVoc{
+        margin-top: 3.5vw;
+        font-size: 3.5vw;
+    }
+
+}
