@@ -39,6 +39,16 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
     navigate("/conversation");
   };
 
+  const OuvrirLec = () => {
+    setOuvert(!ouvert);
+    navigate("/lecons");
+  };
+
+  const OuvrirSout = () => {
+    setOuvert(!ouvert);
+    navigate("/soutenir");
+  };
+
   return (
     <div>
       <div>
@@ -86,11 +96,17 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
           <button className="NavMenuBouton" onClick={OuvrirNomb}>
             Nombres
           </button>
+          <button className="NavMenuBouton" onClick={OuvrirLec}>
+            Leçons
+          </button>
           <button className="NavMenuBouton" onClick={OuvrirVoc}>
             Vocabulaire
           </button>
           <button className="NavMenuBouton" onClick={OuvrirConv}>
-            Conversation
+            Conversations
+          </button>
+          <button className="NavMenuBouton" onClick={OuvrirSout}>
+            Soutenir
           </button>
         </div>
       </div>

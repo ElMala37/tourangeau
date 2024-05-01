@@ -15,6 +15,9 @@ import SePresenter from "./composants/Vocabulaire/SePresenter";
 import Nombres from "./composants/Nombres";
 import Conversation from "./composants/Conversation";
 import SePresenterConv from "./composants/Conversation/SePresenterConv";
+import Lecons from "./composants/Lecons";
+import TemplateLecon from "./composants/Lecons/Template";
+import Soutenir from "./composants/Soutenir";
 
 function App() {
   return (
@@ -23,6 +26,8 @@ function App() {
         <Route exact path="/" element={<Presentation />} />
         <Route exact path="/alphabet" element={<Alphabet />} />
         <Route exact path="/nombres" element={<Nombres />} />
+        <Route exact path="/lecons" element={<Lecons/>} />
+        <Route exact path="/lecons/template" element={<TemplateLecon/>} />
         <Route exact path="/vocabulaire" element={<Vocabulaire />} />
         <Route exact path="/vocabulaire/famille" element={<Famille1 />} />
         <Route exact path="/vocabulaire/vetements" element={<Vetements />} />
@@ -32,8 +37,9 @@ function App() {
         <Route exact path="/vocabulaire/sepresenter" element={<SePresenter />} />
         <Route exact path="/conversation" element={<Conversation />} />
         <Route exact path="/conversation/sepresenter" element={<SePresenterConv />} />
-        <Route exact path="/exercices" element={<Exercices />} />
-        <Route exact path="/exercices/prononciation" element={<Prononciation />} />
+        {/* <Route exact path="/exercices" element={<Exercices />} />
+        <Route exact path="/exercices/prononciation" element={<Prononciation />} /> */}
+        <Route exact path="/soutenir" element={<Soutenir />} />
       </Routes>
     </Router>
   ); 

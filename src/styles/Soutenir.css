@@ -1,0 +1,25 @@
+.ContenuSoutenir{
+    margin-top: 2.5vw;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BouttonFaireUnDon{
+    background-color:#f1d2aa;
+    height: 5vw;
+    width: 20vw;
+    margin-right: 5vw;
+    border-radius: 1vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#aa804a;
+    font-weight:bolder;
+}
+
+.BouttonFaireUnDon:hover{
+    border-color: #aa804a;
+    border-style:solid;
+}
