@@ -75,3 +75,51 @@
     height:2vw;
     width: auto;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .tableauAlphabet{
+        margin-top: 5vw;
+        width: 90vw;
+        margin-left: 5vw;
+        border-radius: 3vw;
+        padding-bottom: 5vw;
+    }
+    
+    .categoriesTableauAlphabet{
+        width: 90vw;
+        height: 7vw;
+        border-radius: 2vw;
+        }
+    
+    .ligneTableauAlphabet{
+        width: 90vw;
+        height: 7vw;
+        border-radius: 2vw;
+        }
+    
+    .celluleTableauAlphabet{
+        width: 22.5vw;
+    }
+    
+    .celluleAudioTableauAlphabet{
+        width: 22.5vw;
+        height: 7vw;
+    }
+    
+    .celluleAudioTableauAlphabet:hover{
+        border-radius: 2vw;
+    }
+    
+    .lettreTableauAlphabet{
+        font-size: 3vw;
+    }
+    
+    .texteTableauAlphabet{
+        font-size: 2.8vw;
+    }
+    
+    .logoAudioTableauAlphabet{
+        height:4vw;
+    }
+}

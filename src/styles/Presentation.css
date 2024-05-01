@@ -72,3 +72,55 @@
     color:black;
     font-weight:bolder;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .Introduction{
+        margin-top: 5vw;
+        flex-direction: column-reverse;
+    }
+    
+    .CarteTouraine1 {
+        width: 80vw;
+    }
+    
+    .EspaceTexteIntroduction{
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+    
+    .TexteIntroduction{
+        font-size: 2.5vw;
+        margin:2vw;
+    }
+    
+    .FondTexteIntroduction{
+        margin-bottom: 10vw;
+        padding:2vw;
+    }
+    
+    .LogoPresentation{
+        margin-top: 1.5vw;
+        height: 20vw;
+        margin-right: 0vw;
+        margin-bottom: 3vw;
+    }
+    
+    .BulleQuestionPresentation {
+        border-radius: 2vw;
+        height: 6vw;
+        margin: 2vw;
+      }
+      
+      .BulleQuestionPresentation::before {
+        border-width: 0.8vw;
+      }
+      
+    
+    .PresentationBulle{
+        font-size: 3vw;
+        margin-left:3vw;
+        margin-right:3vw;
+    }
+
+}

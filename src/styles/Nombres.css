@@ -129,6 +129,98 @@
     width: 2vw;
 }
 
-/* @media only screen and (max-width: 750px) { }*/
-    /* Styles spécifiques pour les téléphones paysages ici */
+@media only screen and (max-width: 600px) {
+    .Dizaine1{
+        margin-top:5vw;
+        width: 100vw;
+        margin-left: 0vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .LigneDizaine1{
+        margin-bottom: 3vw;
+    }
+    
+    .CelluleChiffre{
+        width: 16vw;
+    }
+    
+    .Chiffre{
+        font-size: 6vw;
+    }
+    
+    .CercleChiffre{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .BoutonAudioChiffres{
+        width: 16vw;
+        margin-top: 1vw;
+    }
+    
+    .BoutonAudioChiffres:hover{
+        border-radius: 2vw;
+    }
+    
+    .TexteChiffres{
+        font-size: 3.2vw;
+        margin-left: 1vw;
+    }
+    
+    .LogoAudioChiffres{
+        margin-top: 0.6vw;
+        width: 3vw;
+    }
+    
+    .tableauChiffre{
+        margin-top:2.5vw;
+        width: 100vw;
+        margin-left: 0vw;
+        flex-direction: column;
+        padding: 0vw;
+    }
+    
+    .colonneDizaine{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ligneDizaine{
+        border-radius: 2vw;
+        width: 90vw;
+        height:7vw;
+    }
+    
+    .CelluleColonneDizaine{
+        width: 30vw;
+        height:7vw;
+    }
+    
+    .CelluleColonneDizaineAudio{
+        width: 30vw;
+        height:7vw;
+    }
+    
+    .CelluleColonneDizaineAudio:hover{
+        border-radius: 2vw;
+    }
+    
+    .NumerosTableau{
+        font-size: 3vw;
+    }
+    
+    .texteNumeroTableau{
+        font-size: 3vw;
+    }
+    
+    .LogoAudioNumeros{
+        width: 5vw;
+    }
+ }
  

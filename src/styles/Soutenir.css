@@ -1,25 +1,158 @@
 .ContenuSoutenir{
-    margin-top: 2.5vw;
-    width: 100vw;
+    margin-top: 4vw;
+    width: 60vw;
+    margin-left:20vw;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: row;
 }
 
-.BouttonFaireUnDon{
+.EnveloppeTexteDon{
     background-color:#f1d2aa;
-    height: 5vw;
-    width: 20vw;
-    margin-right: 5vw;
+    height: 15vw;
+    width: 23vw;
     border-radius: 1vw;
     display:flex;
     justify-content: center;
     align-items: center;
-    color:#aa804a;
+    flex-direction: column;
+    padding:1vw;
+}
+
+.TexteDon{
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     font-weight:bolder;
+    font-size: 1.1vw;
+    color:black;
+}
+
+.EnveloppeFaireUnDon{
+    background-color:#f1d2aa;
+    height: 15vw;
+    width: 23vw;
+    border-radius: 1vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.BouttonFaireUnDon{
+    background-color:#0339fe;
+    height: 5vw;
+    width: 20vw;
+    border-radius: 1vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight:bolder;
+    font-size: 1.3vw;
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .BouttonFaireUnDon:hover{
-    border-color: #aa804a;
+    border-color: #03affe;
     border-style:solid;
+    border-width: 0.4vw;
+    font-size: 1.4vw;
+}
+
+.BouttonFaireUnDon:active{
+    border-color: #03affe;
+    border-style:solid;
+    border-width: 0.4vw;
+    font-size: 1.4vw;
+}
+
+.TexteMoyensPaiement{
+    margin-top: 1vw;
+    font-weight:bolder;
+    font-size: 1.1vw;
+    color:black;
+}
+
+.EspaceLogosMoyensPaiement{
+    margin-top: 1vw;
+    width: 18vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logoMoyensPaiement{
+    height: 2vw;
+    width: auto;
+}
+
+.lienSite{
+    color:#aa804a;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .ContenuSoutenir{
+        margin-top: 5vw;
+        width: 80vw;
+        margin-left:10vw;
+        flex-direction: column;
+    }
+    
+    .EnveloppeTexteDon{
+        height: 40vw;
+        width: 80vw;
+        border-radius: 3vw;
+        padding: 2vw;
+        margin-bottom: 4vw;
+    }
+    
+    .TexteDon{
+        margin-bottom: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 3vw;
+    }
+    
+    .EnveloppeFaireUnDon{
+        height: 40vw;
+        width: 80vw;
+        border-radius: 3vw;
+        padding: 2vw;
+    }
+    
+    .BouttonFaireUnDon{
+        height: 15vw;
+        width: 60vw;
+        border-radius: 3vw;
+        font-size: 5vw;
+    }
+    
+    .BouttonFaireUnDon:hover{
+        border-width: 0.8vw;
+        font-size: 5.2vw;
+    }
+    
+    .BouttonFaireUnDon:active{
+        border-width: 0.8vw;
+        font-size: 5.2vw;
+    }
+    
+    .TexteMoyensPaiement{
+        margin-top: 3vw;
+        font-size: 3.5vw;
+    }
+    
+    .EspaceLogosMoyensPaiement{
+        margin-top: 3vw;
+        width: 50vw;
+    }
+    
+    .logoMoyensPaiement{
+        height: 5vw;
+    }
 }

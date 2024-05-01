@@ -96,9 +96,9 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
           <button className="NavMenuBouton" onClick={OuvrirNomb}>
             Nombres
           </button>
-          <button className="NavMenuBouton" onClick={OuvrirLec}>
+          {/* <button className="NavMenuBouton" onClick={OuvrirLec}>
             Leçons
-          </button>
+          </button> */}
           <button className="NavMenuBouton" onClick={OuvrirVoc}>
             Vocabulaire
           </button>
