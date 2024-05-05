@@ -1,9 +1,9 @@
 import random
 
-ListeT=["eul pilom","eul lom","l'ĕoagĕ","la seinĕriyĕ","la vilĕ de noaquicencĕ","eul chaisiau","eul minquier"];
-ListeF=["le prénom","le nom","l'âge","le surnom","la ville de naissance","l'adresse","le métier"]
+ListeF=["la quieuzughnĕ","eul busiau","la salguiauĕ","eul decloas","eul goroagĕ","l'anvĕghnerĕ","eul jucĕtouerĕ","eul coumeun"]
+ListeT=["la cuisine","le bureau","la salle de bain","la salle à manger","le garage","le grenier","la chambre","le salon"]
 condition=0
-nombre=7
+nombre=8
 
 while condition==0:
     Liste1=[]

@@ -70,7 +70,9 @@ const Presentation = () => {
             Le tourangeau est une langue latine et fait partie des langues
             d'oïl. 
           </p>
-          <p className="TexteIntroduction">Ce site est dédié à son apprentissage.</p>
+          <p className="TexteIntroduction">Ce site, qui a été conçu avec l'aide
+          de <a href="https://www.gnto.org/" className="lienSite">l'académie de la langue tourangelle</a>
+          , est dédié à l'apprentissage de la langue tourangelle.</p>
           </div>
         </div>
       </div>

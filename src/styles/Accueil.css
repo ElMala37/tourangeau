@@ -67,26 +67,26 @@
 
   @media only screen and (max-width: 600px) {
     .EnTete{
-      height:8vw;
+      height:12vw;
       width: 100vw;
     }
     
     .Titre{
-      height:8vw;
+      height:12vw;
       }
   
       .Drapeau{
-        height: 7vw;
+        height: 8vw;
       }
   
     .Texte{
       margin-right:2vw;
-      font-size: 6vw;
+      font-size: 7vw;
     }
   
     .LogoNavMenu{
-      height: 4vw;
-      margin: 2vw;
+      height: 7vw;
+    align-self: center;
     }
     
     .NavMenu{
@@ -97,7 +97,7 @@
   
     .NavMenuBouton{
       width: 30vw;
-      font-size: 3vw;
+      font-size: 4vw;
     }
 
   }

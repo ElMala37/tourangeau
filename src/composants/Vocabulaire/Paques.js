@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import Acceuil from "../Accueil";
 import { Chart } from "react-google-charts";
 
-const Instruments = () => {
+const Paques = () => {
   const [ouvert, setOuvert] = useState(true);
   const navigate = useNavigate();
   const [validation, setValidation] = useState(false);
@@ -17,96 +17,96 @@ const Instruments = () => {
 
   const nbQuestion = 16;
   const ListeQuestion = [
-    "le piano",
-    "la vieille",
-    "la flûte",
-    "la guitare",
-    "l'accordéon",
-    "la trompette",
-    "la cornemuse",
-    "le violon",
-    "eul cembĕloz",
-    "la jemphouenĕ",
-    "la sghleutĕ",
-    "la guientairnĕ",
-    "l'acourdayon",
-    "la trompighlĕ",
-    "la bouzinĕ",
-    "la vouesĕ",
+    "l'oeuf",
+    "le lapin",
+    "le chocolat",
+    "le poussin",
+    "chercher",
+    "la jonquille",
+    "ramasser",
+    "les cloches",
+    "eul coquioz",
+    "eul couni",
+    "eul choucoloaz",
+    "eul hrouquioz",
+    "querir",
+    "eul geaughnau",
+    "ernaudair",
+    "lais derlinĕs",
   ];
   const ListeReponse1 = [
-    "la sghleutĕ",
-    "la vouesĕ",
-    "la bouzinĕ",
-    "la jemphouenĕ",
-    "la vouesĕ",
-    "l'acourdayon",
-    "la bouzinĕ",
-    "eul cembĕloz",
-    "la flûte",
-    "la trompette",
-    "la guitare",
-    "la trompette",
-    "la guitare",
-    "la trompette",
-    "l'accordéon",
-    "la vieille",
+    "eul coquioz",
+    "eul choucoloaz",
+    "querir",
+    "eul couni",
+    "lais derlinĕs",
+    "eul coquioz",
+    "eul couni",
+    "eul couni",
+    "le poussin",
+    "les cloches",
+    "la jonquille",
+    "l'oeuf",
+    "l'oeuf",
+    "la jonquille",
+    "le lapin",
+    "ramasser",
   ];
   const ListeReponse2 = [
-    "l'acourdayon",
-    "la sghleutĕ",
-    "la sghleutĕ",
-    "la guientairnĕ",
-    "la jemphouenĕ",
-    "la sghleutĕ",
-    "la guientairnĕ",
-    "la guientairnĕ",
-    "le violon",
-    "la cornemuse",
-    "la vieille",
-    "la guitare",
-    "la flûte",
-    "la cornemuse",
-    "la cornemuse",
-    "le piano",
+    "lais derlinĕs",
+    "eul couni",
+    "eul geaughnau",
+    "eul coquioz",
+    "querir",
+    "ernaudair",
+    "eul hrouquioz",
+    "lais derlinĕs",
+    "l'oeuf",
+    "chercher",
+    "le poussin",
+    "le lapin",
+    "chercher",
+    "le chocolat",
+    "la jonquille",
+    "le chocolat",
   ];
   const ListeReponse3 = [
-    "eul cembĕloz",
-    "la jemphouenĕ",
-    "la jemphouenĕ",
-    "l'acourdayon",
-    "eul cembĕloz",
-    "la guientairnĕ",
-    "eul cembĕloz",
-    "la vouesĕ",
-    "la guitare",
-    "le piano",
-    "la flûte",
-    "le violon",
-    "la cornemuse",
-    "la flûte",
-    "la vieille",
-    "le violon",
+    "eul geaughnau",
+    "eul coquioz",
+    "eul choucoloaz",
+    "eul choucoloaz",
+    "eul hrouquioz",
+    "eul hrouquioz",
+    "ernaudair",
+    "eul geaughnau",
+    "ramasser",
+    "l'oeuf",
+    "les cloches",
+    "le poussin",
+    "le chocolat",
+    "ramasser",
+    "chercher",
+    "le poussin",
   ];
   const ListeReponse4 = [
-    "la bouzinĕ",
-    "la bouzinĕ",
-    "la vouesĕ",
-    "la trompighlĕ",
-    "l'acourdayon",
-    "la trompighlĕ",
-    "la trompighlĕ",
-    "la trompighlĕ",
-    "le piano",
-    "la vieille",
-    "le violon",
-    "le piano",
-    "l'accordéon",
-    "l'accordéon",
-    "la trompette",
-    "l'accordéon",
+    "querir",
+    "ernaudair",
+    "lais derlinĕs",
+    "eul hrouquioz",
+    "eul choucoloaz",
+    "eul geaughnau",
+    "querir",
+    "ernaudair",
+    "chercher",
+    "le lapin",
+    "le chocolat",
+    "la jonquille",
+    "les cloches",
+    "le lapin",
+    "ramasser",
+    "les cloches",
   ];
-  const ListeBonneReponse = [3, 3, 2, 2, 4, 4, 1, 3, 4, 4, 3, 2, 4, 1, 2, 3];
+  const ListeBonneReponse = [1, 2, 3, 4, 2, 4, 3, 2, 2, 4, 4, 3, 2, 1, 4, 4];
 
   useEffect(() => {
     const generateRandomNumbers = () => {
@@ -201,16 +201,16 @@ const Instruments = () => {
               <Chart
                 chartType="PieChart"
                 data={[
-                  ['Réponses', 'score'],
-                  ['Bonnes réponses', score],
-                  ['Mauvaises réponses', nbQuestion - score],
+                  ["Réponses", "score"],
+                  ["Bonnes réponses", score],
+                  ["Mauvaises réponses", nbQuestion - score],
                 ]}
                 options={{
-                  backgroundColor: 'transparent',
-                  colors: ['#50a641', '#a64141']
+                  backgroundColor: "transparent",
+                  colors: ["#50a641", "#a64141"],
                 }}
-                width={'80vw'}
-                height={'30vw'}
+                width={"80vw"}
+                height={"30vw"}
               />
             </div>
           ) : (
@@ -238,11 +238,11 @@ const Instruments = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 1
                         ? "BouttonAudioBonneRep"
                         : select === 1
-                          ? "BouttonAudioMauvRep"
-                          : "BouttonAudio"
-                      : select === 1
-                        ? "BouttonAudioSelect"
+                        ? "BouttonAudioMauvRep"
                         : "BouttonAudio"
+                      : select === 1
+                      ? "BouttonAudioSelect"
+                      : "BouttonAudio"
                   }
                 >
                   <strong
@@ -251,11 +251,11 @@ const Instruments = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 1
                           ? "TexteAudioBonneRep"
                           : select === 1
-                            ? "TexteAudioMauvRep"
-                            : "TexteAudio"
-                        : select === 1
-                          ? "TexteAudioSelect"
+                          ? "TexteAudioMauvRep"
                           : "TexteAudio"
+                        : select === 1
+                        ? "TexteAudioSelect"
+                        : "TexteAudio"
                     }
                   >
                     {ListeReponse1[ordre[numeroQuestion]]}
@@ -268,11 +268,11 @@ const Instruments = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 2
                         ? "BouttonAudioBonneRep"
                         : select === 2
-                          ? "BouttonAudioMauvRep"
-                          : "BouttonAudio"
-                      : select === 2
-                        ? "BouttonAudioSelect"
+                        ? "BouttonAudioMauvRep"
                         : "BouttonAudio"
+                      : select === 2
+                      ? "BouttonAudioSelect"
+                      : "BouttonAudio"
                   }
                 >
                   <strong
@@ -281,11 +281,11 @@ const Instruments = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 2
                           ? "TexteAudioBonneRep"
                           : select === 2
-                            ? "TexteAudioMauvRep"
-                            : "TexteAudio"
-                        : select === 2
-                          ? "TexteAudioSelect"
+                          ? "TexteAudioMauvRep"
                           : "TexteAudio"
+                        : select === 2
+                        ? "TexteAudioSelect"
+                        : "TexteAudio"
                     }
                   >
                     {ListeReponse2[ordre[numeroQuestion]]}
@@ -298,11 +298,11 @@ const Instruments = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 3
                         ? "BouttonAudioBonneRep"
                         : select === 3
-                          ? "BouttonAudioMauvRep"
-                          : "BouttonAudio"
-                      : select === 3
-                        ? "BouttonAudioSelect"
+                        ? "BouttonAudioMauvRep"
                         : "BouttonAudio"
+                      : select === 3
+                      ? "BouttonAudioSelect"
+                      : "BouttonAudio"
                   }
                 >
                   <strong
@@ -311,11 +311,11 @@ const Instruments = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 3
                           ? "TexteAudioBonneRep"
                           : select === 3
-                            ? "TexteAudioMauvRep"
-                            : "TexteAudio"
-                        : select === 3
-                          ? "TexteAudioSelect"
+                          ? "TexteAudioMauvRep"
                           : "TexteAudio"
+                        : select === 3
+                        ? "TexteAudioSelect"
+                        : "TexteAudio"
                     }
                   >
                     {ListeReponse3[ordre[numeroQuestion]]}
@@ -328,11 +328,11 @@ const Instruments = () => {
                       ? ListeBonneReponse[ordre[numeroQuestion]] === 4
                         ? "BouttonAudioBonneRep"
                         : select === 4
-                          ? "BouttonAudioMauvRep"
-                          : "BouttonAudio"
-                      : select === 4
-                        ? "BouttonAudioSelect"
+                        ? "BouttonAudioMauvRep"
                         : "BouttonAudio"
+                      : select === 4
+                      ? "BouttonAudioSelect"
+                      : "BouttonAudio"
                   }
                 >
                   <strong
@@ -341,11 +341,11 @@ const Instruments = () => {
                         ? ListeBonneReponse[ordre[numeroQuestion]] === 4
                           ? "TexteAudioBonneRep"
                           : select === 4
-                            ? "TexteAudioMauvRep"
-                            : "TexteAudio"
-                        : select === 4
-                          ? "TexteAudioSelect"
+                          ? "TexteAudioMauvRep"
                           : "TexteAudio"
+                        : select === 4
+                        ? "TexteAudioSelect"
+                        : "TexteAudio"
                     }
                   >
                     {ListeReponse4[ordre[numeroQuestion]]}
@@ -391,4 +391,4 @@ const Instruments = () => {
   );
 };
 
-export default Instruments;
+export default Paques;

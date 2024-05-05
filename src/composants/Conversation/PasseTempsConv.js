@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import Acceuil from "../Accueil";
 import { Chart } from "react-google-charts";
 
-const SePresenterConv = () => {
+const PasseTempsConv = () => {
   const [ouvert, setOuvert] = useState(true);
   const navigate = useNavigate();
   const [etape, setEtape] = useState(0);
@@ -12,66 +12,51 @@ const SePresenterConv = () => {
   const [Validation, setValidation] = useState(false);
   const [bonneRep, setBonneRep] = useState(true);
   const [score, setScore] = useState(0);
-  const nbEtapes = 8;
+  const nbEtapes = 12;
 
   const Question = [
-    "Comment t'appelles-tu ?",
-    "Je m'appelle Thomas",
-    "Quel âge as-tu ?",
-    "J'ai 20 ans",
-    "Comment t'appelles-tu ?",
-    "Je m'appelle Fernand",
-    "Quel âge as-tu ?",
-    "J'ai 17 ans",
+    "Qu'aimes-tu faire ?",
+    "J'aime bien sortir avec mes amis",
+    "J'aime bien jouer de la musique",
+    "Détestes-tu certaines activités ?",
+    "Je déteste aller à la plage",
+    "Je déteste faire du sport",
+    "Et toi, qu'aimes-tu faire ?",
+    "J'aime bien aller à la plage",
+    "J'aime bien faire du sport",
+    "Et détestes-tu certaines activités ?",
+    "Je déteste jouer de la musique",
+    "Je déteste sortir avec mes amis",
   ];
 
   const Propositions = [
-    ["Coumenque", "t'hoas-ti", "lom", "Eyouque", "tu", "?", "eul", "fraizĕr"],
-    ["J'hag", "t'hoas-ti", "lom", "angs", "frarĕ", "couni", "eul", "Thomas"],
-    [
-      "Quiĕlĕ",
-      "ĕoagĕ",
-      "que",
-      "t'hoas-ti",
-      "?",
-      "seinĕriyĕ",
-      "chaisiau",
-      "lom",
-    ],
-    ["J'hag", "vinz", "lom", "t'hoas-ti", "ĕoagĕ", "Jĕ", "rĕssĕ", "angs"],
-    [
-      "?",
-      "sghleutĕ",
-      "t'hoas-ti",
-      "tu",
-      "lom",
-      "Coumenque",
-      "Quiĕlĕ",
-      "pouesĕ",
-    ],
-    ["Je", "J'hag", "Jĕ", "Fernand", "cimarrĕ", "margouh", "paizĕr", "lom"],
-    ["que", "tu", "dissouep", "t'hoas-ti", "?", "Quiĕlĕ", "ĕoagĕ", "angs"],
-    [
-      "J'ai",
-      "angs",
-      "ans",
-      "dizouez",
-      "dissouep",
-      "J'hag",
-      "ĕoagĕ",
-      "chaisiau",
-    ],
+    ['?', 'que', "t'agrĕyĕs-ti", 'Queique-dung', 'rĕssĕs-ti', "t'hoas-ti", 'faizĕr', 'tu'],
+['meuns', 'les', "d'anque", 'saighlir', "J'agrĕyĕ", "d'amiys", 'faizĕr', 'ben'],
+['saighlir', 'terhlutrair', 'de', 'meusiquĕ', 'ben', 'la', "J'agrĕyĕ", "J'hag"],
+['que', "d'auquieunĕs", "t'hoas-ti", '?', 'rĕssĕs-ti', "T'haguis-ti-dung", 'accions', 'tu'],
+['falosierĕ', 'la', 'vadair', "J'haguig", 'loa ', 'sus', 'rĕssĕ', 'Jĕ'],
+['pherucalĕ', 'la', 'de', 'quieulturĕ', "J'agrĕyĕ", 'ben', 'faizĕr', "J'haguig"],
+["T'haguis-ti-dung", 'queique-dung', '?', 'que', 'faizĕr', 'E', 'toue-dung,', "t'agrĕyĕs-ti"],
+['vadair', 'ben', "J'hag", "J'agrĕyĕ", 'terhlutrair', 'falosierĕ', 'loa', "J'haguig"],
+['de', 'la', 'quieulturĕ', 'ben', 'vadair', "J'agrĕyĕ", 'pherucalĕ', 'faizĕr'],
+["d'auquieunĕs", "t'haguis-ti-dung", 'rĕssĕs-ti', 'accions', 'tu', "t'hoas-ti", '?', 'E'],
+['la', 'meusiquĕ', 'faizĕr', 'saighlir', 'de', 'ersghlentir', "J'haguig", 'terhlutrair'],
+["J'agrĕyĕ", "d'amiys", 'les', "J'haguig", "d'anque", 'saighlir', 'ben', 'meuns'],
   ];
 
   const BonnesReponses = [
-    ["Coumenque", "t'hoas-ti", "lom", "?"],
-    ["J'hag", "lom", "Thomas"],
-    ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?"],
-    ["J'hag", "vinz", "angs"],
-    ["Coumenque", "t'hoas-ti", "lom", "?"],
-    ["J'hag", "lom", "Fernand"],
-    ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?"],
-    ["J'hag", "dissouep", "angs"],
+    ["Queique-dung","que","t'agrĕyĕs-ti","faizĕr","?"],
+    ["J'agrĕyĕ","ben","saighlir","d'anque","les","meuns","d'amiys"],
+    ["J'agrĕyĕ","ben","terhlutrair","de","la","meusiquĕ"],
+    ["T'haguis-ti-dung","d'auquieunĕs","accions","?"],
+    ["J'haguig","vadair","loa ","falosierĕ"],
+    ["J'haguig","faizĕr","de","la","quieulturĕ","pherucalĕ"],
+    ["E","toue-dung,","queique-dung","que","t'agrĕyĕs-ti","faizĕr","?"],
+    ["J'agrĕyĕ","ben","vadair","loa","falosierĕ"],
+    ["J'agrĕyĕ","ben","faizĕr","de","la","quieulturĕ","pherucalĕ"],
+    ["E","t'haguis-ti-dung","d'auquieunĕs","accions","?"],
+    ["J'haguig","terhlutrair","de","la","meusiquĕ"],
+    ["J'haguig","saighlir","d'anque","les","meuns","d'amiys"],
   ];
 
   const FermerTheme = () => {
@@ -314,4 +299,4 @@ const SePresenterConv = () => {
   );
 };
 
-export default SePresenterConv;
+export default PasseTempsConv;

@@ -30,6 +30,19 @@
     border-style:solid;
 }
 
+.EtiquetteDifficile {
+    position: absolute;
+    margin-left:17vw;
+    margin-bottom: 5vw;
+    background-color: red; /* Couleur de fond de l'étiquette */
+    color: white; /* Couleur du texte de l'étiquette */
+    padding-left: 0.8vw; /* Marge intérieure de l'étiquette */
+    padding-right: 0.8vw;
+    border-radius: 1vw; /* Rayon de la bordure de l'étiquette */
+    font-size: 1.2vw; /* Taille de la police de l'étiquette */
+    font-weight: bold;
+  }
+
 .TitreCarteTheme{
     color:#aa804a;
     font-weight:bolder;
@@ -59,6 +72,16 @@
     border-radius: 2vw;
     margin-top: 3vw;
 }
+
+.EtiquetteDifficile {
+    margin-left:70vw;
+    margin-bottom: 8vw;
+    background-color: red; /* Couleur de fond de l'étiquette */
+    padding-left: 2vw;
+    padding-right: 2vw; /* Marge intérieure de l'étiquette */
+    border-radius: 2vw; /* Rayon de la bordure de l'étiquette */
+    font-size: 3vw; /* Taille de la police de l'étiquette */
+  }
 
 .TitreCarteTheme{
     font-size: 4vw;

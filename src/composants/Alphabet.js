@@ -126,9 +126,15 @@ const Alphabet = () => {
     audioElement.play();
   };
 
+  const LectureAudioSonLettre = (index) => {
+    const audioElement = document.getElementById(`AudioSonLettre${NomAudio[index]}`);
+    audioElement.currentTime = 0;
+    audioElement.play();
+  };
+
   return (
     <div className="Fond">
-      <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="ALPHABET TOURANGEAU" />
+      <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="ALPHABET" />
       <div className="tableauAlphabet">
         <div className="categoriesTableauAlphabet">
           <div className="celluleTableauAlphabet">
@@ -155,7 +161,7 @@ const Alphabet = () => {
             <div className="celluleAudioTableauAlphabet" onClick={() => LectureAudioNomLettre(index)}>
               <text className="texteTableauAlphabet">{NomLettre[index]}</text>
             </div>
-            <div className="celluleAudioTableauAlphabet">
+            <div className="celluleAudioTableauAlphabet" onClick={() => LectureAudioSonLettre(index)}>
               <img
                 src="images/audio.png"
                 alt="audioNom"
@@ -163,6 +169,7 @@ const Alphabet = () => {
               />
             </div>
             <audio id={`AudioNomLettre${NomAudio[index]}`} src={`/audios/NomDesLettres/${NomAudio[index]}.mp3`}></audio>
+            <audio id={`AudioSonLettre${NomAudio[index]}`} src={`/audios/SonDesLettres/sslm_${NomAudio[index]}.mp3`}></audio>
           </div>
         ))}
       </div>

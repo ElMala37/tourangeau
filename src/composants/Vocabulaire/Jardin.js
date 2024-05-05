@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import Acceuil from "../Accueil";
 import { Chart } from "react-google-charts";
 
-const Instruments = () => {
+const Jardin = () => {
   const [ouvert, setOuvert] = useState(true);
   const navigate = useNavigate();
   const [validation, setValidation] = useState(false);
@@ -16,97 +16,12 @@ const Instruments = () => {
   const [ordre, setOrdre] = useState([]);
 
   const nbQuestion = 16;
-  const ListeQuestion = [
-    "le piano",
-    "la vieille",
-    "la flûte",
-    "la guitare",
-    "l'accordéon",
-    "la trompette",
-    "la cornemuse",
-    "le violon",
-    "eul cembĕloz",
-    "la jemphouenĕ",
-    "la sghleutĕ",
-    "la guientairnĕ",
-    "l'acourdayon",
-    "la trompighlĕ",
-    "la bouzinĕ",
-    "la vouesĕ",
-  ];
-  const ListeReponse1 = [
-    "la sghleutĕ",
-    "la vouesĕ",
-    "la bouzinĕ",
-    "la jemphouenĕ",
-    "la vouesĕ",
-    "l'acourdayon",
-    "la bouzinĕ",
-    "eul cembĕloz",
-    "la flûte",
-    "la trompette",
-    "la guitare",
-    "la trompette",
-    "la guitare",
-    "la trompette",
-    "l'accordéon",
-    "la vieille",
-  ];
-  const ListeReponse2 = [
-    "l'acourdayon",
-    "la sghleutĕ",
-    "la sghleutĕ",
-    "la guientairnĕ",
-    "la jemphouenĕ",
-    "la sghleutĕ",
-    "la guientairnĕ",
-    "la guientairnĕ",
-    "le violon",
-    "la cornemuse",
-    "la vieille",
-    "la guitare",
-    "la flûte",
-    "la cornemuse",
-    "la cornemuse",
-    "le piano",
-  ];
-  const ListeReponse3 = [
-    "eul cembĕloz",
-    "la jemphouenĕ",
-    "la jemphouenĕ",
-    "l'acourdayon",
-    "eul cembĕloz",
-    "la guientairnĕ",
-    "eul cembĕloz",
-    "la vouesĕ",
-    "la guitare",
-    "le piano",
-    "la flûte",
-    "le violon",
-    "la cornemuse",
-    "la flûte",
-    "la vieille",
-    "le violon",
-  ];
-  const ListeReponse4 = [
-    "la bouzinĕ",
-    "la bouzinĕ",
-    "la vouesĕ",
-    "la trompighlĕ",
-    "l'acourdayon",
-    "la trompighlĕ",
-    "la trompighlĕ",
-    "la trompighlĕ",
-    "le piano",
-    "la vieille",
-    "le violon",
-    "le piano",
-    "l'accordéon",
-    "l'accordéon",
-    "la trompette",
-    "l'accordéon",
-  ];
-  const ListeBonneReponse = [3, 3, 2, 2, 4, 4, 1, 3, 4, 4, 3, 2, 4, 1, 2, 3];
+  const ListeQuestion = ["un arbre","une brouette","une fleur","un cabanon","un potager","une fontaine","une herbe","une balançoire","eun oabĕr","eunĕ berrouetĕ","eunĕ sghleus","eunĕ loubitĕ","eunĕ ouchĕ","eunĕ font","eunĕ harbĕ","eunĕ berlancelĕ"];
+  const ListeReponse1 = ['eunĕ berrouetĕ', 'eunĕ berrouetĕ', 'eunĕ sghleus', 'eunĕ berrouetĕ', 'eunĕ font', 'eunĕ font', 'eunĕ sghleus', 'eunĕ berlancelĕ','une balançoire', 'une fleur', 'une brouette', 'une brouette', 'une herbe', 'un cabanon', 'une fleur', 'une balançoire'];
+  const ListeReponse2 = ['eunĕ berlancelĕ', 'eunĕ harbĕ', 'eun oabĕr', 'eunĕ loubitĕ', 'eunĕ loubitĕ', 'eunĕ sghleus', 'eunĕ harbĕ', 'eunĕ font','une fontaine', 'un potager', 'un arbre', 'un potager', 'une balançoire', 'un arbre', 'une fontaine', 'une fleur'];
+  const ListeReponse3 = ['eun oabĕr', 'eunĕ berlancelĕ', 'eunĕ berrouetĕ', 'eun oabĕr', 'eunĕ ouchĕ', 'eunĕ harbĕ', 'eunĕ loubitĕ', 'eunĕ loubitĕ','un potager', 'une brouette', 'une fontaine', 'un cabanon', 'un potager', 'une balançoire', 'une herbe', 'une herbe'];
+  const ListeReponse4 = ['eunĕ ouchĕ', 'eunĕ sghleus', 'eunĕ berlancelĕ', 'eunĕ ouchĕ', 'eun oabĕr', 'eunĕ ouchĕ', 'eunĕ font', 'eunĕ harbĕ','un arbre', 'un cabanon', 'une fleur', 'une herbe', 'un arbre', 'une fontaine', 'une brouette', 'un cabanon'];
+  const ListeBonneReponse = [3, 1, 1, 2, 3, 1, 2, 1, 4, 3, 4, 3, 3, 4, 3, 1];
 
   useEffect(() => {
     const generateRandomNumbers = () => {
@@ -391,4 +306,4 @@ const Instruments = () => {
   );
 };
 
-export default Instruments;
+export default Jardin;

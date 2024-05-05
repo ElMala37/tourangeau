@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import Acceuil from "../Accueil";
 import { Chart } from "react-google-charts";
 
-const SePresenterConv = () => {
+const SePresenterConv2 = () => {
   const [ouvert, setOuvert] = useState(true);
   const navigate = useNavigate();
   const [etape, setEtape] = useState(0);
@@ -15,63 +15,36 @@ const SePresenterConv = () => {
   const nbEtapes = 8;
 
   const Question = [
-    "Comment t'appelles-tu ?",
-    "Je m'appelle Thomas",
-    "Quel âge as-tu ?",
-    "J'ai 20 ans",
-    "Comment t'appelles-tu ?",
-    "Je m'appelle Fernand",
-    "Quel âge as-tu ?",
-    "J'ai 17 ans",
+    "Où habites-tu ?",
+    "J'habite à Tours",
+    "Où es-tu né ?",
+    "Je suis né à Chinon",
+    "Où habites-tu ?",
+    "J'habite à Amboise",
+    "Où es-tu né ?",
+    "Je suis né à Loches",
   ];
 
   const Propositions = [
-    ["Coumenque", "t'hoas-ti", "lom", "Eyouque", "tu", "?", "eul", "fraizĕr"],
-    ["J'hag", "t'hoas-ti", "lom", "angs", "frarĕ", "couni", "eul", "Thomas"],
-    [
-      "Quiĕlĕ",
-      "ĕoagĕ",
-      "que",
-      "t'hoas-ti",
-      "?",
-      "seinĕriyĕ",
-      "chaisiau",
-      "lom",
-    ],
-    ["J'hag", "vinz", "lom", "t'hoas-ti", "ĕoagĕ", "Jĕ", "rĕssĕ", "angs"],
-    [
-      "?",
-      "sghleutĕ",
-      "t'hoas-ti",
-      "tu",
-      "lom",
-      "Coumenque",
-      "Quiĕlĕ",
-      "pouesĕ",
-    ],
-    ["Je", "J'hag", "Jĕ", "Fernand", "cimarrĕ", "margouh", "paizĕr", "lom"],
-    ["que", "tu", "dissouep", "t'hoas-ti", "?", "Quiĕlĕ", "ĕoagĕ", "angs"],
-    [
-      "J'ai",
-      "angs",
-      "ans",
-      "dizouez",
-      "dissouep",
-      "J'hag",
-      "ĕoagĕ",
-      "chaisiau",
-    ],
+    ["Eyouque","t'hoas-ti","rĕssĕs-ti","dong","tu","Quiĕlĕ","?","lom"],
+    ["J'hag","sus","Tours","à","Jĕ","rĕssĕ","noatuy","rĕssĕs-ti"],
+    ["?","Quiĕlĕ","Où","Eyouque","t'hoas-ti","tu","noatuy","rĕssĕs-ti"],
+    ["J'hag","noatuy","Jĕ","noaquicencĕ","alouezĕs","sus","Chinon","lom"],
+    ["t'hoas-ti","tu","minquier","rĕssĕs-ti","Quiĕlĕ","Eyouque", "?","Où"],
+    ["J'hag","rĕssĕ","à","sus","Amboise","Je","Jĕ","couest-ti"],
+    ["Eyouque","noatuy","angs","?","t'hoas-ti","nemouzughnĕ","rĕssĕs-ti","ĕoagĕ"],
+    ["Loches","suis","J'hag","noaquicencĕ","noatuy","sus","Jĕ","rĕssĕ"],
   ];
 
   const BonnesReponses = [
-    ["Coumenque", "t'hoas-ti", "lom", "?"],
-    ["J'hag", "lom", "Thomas"],
-    ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?"],
-    ["J'hag", "vinz", "angs"],
-    ["Coumenque", "t'hoas-ti", "lom", "?"],
-    ["J'hag", "lom", "Fernand"],
-    ["Quiĕlĕ", "ĕoagĕ", "que", "t'hoas-ti", "?"],
-    ["J'hag", "dissouep", "angs"],
+    ["Eyouque","tu","rĕssĕs-ti", "?"],
+    ["Jĕ","rĕssĕ","sus","Tours"],
+    ["Eyouque","t'hoas-ti","noatuy","?"],
+    ["J'hag","noatuy","sus","Chinon"],
+    ["Eyouque","tu","rĕssĕs-ti", "?"],
+    ["Jĕ","rĕssĕ","sus","Amboise"],
+    ["Eyouque","t'hoas-ti","noatuy","?"],
+    ["J'hag","noatuy","sus","Loches"],
   ];
 
   const FermerTheme = () => {
@@ -314,4 +287,4 @@ const SePresenterConv = () => {
   );
 };
 
-export default SePresenterConv;
+export default SePresenterConv2;
