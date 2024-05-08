@@ -16,11 +16,11 @@ const Noel = () => {
   const [ordre, setOrdre] = useState([]);
 
   const nbQuestion = 12;
-  const ListeReponse1 = ['la gĕvĕnaiyĕ', 'eul Papa de la Nauĕ', 'eul Papa de la Nauĕ', 'eul terfouz', 'la gĕvĕnaiyĕ', 'les perzents','la cheminée', 'les cadeaux', 'la cheminée', 'la hotte', 'la cheminée', 'la cheminée'];
+  const ListeReponse1 = ['la gĕvĕnaiyĕ', 'eul Popa de la Nauĕ', 'eul Popa de la Nauĕ', 'eul terfouz', 'la gĕvĕnaiyĕ', 'les perzents','la cheminée', 'les cadeaux', 'la cheminée', 'la hotte', 'la cheminée', 'la cheminée'];
   const ListeReponse2 = ['la balugĕ', 'eul butet', 'la balugĕ', 'la balugĕ', 'eul butet', 'la gĕvĕnaiyĕ','le sapin', 'le Père Noël', 'la bûche', 'le sapin', 'la bûche', 'le sapin'];
-  const ListeReponse3 = ['eul Papa de la Nauĕ', 'eul terfouz', 'eul butet', 'eul Papa de la Nauĕ', 'eul terfouz', 'eul butet','les cadeaux', 'la bûche', 'la hotte', 'la bûche', 'le sapin', 'le Père Noël'];
+  const ListeReponse3 = ['eul Popa de la Nauĕ', 'eul terfouz', 'eul butet', 'eul Popa de la Nauĕ', 'eul terfouz', 'eul butet','les cadeaux', 'la bûche', 'la hotte', 'la bûche', 'le sapin', 'le Père Noël'];
   const ListeReponse4 = ['eul terfouz', 'les perzents', 'la gĕvĕnaiyĕ', 'les perzents', 'les perzents', 'la balugĕ','le Père Noël', 'la hotte', 'les cadeaux', 'le Père Noël', 'les cadeaux', 'la hotte'];
-  const ListeQuestion = ["le sapin","le Père Noël","la cheminée","la bûche","les cadeaux","la hotte","la balugĕ","eul Papa de la Nauĕ","la gĕvĕnaiyĕ","eul terfouz","les perzents","eul butet"];
+  const ListeQuestion = ["le sapin","le Père Noël","la cheminée","la bûche","les cadeaux","la hotte","la balugĕ","eul Popa de la Nauĕ","la gĕvĕnaiyĕ","eul terfouz","les perzents","eul butet"];
   const ListeBonneReponse = [2, 1, 4, 1, 4, 3,2, 2, 1, 3, 4, 4];
 
   useEffect(() => {

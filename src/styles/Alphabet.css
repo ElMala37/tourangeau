@@ -1,5 +1,5 @@
 .tableauAlphabet{
-    margin-top: 2.5vw;
+    margin-top: 1vw;
     width: 60vw;
     margin-left: 20vw;
     display:flex;
@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    padding-bottom: 5vw;
 }
 
 .categoriesTableauAlphabet{
@@ -76,10 +75,63 @@
     width: auto;
 }
 
+.tableauDigraphes{
+    margin-top: 1vw;
+    width: 45vw;
+    margin-left: 27.5vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+}
+
+.categoriesTableauDigraphes{
+    width: 45vw;
+    height: 2.5vw;
+    background-color: #aa804a;
+    border-color: #DEB887;
+    border-style:solid;
+    border-radius: 1vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+.ligneTableauDigraphes{
+    width: 45vw;
+    height: 2.5vw;
+    background-color: #f1d2aa;
+    border-color: #DEB887;
+    border-style:solid;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+.espaceTitreTableau{
+    width: 100vw;
+    margin-top: 3vw;
+}
+
+.titreTableau{
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.texteRegle{
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
+    
 @media only screen and (max-width: 600px) {
 
     .tableauAlphabet{
-        margin-top: 5vw;
+        margin-top: 2vw;
         width: 90vw;
         margin-left: 5vw;
         border-radius: 3vw;
@@ -121,5 +173,37 @@
     
     .logoAudioTableauAlphabet{
         height:4vw;
+    }
+
+    .tableauDigraphes{
+        margin-top: 1vw;
+        width: 67.5vw;
+        margin-left: 16.125vw;
+        border-radius: 3vw;
+    }
+    
+    .categoriesTableauDigraphes{
+        width: 67.5vw;
+        height: 7vw;
+        border-radius: 2vw;
+        }
+    
+    .ligneTableauDigraphes{
+        width: 67.5vw;
+        height: 7vw;
+        border-radius: 2vw;
+        }
+
+    .espaceTitreTableau{
+        width: 100vw;
+        margin-top: 5vw;
+    }
+    
+    .titreTableau{
+        font-size: 4vw;
+    }
+
+    .texteRegle{
+        font-size: 2.3vw;
     }
 }

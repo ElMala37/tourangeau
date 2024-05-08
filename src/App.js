@@ -13,8 +13,8 @@ import SePresenter from "./composants/Vocabulaire/SePresenter";
 import Nombres from "./composants/Nombres";
 import Conversation from "./composants/Conversation";
 import SePresenterConv from "./composants/Conversation/SePresenterConv";
-import Lecons from "./composants/Lecons";
-import TemplateLecon from "./composants/Lecons/Template";
+import Verbes from "./composants/Verbes";
+import VerbeTemplate from "./composants/Verbes/Template";
 import Soutenir from "./composants/Soutenir";
 import SePresenterConv2 from "./composants/Conversation/SePresenterConv2";
 import RestaurantConv from "./composants/Conversation/RestaurantConv";
@@ -24,6 +24,7 @@ import Noel from "./composants/Vocabulaire/Noel";
 import Hiver from "./composants/Vocabulaire/Hiver";
 import Maison from "./composants/Vocabulaire/Maison";
 import Jardin from "./composants/Vocabulaire/Jardin";
+import Dictionnaire from "./composants/Dictionnaire";
 
 function App() {
   return (
@@ -32,8 +33,9 @@ function App() {
         <Route exact path="/" element={<Presentation />} />
         <Route exact path="/alphabet" element={<Alphabet />} />
         <Route exact path="/nombres" element={<Nombres />} />
-        <Route exact path="/lecons" element={<Lecons/>} />
-        <Route exact path="/lecons/template" element={<TemplateLecon/>} />
+        <Route exact path="/dictionnaire" element={<Dictionnaire />} />
+        <Route exact path="/verbes" element={<Verbes/>} />
+        <Route exact path="/verbes/template" element={<VerbeTemplate/>} />
         <Route exact path="/vocabulaire" element={<Vocabulaire />} />
         <Route exact path="/vocabulaire/famille" element={<Famille1 />} />
         <Route exact path="/vocabulaire/vetements" element={<Vetements />} />

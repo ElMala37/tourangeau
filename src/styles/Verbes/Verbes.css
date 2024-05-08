@@ -1,0 +1,168 @@
+.contenuVerbe{
+    width: 100vw;
+    height: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.EnteteVerbe{
+    width: 85vw;
+    margin-top: 1.5vw;
+    margin-bottom: 0vw;
+}  
+
+.ligneVerbe{
+    width: 72vw;
+    height: 3.5vw;
+    display :flex;
+    flex-direction: row;
+    background-color: #aa804a;
+    padding:0.5vw;
+    align-items: center;
+}
+
+.celluletitreVerbe{
+    width: 72vw;
+    height: 3.5vw;
+    background-color: #f1d2aa;
+    border-style: solid;
+    border-color: #aa804a;
+    display :flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.celluleLigneVerbe{
+    width: 12vw;
+    height: 3.5vw;
+    background-color: #f1d2aa;
+    border-style: solid;
+    border-color: #aa804a;
+    display :flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.verbeTitre{
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.verbeDescription{
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+.verbeConjugaisons{
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.EspaceVerbeExerciceDebut{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 80vw;
+    height:15vw;
+    display :flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChevreVerbeDebut{
+    width: 15vw;
+}
+
+.BulleQuestionVerbe {
+    position: relative;
+    bottom:3vw;
+    background-color: #ffffff;
+    border-radius: 1vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    height: 3vw;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+  }
+
+.BulleQuestionVerbe::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    border-width: 0.4vw;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.QuestionBulleVerbe{
+    font-size: 1.5vw;
+    margin-left:1vw;
+    margin-right:1vw;
+    color:black;
+    font-weight:bolder;
+}
+
+.bouttonCommencerExercice{
+    width: 20vw;
+    height: 4vw;
+    background-color: #f1d2aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: #aa804a;
+    border-radius: 1.5vw;
+}
+
+.bouttonCommencerExercice:hover{
+    border-style: solid;
+    border-color: #aa804a;
+}
+
+.EspaceVerbeExercice{
+    margin-bottom: 4.5vw;
+    width: 80vw;
+    height: 10vw;
+    display :flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouttonValiderVerbe{
+    margin-top: 4.5vw;
+    width: 20vw;
+    height: 4vw;
+    background-color: #a7ee99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: #50a641;
+    border-radius: 1.5vw;
+}
+
+.bouttonValiderVerbe:hover{
+    border-style: solid;
+    border-color: #50a641;
+}
+
+.inputVerbeExercice{
+    width: 10vw;
+    height: 3.5vw;
+    background-color: #f1d2aa;
+    border-style: solid;
+    border-color: #aa804a;
+    display :flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

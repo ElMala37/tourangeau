@@ -9,44 +9,9 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
     setOuvert(!ouvert);
   };
 
-  const OuvrirPre = () => {
+  const AllerPage = (lien) => {
     setOuvert(!ouvert);
-    navigate("/");
-  };
-
-  const OuvrirVoc = () => {
-    setOuvert(!ouvert);
-    navigate("/vocabulaire");
-  };
-
-  // const OuvrirExe = () => {
-  //   setOuvert(!ouvert);
-  //   navigate("/exercices");
-  // };
-
-  const OuvrirAlph = () => {
-    setOuvert(!ouvert);
-    navigate("/alphabet");
-  };
-
-  const OuvrirNomb = () => {
-    setOuvert(!ouvert);
-    navigate("/nombres");
-  };
-
-  const OuvrirConv = () => {
-    setOuvert(!ouvert);
-    navigate("/conversation");
-  };
-
-  const OuvrirLec = () => {
-    setOuvert(!ouvert);
-    navigate("/lecons");
-  };
-
-  const OuvrirSout = () => {
-    setOuvert(!ouvert);
-    navigate("/soutenir");
+    navigate(lien);
   };
 
   return (
@@ -87,25 +52,28 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
             transition: "transform 0.7s ease",
           }}
         >
-          <button className="NavMenuBouton" onClick={OuvrirPre}>
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/")}>
             Présentation
           </button>
-          <button className="NavMenuBouton" onClick={OuvrirAlph}>
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/alphabet")}>
             Alphabet
           </button>
-          <button className="NavMenuBouton" onClick={OuvrirNomb}>
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/nombres")}>
             Nombres
           </button>
-          {/* <button className="NavMenuBouton" onClick={OuvrirLec}>
-            Leçons
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/dictionnaire")}>
+            Dictionnaire
+          </button>
+          {/* <button className="NavMenuBouton" onClick={()=>AllerPage("/verbes")}>
+            Verbes
           </button> */}
-          <button className="NavMenuBouton" onClick={OuvrirVoc}>
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/vocabulaire")}>
             Vocabulaire
           </button>
-          <button className="NavMenuBouton" onClick={OuvrirConv}>
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/conversation")}>
             Conversations
           </button>
-          <button className="NavMenuBouton" onClick={OuvrirSout}>
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/soutenir")}>
             Soutenir
           </button>
         </div>

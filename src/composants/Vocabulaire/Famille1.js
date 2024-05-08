@@ -139,7 +139,6 @@ const Famille1 = () => {
       setFinExo(true);
     }
   };
-
   return (
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} />

@@ -27,7 +27,7 @@ const SePresenterConv2 = () => {
 
   const Propositions = [
     ["Eyouque","t'hoas-ti","rĕssĕs-ti","dong","tu","Quiĕlĕ","?","lom"],
-    ["J'hag","sus","Tours","à","Jĕ","rĕssĕ","noatuy","rĕssĕs-ti"],
+    ["J'hag","sus","Tors","à","Jĕ","rĕssĕ","noatuy","rĕssĕs-ti"],
     ["?","Quiĕlĕ","Où","Eyouque","t'hoas-ti","tu","noatuy","rĕssĕs-ti"],
     ["J'hag","noatuy","Jĕ","noaquicencĕ","alouezĕs","sus","Chinon","lom"],
     ["t'hoas-ti","tu","minquier","rĕssĕs-ti","Quiĕlĕ","Eyouque", "?","Où"],
@@ -38,7 +38,7 @@ const SePresenterConv2 = () => {
 
   const BonnesReponses = [
     ["Eyouque","tu","rĕssĕs-ti", "?"],
-    ["Jĕ","rĕssĕ","sus","Tours"],
+    ["Jĕ","rĕssĕ","sus","Tors"],
     ["Eyouque","t'hoas-ti","noatuy","?"],
     ["J'hag","noatuy","sus","Chinon"],
     ["Eyouque","tu","rĕssĕs-ti", "?"],
