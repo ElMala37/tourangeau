@@ -64,15 +64,20 @@ const Presentation = () => {
             />
           </div>
           <div className="FondTexteIntroduction">
-          <p className="TexteIntroduction">
-            La Touraine est une région située dans le centre de la France.
-            Cette région possède sa propre langue, le tourangeau.
-            Le tourangeau est une langue latine et fait partie des langues
-            d'oïl. 
-          </p>
-          <p className="TexteIntroduction">Ce site, qui a été conçu avec l'aide
-          de <a href="https://www.gnto.org/" className="lienSite">l'académie de la langue tourangelle</a>
-          , est dédié à l'apprentissage de la langue tourangelle.</p>
+            <p className="TexteIntroduction">
+              La Touraine est une région située dans le centre de la France.
+              Cette région possède sa propre langue, le tourangeau. Le
+              tourangeau est une langue latine et fait partie des langues d'oïl.
+            </p>
+            <p className="TexteIntroduction">
+              Ce site, qui a été conçu avec l'aide de{" "}
+              <a href="https://www.gnto.org/" className="lienSite">
+                l'académie de la langue tourangelle
+              </a>
+              , est dédié à l'apprentissage de la langue tourangelle.
+            </p>
+            <p className="TexteIntroduction">Vous pouvez contacter
+              le créateur du site sur Instagram : @informatique_du_terroir</p>
           </div>
         </div>
       </div>

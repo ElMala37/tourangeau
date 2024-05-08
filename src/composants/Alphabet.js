@@ -177,6 +177,54 @@ const Alphabet = () => {
     audioElement.play();
   };
 
+  const LectureAudioDigraphe = (index) => {
+    const audioElement = document.getElementById(
+      `AudioMotDigraphe${Digraphes[index][1]}${Digraphes[index][2]}${Digraphes[index][3]}`
+    );
+    audioElement.currentTime = 0;
+    audioElement.play();
+  };
+
+  const LectureAudioSonDigraphe = (index) => {
+    const audioElement = document.getElementById(
+      `AudioSonDigraphe${Digraphes[index][0]}`
+    );
+    audioElement.currentTime = 0;
+    audioElement.play();
+  };
+
+  const LectureAudioTrigraphe = (index) => {
+    const audioElement = document.getElementById(
+      `AudioMotTrigraphe${Trigraphes[index][1]}${Trigraphes[index][2]}${Trigraphes[index][3]}`
+    );
+    audioElement.currentTime = 0;
+    audioElement.play();
+  };
+
+  const LectureAudioSonTrigraphe = (index) => {
+    const audioElement = document.getElementById(
+      `AudioSonTrigraphe${Trigraphes[index][0]}`
+    );
+    audioElement.currentTime = 0;
+    audioElement.play();
+  };
+
+  const LectureAudioLettreFinDeMot = (index) => {
+    const audioElement = document.getElementById(
+      `AudioLettreFDM${LettreFinDeMot[index][2]}${LettreFinDeMot[index][3]}`
+    );
+    audioElement.currentTime = 0;
+    audioElement.play();
+  };
+
+  const LectureAudioSonLFDM = (index) => {
+    const audioElement = document.getElementById(
+      `AudioSonLFDM${LettreFinDeMot[index][3]}`
+    );
+    audioElement.currentTime = 0;
+    audioElement.play();
+  };
+
   return (
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="ALPHABET" />
@@ -259,14 +307,20 @@ const Alphabet = () => {
                 {Digraphes[index][0]}
               </text>
             </div>
-            <div className="celluleAudioTableauAlphabet">
+            <div
+              className="celluleAudioTableauAlphabet"
+              onClick={() => LectureAudioSonDigraphe(index)}
+            >
               <img
                 src="images/audio.png"
                 alt="audioNom"
                 className="logoAudioTableauAlphabet"
               />
             </div>
-            <div className="celluleAudioTableauAlphabet">
+            <div
+              className="celluleAudioTableauAlphabet"
+              onClick={() => LectureAudioDigraphe(index)}
+            >
               <text className="texteTableauAlphabet">
                 {Digraphes[index][1]}
                 <span style={{ fontWeight: "bold" }}>
@@ -275,6 +329,14 @@ const Alphabet = () => {
                 {Digraphes[index][3]}
               </text>
             </div>
+            <audio
+              id={`AudioMotDigraphe${Digraphes[index][1]}${Digraphes[index][2]}${Digraphes[index][3]}`}
+              src={`/audios/Digraphes/${Digraphes[index][1]}${Digraphes[index][2]}${Digraphes[index][3]}.mp3`}
+            ></audio>
+            <audio
+              id={`AudioSonDigraphe${Digraphes[index][0]}`}
+              src={`/audios/Digraphes/${Digraphes[index][0]}.mp3`}
+            ></audio>
           </div>
         ))}
       </div>
@@ -302,14 +364,20 @@ const Alphabet = () => {
                 {Trigraphes[index][0]}
               </text>
             </div>
-            <div className="celluleAudioTableauAlphabet">
+            <div
+              className="celluleAudioTableauAlphabet"
+              onClick={() => LectureAudioSonTrigraphe(index)}
+            >
               <img
                 src="images/audio.png"
                 alt="audioNom"
                 className="logoAudioTableauAlphabet"
               />
             </div>
-            <div className="celluleAudioTableauAlphabet">
+            <div
+              className="celluleAudioTableauAlphabet"
+              onClick={() => LectureAudioTrigraphe(index)}
+            >
               <text className="texteTableauAlphabet">
                 {Trigraphes[index][1]}
                 <span style={{ fontWeight: "bold" }}>
@@ -318,6 +386,14 @@ const Alphabet = () => {
                 {Trigraphes[index][3]}
               </text>
             </div>
+            <audio
+              id={`AudioMotTrigraphe${Trigraphes[index][1]}${Trigraphes[index][2]}${Trigraphes[index][3]}`}
+              src={`/audios/Trigraphes/${Trigraphes[index][1]}${Trigraphes[index][2]}${Trigraphes[index][3]}.mp3`}
+            ></audio>
+            <audio
+              id={`AudioSonTrigraphe${Trigraphes[index][0]}`}
+              src={`/audios/Trigraphes/${Trigraphes[index][0]}.mp3`}
+            ></audio>
           </div>
         ))}
       </div>
@@ -351,21 +427,62 @@ const Alphabet = () => {
             <div className="celluleTableauAlphabet">
               <text className="texteRegle">{LettreFinDeMot[index][1]}</text>
             </div>
-            <div className="celluleAudioTableauAlphabet">
-              <img
-                src="images/audio.png"
-                alt="audioNom"
-                className="logoAudioTableauAlphabet"
-              />
-            </div>
-            <div className="celluleAudioTableauAlphabet">
-              <text className="texteTableauAlphabet">
-                {LettreFinDeMot[index][2]}
-                <span style={{ fontWeight: "bold" }}>
-                  {LettreFinDeMot[index][3]}
-                </span>{" "}
-              </text>
-            </div>
+            {index === 1 || index === 5 || index === 6 ? (
+              <div className="celluleAudioTableauAlphabet">
+                <text className="texteTableauAlphabet">muet</text>
+              </div>
+            ) : (
+              <div
+                className="celluleAudioTableauAlphabet"
+                onClick={() => LectureAudioSonLFDM(index)}
+              >
+                <img
+                  src="images/audio.png"
+                  alt="audioNom"
+                  className="logoAudioTableauAlphabet"
+                />
+              </div>
+            )}
+            {LettreFinDeMot[index][2] + LettreFinDeMot[index][3] ===
+            "guernanz" ? (
+              <div className="celluleAudioTableauAlphabet">
+                <text className="texteTableauAlphabet">
+                  {LettreFinDeMot[index][2]}
+                  <span style={{ fontWeight: "bold" }}>
+                    {LettreFinDeMot[index][3]}
+                  </span>
+                </text>
+              </div>
+            ) : (
+              <div
+                className="celluleAudioTableauAlphabet"
+                onClick={() => LectureAudioLettreFinDeMot(index)}
+              >
+                <text className="texteTableauAlphabet">
+                  {LettreFinDeMot[index][2]}
+                  <span style={{ fontWeight: "bold" }}>
+                    {LettreFinDeMot[index][3]}
+                  </span>
+                </text>
+              </div>
+            )}
+            {LettreFinDeMot[index][2] + LettreFinDeMot[index][3] ===
+            "guernanz" ? (
+              <div></div>
+            ) : (
+              <audio
+                id={`AudioLettreFDM${LettreFinDeMot[index][2]}${LettreFinDeMot[index][3]}`}
+                src={`/audios/LettreFinDeMot/${LettreFinDeMot[index][2]}${LettreFinDeMot[index][3]}.mp3`}
+              ></audio>
+            )}
+            {index === 1 || index === 5 || index === 6 ? (
+              <div></div>
+            ) : (
+              <audio
+                id={`AudioSonLFDM${LettreFinDeMot[index][3]}`}
+                src={`/audios/LettreFinDeMot/${LettreFinDeMot[index][3]}.mp3`}
+              ></audio>
+            )}
           </div>
         ))}
       </div>

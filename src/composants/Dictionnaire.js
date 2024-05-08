@@ -46,7 +46,7 @@ const Dictionnaire = () => {
       item.tourangeau.toLowerCase().startsWith(mot.toLowerCase())
     );
     ResultatRecherche.sort((a, b) => {
-        return a.français.localeCompare(b.français);
+      return a.français.localeCompare(b.français);
     });
     setListeMots(ResultatRecherche);
   }, []);
@@ -63,6 +63,9 @@ const Dictionnaire = () => {
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="DICTIONNAIRE" />
       <div className="ContenuDictionnaire">
+        <div style={{ marginBottom: "2vw", fontWeight: "bold" }}>
+          Le dictionnaire est encore en version de développement...
+        </div>
         <div className="enteteDictionnaire">
           {RechercheLangue === "fra" ? (
             <input
