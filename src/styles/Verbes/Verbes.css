@@ -2,49 +2,35 @@
     width: 100vw;
     height: content;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: left;
+    flex-direction: row;
 }
 
 .EnteteVerbe{
-    width: 85vw;
-    margin-top: 1.5vw;
+    width: 10vw;
+    margin-left: 15vw;
+    margin-top: 2vw;
     margin-bottom: 0vw;
+    display: flex;
+    justify-content: center;
 }  
 
-.ligneVerbe{
-    width: 72vw;
-    height: 3.5vw;
-    display :flex;
-    flex-direction: row;
+.tableauVerbe{
+    margin-top: 3vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreTableauVerbe{
+    width: 50vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #aa804a;
-    padding:0.5vw;
-    align-items: center;
-}
-
-.celluletitreVerbe{
-    width: 72vw;
-    height: 3.5vw;
-    background-color: #f1d2aa;
-    border-style: solid;
-    border-color: #aa804a;
-    display :flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.celluleLigneVerbe{
-    width: 12vw;
-    height: 3.5vw;
-    background-color: #f1d2aa;
-    border-style: solid;
-    border-color: #aa804a;
-    display :flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
 }
 
 .verbeTitre{
@@ -57,112 +43,96 @@
     font-style: italic;
 }
 
-.verbeConjugaisons{
+.ligneVerbe{
+    width: 50vw;
+    height:4vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #f1d2aa;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+}
+
+.celluleDrapeauVerbe{
+    width: 5vw;
+    height:4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImageDrapeauVerbe{
+    width: 2.75vw;
+}
+
+.celluleTexteVerbe{
+    width: 20vw;
+    height:4vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
     font-size: 1.2vw;
     font-weight: bold;
 }
 
-.EspaceVerbeExerciceDebut{
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    width: 80vw;
-    height:15vw;
-    display :flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+@media only screen and (max-width: 600px) {
+    .contenuVerbe{
+        width: 100vw;
+        height: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .EnteteVerbe{
+        width: 100vw;
+        margin-left: 5vw;
+        margin-top: 2vw;
+        margin-bottom: 0vw;
+        display: flex;
+        justify-content: left;
+    }  
+    
+    .tableauVerbe{
+        margin-top: 3vw;
+        width: 90vw;
+    }
+    
+    .titreTableauVerbe{
+        width: 90vw;
+        height: 8vw;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .verbeTitre{
+        font-size: 4vw;
+    }
+    
+    .verbeDescription{
+        font-size: 3vw;
+    }
+    
+    .ligneVerbe{
+        width: 90vw;
+        height:9vw;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .celluleDrapeauVerbe{
+        width: 7.5vw;
+        height:9vw;
+    }
+    
+    .ImageDrapeauVerbe{
+        width: 5vw;
+    }
+    
+    .celluleTexteVerbe{
+        width: 37.5vw;
+        height:9vw;
+        font-size: 3vw;
+    }
 
-.ChevreVerbeDebut{
-    width: 15vw;
-}
-
-.BulleQuestionVerbe {
-    position: relative;
-    bottom:3vw;
-    background-color: #ffffff;
-    border-radius: 1vw;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: max-content;
-    height: 3vw;
-    margin: 1vw;
-    display: flex;
-    align-items: center;
-  }
-
-.BulleQuestionVerbe::before {
-    content: '';
-    position: absolute;
-    top: 40%;
-    left: 100%;
-    border-width: 0.4vw;
-    border-style: solid;
-    border-color: transparent transparent transparent #ffffff;
-}
-
-.QuestionBulleVerbe{
-    font-size: 1.5vw;
-    margin-left:1vw;
-    margin-right:1vw;
-    color:black;
-    font-weight:bolder;
-}
-
-.bouttonCommencerExercice{
-    width: 20vw;
-    height: 4vw;
-    background-color: #f1d2aa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5vw;
-    font-weight: bolder;
-    color: #aa804a;
-    border-radius: 1.5vw;
-}
-
-.bouttonCommencerExercice:hover{
-    border-style: solid;
-    border-color: #aa804a;
-}
-
-.EspaceVerbeExercice{
-    margin-bottom: 4.5vw;
-    width: 80vw;
-    height: 10vw;
-    display :flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.bouttonValiderVerbe{
-    margin-top: 4.5vw;
-    width: 20vw;
-    height: 4vw;
-    background-color: #a7ee99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5vw;
-    font-weight: bolder;
-    color: #50a641;
-    border-radius: 1.5vw;
-}
-
-.bouttonValiderVerbe:hover{
-    border-style: solid;
-    border-color: #50a641;
-}
-
-.inputVerbeExercice{
-    width: 10vw;
-    height: 3.5vw;
-    background-color: #f1d2aa;
-    border-style: solid;
-    border-color: #aa804a;
-    display :flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }

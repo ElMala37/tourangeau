@@ -7,7 +7,7 @@ const Dictionnaire = () => {
   const [ouvert, setOuvert] = useState(true);
   const [MotRecherche, setMotRecherche] = useState("");
   const [listeMots, setListeMots] = useState([]);
-  const [RechercheLangue, setRechercheLangue] = useState("fra");
+  const [RechercheLangue, setRechercheLangue] = useState("tou");
 
   const RechercherMot = (event) => {
     setMotRecherche(event.target.value);
@@ -36,6 +36,9 @@ const Dictionnaire = () => {
       }
     });
 
+    // Limiter le nombre de résultats à 50
+    ResultatRecherche = ResultatRecherche.slice(0, 50);
+
     setListeMots(ResultatRecherche);
   };
 
@@ -46,8 +49,12 @@ const Dictionnaire = () => {
       item.tourangeau.toLowerCase().startsWith(mot.toLowerCase())
     );
     ResultatRecherche.sort((a, b) => {
-      return a.français.localeCompare(b.français);
+      return a.tourangeau.localeCompare(b.tourangeau);
     });
+
+    // Limiter le nombre de résultats à 50
+    ResultatRecherche = ResultatRecherche.slice(0, 50);
+
     setListeMots(ResultatRecherche);
   }, []);
 
@@ -63,9 +70,6 @@ const Dictionnaire = () => {
     <div className="Fond">
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="DICTIONNAIRE" />
       <div className="ContenuDictionnaire">
-        <div style={{ marginBottom: "2vw", fontWeight: "bold" }}>
-          Le dictionnaire est encore en version de développement...
-        </div>
         <div className="enteteDictionnaire">
           {RechercheLangue === "fra" ? (
             <input

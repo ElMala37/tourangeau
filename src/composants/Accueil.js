@@ -64,9 +64,9 @@ const Acceuil = ({ ouvert, setOuvert, titre }) => {
           <button className="NavMenuBouton" onClick={()=>AllerPage("/dictionnaire")}>
             Dictionnaire
           </button>
-          {/* <button className="NavMenuBouton" onClick={()=>AllerPage("/verbes")}>
+          <button className="NavMenuBouton" onClick={()=>AllerPage("/verbes")}>
             Verbes
-          </button> */}
+          </button>
           <button className="NavMenuBouton" onClick={()=>AllerPage("/vocabulaire")}>
             Vocabulaire
           </button>

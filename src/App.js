@@ -14,7 +14,7 @@ import Nombres from "./composants/Nombres";
 import Conversation from "./composants/Conversation";
 import SePresenterConv from "./composants/Conversation/SePresenterConv";
 import Verbes from "./composants/Verbes";
-import VerbeTemplate from "./composants/Verbes/Template";
+// import VerbeTemplate from "./composants/Verbes/VerbeTemplate";
 import Soutenir from "./composants/Soutenir";
 import SePresenterConv2 from "./composants/Conversation/SePresenterConv2";
 import RestaurantConv from "./composants/Conversation/RestaurantConv";
@@ -25,6 +25,15 @@ import Hiver from "./composants/Vocabulaire/Hiver";
 import Maison from "./composants/Vocabulaire/Maison";
 import Jardin from "./composants/Vocabulaire/Jardin";
 import Dictionnaire from "./composants/Dictionnaire";
+import Etre from "./composants/Verbes/Etre";
+import Avoir from "./composants/Verbes/Avoir";
+import Faire from "./composants/Verbes/Faire";
+import Croire from "./composants/Verbes/Croire";
+import Savoir from "./composants/Verbes/Savoir";
+import Devoir from "./composants/Verbes/Devoir";
+import SeLever from "./composants/Verbes/SeLever";
+import Pouvoir from "./composants/Verbes/Pouvoir";
+import Vouloir from "./composants/Verbes/Vouloir";
 
 function App() {
   return (
@@ -35,7 +44,16 @@ function App() {
         <Route exact path="/nombres" element={<Nombres />} />
         <Route exact path="/dictionnaire" element={<Dictionnaire />} />
         <Route exact path="/verbes" element={<Verbes/>} />
-        <Route exact path="/verbes/template" element={<VerbeTemplate/>} />
+        {/* <Route exact path="/verbes/template" element={<VerbeTemplate/>} /> */}
+        <Route exact path="/verbes/eter" element={<Etre/>} />
+        <Route exact path="/verbes/havouere" element={<Avoir/>} />
+        <Route exact path="/verbes/faizer" element={<Faire/>} />
+        <Route exact path="/verbes/crerre" element={<Croire/>} />
+        <Route exact path="/verbes/asçaouere" element={<Savoir/>} />
+        <Route exact path="/verbes/douere" element={<Devoir/>} />
+        <Route exact path="/verbes/se_ghlevair" element={<SeLever/>} />
+        <Route exact path="/verbes/poyeire" element={<Pouvoir/>} />
+        <Route exact path="/verbes/veulouere" element={<Vouloir/>} />
         <Route exact path="/vocabulaire" element={<Vocabulaire />} />
         <Route exact path="/vocabulaire/famille" element={<Famille1 />} />
         <Route exact path="/vocabulaire/vetements" element={<Vetements />} />
