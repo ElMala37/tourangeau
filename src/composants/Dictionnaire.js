@@ -105,25 +105,29 @@ const Dictionnaire = () => {
                   />
                 </div>
                 <div className="CelluleMotDictionnaire">{item.français}</div>
-                <div className="CelluleDetailDictionnaire">
-                  type : {item.type_français}
-                </div>
-                {item.genre_français === "" ? (
-                  <div className="CelluleDetailDictionnaire" />
+                {item.type_français === "groupe nominal commun" ? (
+                  <div className="CelluleGrosDetailDictionnaire">type : {item.type_français}</div>
+                ) : (
+                  <div className="CelluleDetailDictionnaire">
+                    type : {item.type_français}
+                  </div>
+                )}
+                {item.genre_français === "" || item.type_français === "groupe nominal commun" ? (
+                  <div/>
                 ) : (
                   <div className="CelluleDetailDictionnaire">
                     genre : {item.genre_français}
                   </div>
                 )}
-                {item.singulier_français === "" ? (
-                  <div className="CelluleSingulierPlurielDictionnaire" />
+                {item.singulier_français === "" || item.type_français === "groupe nominal commun" ? (
+                  <div />
                 ) : (
                   <div className="CelluleSingulierPlurielDictionnaire">
                     {item.singulier_français} {item.français}
                   </div>
                 )}
-                {item.pluriel_français === "" ? (
-                  <div className="CelluleSingulierPlurielDictionnaire" />
+                {item.pluriel_français === "" || item.type_français === "groupe nominal commun" ? (
+                  <div/>
                 ) : (
                   <div className="CelluleSingulierPlurielDictionnaire">
                     {item.pluriel_français}
@@ -211,25 +215,29 @@ const Dictionnaire = () => {
                   />
                 </div>
                 <div className="CelluleMotDictionnaire">{item.français}</div>
-                <div className="CelluleDetailDictionnaire">
-                  type : {item.type_français}
-                </div>
-                {item.genre_français === "" ? (
-                  <div className="CelluleDetailDictionnaire" />
+                {item.type_français === "groupe nominal commun" ? (
+                  <div className="CelluleGrosDetailDictionnaire">type : {item.type_français}</div>
+                ) : (
+                  <div className="CelluleDetailDictionnaire">
+                    type : {item.type_français}
+                  </div>
+                )}
+                {item.genre_français === "" || item.type_français === "groupe nominal commun" ? (
+                  <div/>
                 ) : (
                   <div className="CelluleDetailDictionnaire">
                     genre : {item.genre_français}
                   </div>
                 )}
-                {item.singulier_français === "" ? (
-                  <div className="CelluleSingulierPlurielDictionnaire" />
+                {item.singulier_français === "" || item.type_français === "groupe nominal commun"? (
+                  <div/>
                 ) : (
                   <div className="CelluleSingulierPlurielDictionnaire">
                     {item.singulier_français} {item.français}
                   </div>
                 )}
-                {item.pluriel_français === "" ? (
-                  <div className="CelluleSingulierPlurielDictionnaire" />
+                {item.pluriel_français === "" || item.type_français === "groupe nominal commun" ? (
+                  <div/>
                 ) : (
                   <div className="CelluleSingulierPlurielDictionnaire">
                     {item.pluriel_français}

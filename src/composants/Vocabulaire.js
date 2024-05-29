@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Acceuil from "./Accueil";
 import { useNavigate } from "react-router";
+import { Helmet } from 'react-helmet';
 
 const Vocabulaire = () => {
   const [ouvert, setOuvert] = useState(true);
   const navigate = useNavigate();
+  
   
   const AllerTheme = (lien) => {
     navigate(lien);
@@ -12,6 +14,10 @@ const Vocabulaire = () => {
 
   return (
     <div className="Fond">
+      <Helmet>
+        <title>Vocabulaire tourangeau</title>
+        <meta name="description" content="La touraine a ses propres mots, ses propres expressions et c'est ici qu'on vous propose de découvrir le vocabulaire de la langue tourangelle." />
+      </Helmet>
       <Acceuil ouvert={ouvert} setOuvert={setOuvert} titre="VOCABULAIRE" />
       <div className="Contenu">
         <div className="CarteTheme" onClick={() => AllerTheme("/vocabulaire/famille")}>
